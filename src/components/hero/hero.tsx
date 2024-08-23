@@ -53,7 +53,10 @@ function Hero({
         <div className="hero-inner relative lg:flex">
           <div className="hero-copy pb-16 pt-10 lg:min-w-[40rem] lg:pr-20 lg:pt-16">
             <div className="mx-auto w-full max-w-3xl">
-              <h1 className="mb-4 mt-0 text-4xl font-bold md:text-5xl " ref={addToScrollRevealRef}>
+              <h1
+                className="mb-4 mt-0 font-[Nabla] text-4xl font-bold md:text-5xl"
+                ref={addToScrollRevealRef}
+              >
                 {title}
               </h1>
               <p className="prose prose-xl m-auto text-gray-500" ref={addToScrollRevealRef}>
@@ -61,12 +64,18 @@ function Hero({
               </p>
             </div>
 
-            <div ref={addToScrollRevealRef}>
+            {/* <div ref={addToScrollRevealRef}>
               <NewsletterForm
                 className="mx-auto mt-8 max-w-md lg:mx-0"
                 submitText="Get early access"
                 onSubmit={onNewsletterSubmit}
               />
+            </div> */}
+            <div className="mt-8 text-center text-gray-300">
+              <p>If you have a project in mind, feel free to reach out:</p>
+              <a href="mailto:contact@totono.com" className="text-blue-500 underline">
+                toni.tralice@totono.xyz
+              </a>
             </div>
           </div>
 
