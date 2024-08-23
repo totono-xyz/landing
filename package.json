@@ -3,15 +3,15 @@
   "name": "holly-react",
   "description": "React version of Holly",
   "author": "Luke McDonald (https://lukemcdonald.com/)",
-  "homepage": "https://lukemcdonald.github.io/holly-react",
+  "homepage": "https://totono-xyz.github.io/landing/",
   "keywords": [],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lukemcdonald/holly-react.git"
+    "url": "https://github.com/totono-xyz/landing.git"
   },
   "bugs": {
-    "url": "https://github.com/lukemcdonald/holly-react/issues"
+    "url": "https://github.com/totono-xyz/landing.git/issues"
   },
   "scripts": {
     "build": "NODE_ENV=production run-s build:*",
