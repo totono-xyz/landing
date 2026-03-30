@@ -1,70 +1,120 @@
 @import 'tailwindcss';
-@plugin "@tailwindcss/forms";
-@plugin "@tailwindcss/typography";
 
 @theme {
-  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+  /* Fonts */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-display: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --font-brand: 'Silkscreen', monospace;
 
+  /* Reset default colors */
   --color-*: initial;
 
+  /* Core */
   --color-black: #000000;
   --color-white: #ffffff;
 
-  /* Gray (slate) */
-  --color-gray-50: #f8fafc;
-  --color-gray-100: #f1f5f9;
-  --color-gray-200: #e2e8f0;
-  --color-gray-300: #cbd5e1;
-  --color-gray-400: #94a3b8;
-  --color-gray-500: #64748b;
-  --color-gray-600: #475569;
-  --color-gray-700: #334155;
-  --color-gray-800: #1e293b;
-  --color-gray-900: #0f172a;
-  --color-gray-950: #020617;
-
   /* Primary */
-  --color-primary-50: #f0faff;
-  --color-primary-100: #e0f2fe;
-  --color-primary-200: #bae6fd;
-  --color-primary-300: #7dd3fc;
-  --color-primary-400: #38bdf8;
-  --color-primary-500: #0ea5e9;
-  --color-primary-600: #0284c7;
-  --color-primary-700: #0369a1;
-  --color-primary-800: #075985;
-  --color-primary-900: #0c4a6e;
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0f1c2c;
+  --color-on-primary-container: #778598;
 
   /* Secondary */
-  --color-secondary-50: #fff7ed;
-  --color-secondary-100: #ffedd5;
-  --color-secondary-200: #fed7aa;
-  --color-secondary-300: #fdba74;
-  --color-secondary-400: #fb923c;
-  --color-secondary-500: #f97316;
-  --color-secondary-600: #ea580c;
-  --color-secondary-700: #c2410c;
-  --color-secondary-800: #9a3412;
-  --color-secondary-900: #7c2d12;
+  --color-secondary: #47607e;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #c2dcff;
+  --color-on-secondary-container: #48617e;
 
   /* Tertiary */
-  --color-tertiary-50: #f0fdf4;
-  --color-tertiary-100: #dcfce7;
-  --color-tertiary-200: #bbf7d0;
-  --color-tertiary-300: #86efac;
-  --color-tertiary-400: #4ade80;
-  --color-tertiary-500: #22c55e;
-  --color-tertiary-600: #16a34a;
-  --color-tertiary-700: #15803d;
-  --color-tertiary-800: #166534;
-  --color-tertiary-900: #14532d;
+  --color-tertiary: #000000;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #001f24;
+  --color-on-tertiary-container: #0091a2;
+
+  /* Error */
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  /* Background */
+  --color-background: #f8f9fa;
+  --color-on-background: #191c1d;
+
+  /* Surface */
+  --color-surface: #f8f9fa;
+  --color-on-surface: #191c1d;
+  --color-on-surface-variant: #44474c;
+  --color-surface-dim: #d9dadb;
+  --color-surface-bright: #f8f9fa;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f4f5;
+  --color-surface-container: #edeeef;
+  --color-surface-container-high: #e7e8e9;
+  --color-surface-container-highest: #e1e3e4;
+  --color-surface-tint: #525f71;
+
+  /* Outline */
+  --color-outline: #74777d;
+  --color-outline-variant: #c4c6cc;
+
+  /* Inverse */
+  --color-inverse-surface: #2e3132;
+  --color-inverse-on-surface: #f0f1f2;
+  --color-inverse-primary: #bac8dc;
+
+  /* Accent */
+  --color-accent: #c78400;
+
+  /* Slate (for footer/nav fallback) */
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-50: #f8fafc;
+
+  /* Border radius */
+  --radius: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  /* Animations */
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-cursor-blink: cursor-blink 1.2s step-end infinite;
 }
 
-/*
- * Typography plugin: prose link color override
- * (migrated from tailwind.config.js typography config)
- */
-.prose a {
-  color: currentColor;
+@keyframes cursor-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.text-huge {
+  font-size: clamp(4rem, 15vw, 12rem);
+  line-height: 0.8;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
 }

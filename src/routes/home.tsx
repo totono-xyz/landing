@@ -1,14 +1,24 @@
-import { Hero, HeroIllustration } from '@/components/hero'
-import { Layout } from '@/components/layout'
+import { BackgroundText } from '@/components/background-text'
+import { ContactSection } from '@/components/contact-section'
+import { Footer } from '@/components/footer'
+import { HeroSection } from '@/components/hero-section'
+import { TopNavBar } from '@/components/top-nav-bar'
 
 export default function HomePage() {
   return (
-    <Layout>
-      <Hero
-        title="TOTONO"
-        content="Bringing your ideas to life with tailored software services. Let's build something great together."
-        illustration={<HeroIllustration />}
-      />
-    </Layout>
+    <div className="min-h-screen flex flex-col">
+      <TopNavBar />
+
+      <main className="flex-grow pt-32 relative overflow-hidden">
+        <BackgroundText />
+
+        <div className="max-w-7xl mx-auto px-12 h-full flex flex-col">
+          <HeroSection />
+          <ContactSection />
+        </div>
+      </main>
+
+      <Footer />
+    </div>
   )
 }
