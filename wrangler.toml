@@ -2,3 +2,7 @@ name = "totono-landing"
 main = "worker.mjs"
 compatibility_date = "2026-08-23"
 routes = [{ pattern = "totono.xyz/*", zone_name = "totono.xyz" }]
+
+[[analytics_engine_datasets]]
+binding = "TRAFFIC"
+dataset = "totono_traffic"

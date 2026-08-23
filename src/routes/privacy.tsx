@@ -10,9 +10,11 @@ export default function PrivacyPage() {
 
       <h2>Information we collect on this website</h2>
       <p>
-        totono.xyz is a static website. It does not set cookies, does not use analytics or
-        advertising trackers, and does not require an account. We do not collect personal
-        information through the site itself.
+        totono.xyz is a static website. It does not set cookies, does not use advertising trackers,
+        and does not require an account. To understand traffic in aggregate we use Cloudflare Web
+        Analytics and Cloudflare edge metrics, which record the page requested, the referring site,
+        country, browser type and whether the request came from an AI agent. These measurements use
+        no cookies and no fingerprinting, and we do not store IP addresses.
       </p>
       <p>
         The site is hosted on GitHub Pages and served through Cloudflare. Like most hosting

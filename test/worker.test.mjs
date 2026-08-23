@@ -3,7 +3,7 @@ import assert from 'node:assert/strict'
 import { existsSync, readFileSync } from 'node:fs'
 import { extname } from 'node:path'
 import { test } from 'node:test'
-import worker, { markdownPath, preferredType } from '../worker.mjs'
+import worker, { classifyAgent, markdownPath, preferredType } from '../worker.mjs'
 
 const CHROME =
   'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
@@ -107,4 +107,62 @@ test('static assets and .md URLs pass straight through regardless of Accept', as
     assert.equal(res.headers.get('vary'), 'Accept-Encoding', path)
     assert.equal(res.headers.get('link'), null)
   }
+})
+
+test('classifyAgent buckets the user agents we care about', () => {
+  assert.equal(
+    classifyAgent(
+      'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)',
+    ),
+    'claude',
+  )
+  assert.equal(
+    classifyAgent('Mozilla/5.0 (compatible; GPTBot/1.1; +https://openai.com/gptbot)'),
+    'openai',
+  )
+  assert.equal(classifyAgent('ora-agent'), 'ora')
+  assert.equal(classifyAgent('Mozilla/5.0 (compatible; Googlebot/2.1)'), 'search-crawler')
+  assert.equal(classifyAgent('curl/8.6.0'), 'script')
+  assert.equal(
+    classifyAgent(
+      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36',
+    ),
+    'browser',
+  )
+  assert.equal(classifyAgent('SomethingCrawler/1.0'), 'other-bot')
+  assert.equal(classifyAgent(''), 'unknown')
+})
+
+test('page views, markdown, assets and 406s each write one traffic datapoint', async () => {
+  const points = []
+  const env = { TRAFFIC: { writeDataPoint: (p) => points.push(p) } }
+  const hit = (path, headers) =>
+    worker.fetch(new Request(`https://totono.xyz${path}`, { headers, cf: { country: 'AR' } }), env)
+
+  await hit('/about', {
+    'user-agent': 'ClaudeBot/1.0',
+    accept: 'text/markdown',
+    referer: 'https://claude.ai/',
+  })
+  await hit('/', { 'user-agent': 'Mozilla/5.0 Chrome/126' })
+  await hit('/logo.png', {})
+  await hit('/', { accept: 'application/pdf' })
+
+  assert.deepEqual(
+    points.map((p) => [p.blobs[0], p.blobs[2], p.blobs[4]]),
+    [
+      ['/about', 'claude', 'markdown'],
+      ['/', 'browser', 'html'],
+      ['/logo.png', 'unknown', 'asset'],
+      ['/', 'unknown', '406'],
+    ],
+  )
+  assert.deepEqual(points[0].blobs[1], 'https://claude.ai/')
+  assert.deepEqual(points[0].indexes, ['claude'])
+  assert.deepEqual(points[0].doubles, [1])
+})
+
+test('the worker still works with no analytics binding', async () => {
+  const res = await worker.fetch(new Request('https://totono.xyz/about'), {})
+  assert.equal(res.status, 200)
 })
