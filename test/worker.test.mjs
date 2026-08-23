@@ -166,3 +166,16 @@ test('the worker still works with no analytics binding', async () => {
   const res = await worker.fetch(new Request('https://totono.xyz/about'), {})
   assert.equal(res.status, 200)
 })
+
+test('/.well-known/api-catalog is an empty RFC 9727 linkset', async () => {
+  const res = await get('/.well-known/api-catalog', '*/*')
+  assert.equal(res.status, 200)
+  assert.equal(res.headers.get('content-type'), 'application/linkset+json')
+  assert.deepEqual(await res.json(), { linkset: [] })
+})
+
+test('/auth.md passes through as markdown', async () => {
+  const res = await get('/auth.md')
+  assert.equal(res.status, 200)
+  assert.match(await res.text(), /^# auth\.md\n/)
+})

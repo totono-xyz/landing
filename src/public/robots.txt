@@ -1,4 +1,11 @@
+# Content Signals (https://contentsignals.org/) declare how collected content
+# may be used: search = search indexing and results; ai-input = feeding
+# content into AI models at inference time (RAG, grounding, AI answers);
+# ai-train = training or fine-tuning AI models. totono.xyz is a public
+# marketing site and grants all three.
+
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 Sitemap: https://totono.xyz/sitemap.xml
