@@ -9,8 +9,9 @@ function HeroSection() {
 
       <div className="border-primary mb-12 ml-0 border-l-4 py-2 pl-8 md:ml-48">
         <p className="text-on-surface-variant max-w-2xl font-sans text-xl leading-relaxed md:text-2xl">
-          Bringing your ideas to life with tailored software services. We focus on reliability,
-          structural integrity, and the technical precision your vision deserves.
+          Totono is an independent software studio. We design and build tailored web applications,
+          backend systems and learning platforms for companies that need reliability, structural
+          integrity and the technical precision their vision deserves.
         </p>
       </div>
 
