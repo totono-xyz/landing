@@ -37,12 +37,16 @@ function ContactSection() {
             onClick={handleClick}
           >
             {EMAIL}
-            <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
+            <span
+              aria-hidden="true"
+              className="material-symbols-outlined transition-transform group-hover:translate-x-1"
+            >
               arrow_forward
             </span>
           </a>
 
           <span
+            aria-hidden={!copied}
             className={`absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs font-sans text-on-surface-variant transition-opacity duration-300 ${copied ? 'opacity-100' : 'opacity-0'}`}
           >
             Copied to clipboard
