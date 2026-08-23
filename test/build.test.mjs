@@ -52,6 +52,16 @@ test('every page has a markdown sibling with a heading, 500+ chars and no HTML',
   assert.match(read('404.md'), /\[sitemap\.xml\]\(https:\/\/totono\.xyz\/sitemap\.xml\)/)
 })
 
+test('home, about and llms.txt all say "software studio" so agents can classify the site', () => {
+  for (const file of ['index.html', 'about.html', 'index.md', 'llms.txt'])
+    assert.match(read(file), /software studio/i, file)
+  assert.doesNotMatch(
+    read('about.md') + read('contact.md'),
+    /Toni Tralice/,
+    'use the full name in copy',
+  )
+})
+
 test('nested copies match the flat pages so /about and /about/ serve the same HTML', () => {
   for (const route of ['about', 'contact', 'privacy']) {
     assert.equal(read(`${route}/index.html`), read(`${route}.html`))
@@ -75,6 +85,8 @@ test('homepage JSON-LD has an Organization with contactPoint and address', () =>
   assert.equal(org.url, 'https://totono.xyz/')
   assert.equal(org.contactPoint['@type'], 'ContactPoint')
   assert.ok(org.contactPoint.email && org.contactPoint.contactType)
+  assert.equal(org.founder.name, 'Antonio Tralice')
+  assert.ok(org.makesOffer.length >= 4 && org.knowsAbout.length >= 4)
   assert.equal(org.address['@type'], 'PostalAddress')
   assert.ok(org.address.addressCountry)
 })

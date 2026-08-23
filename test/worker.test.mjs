@@ -63,7 +63,7 @@ test('Accept: text/markdown serves the markdown sibling with Vary: Accept', asyn
     assert.equal(res.status, 200, path)
     assert.equal(res.headers.get('content-type'), 'text/markdown; charset=utf-8')
     assert.equal(res.headers.get('vary'), 'Accept-Encoding, Accept')
-    assert.match(await res.text(), /^About\n# Software built to last\./)
+    assert.match(await res.text(), /^About\n# An independent software studio\./)
   }
   const home = await get('/', 'text/markdown, text/html;q=0.8')
   assert.match(await home.text(), /# Let's build something great together\./)

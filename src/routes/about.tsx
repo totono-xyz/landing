@@ -2,26 +2,36 @@ import { Page } from '@/components/page'
 
 export default function AboutPage() {
   return (
-    <Page label="About" title="Software built to last.">
+    <Page label="About" title="An independent software studio.">
       <p>
-        Totono is a software engineering studio operated by TOTONO LLC, a limited liability company
-        registered in the state of Delaware, United States. We design and build tailored software
-        for companies that need dependable systems rather than one-size-fits-all products.
+        Totono is a software studio operated by TOTONO LLC, a limited liability company registered
+        in Delaware, United States, and run from Buenos Aires, Argentina. We design and build
+        tailored software for startups and established companies that need dependable systems rather
+        than one-size-fits-all products.
       </p>
       <p>
-        The studio is led by Toni Tralice, a software engineer with more than a decade of experience
-        building web platforms, backend services and developer tooling for startups and established
-        businesses. Every engagement is handled directly by the people who write the code: no
-        account managers, no hand-offs, no surprises.
+        The studio is led by Antonio Tralice, a software engineer and ed-tech entrepreneur from
+        Tucumán, Argentina, and a Y Combinator alumni (S20). Antonio has spent more than a decade
+        building web platforms, backend services and learning products, and every Totono engagement
+        is handled directly by him: no account managers, no hand-offs, no surprises.
       </p>
 
       <h2>What we do</h2>
       <ul>
         <li>Custom web applications, from first prototype to production.</li>
-        <li>Backend systems, APIs and integrations with third-party services.</li>
-        <li>System architecture reviews and technical due diligence.</li>
-        <li>Fractional engineering leadership for teams that need senior guidance.</li>
+        <li>Backend systems, REST and GraphQL APIs, and integrations with third-party services.</li>
+        <li>Learning platforms and ed-tech products: courses, cohorts, assessments and tooling.</li>
+        <li>Architecture reviews and technical due diligence on existing codebases.</li>
+        <li>Fractional CTO and engineering leadership for teams that need senior guidance.</li>
       </ul>
+
+      <h2>Who we work with</h2>
+      <p>
+        Early-stage startups that need a first production system, growing companies that have
+        outgrown their initial codebase, and education businesses building or replacing a learning
+        platform. We work remotely in English and Spanish with clients across the Americas and
+        Europe, and overlap with both US and European business hours.
+      </p>
 
       <h2>How we work</h2>
       <p>
@@ -31,7 +41,7 @@ export default function AboutPage() {
         precision your vision deserves.
       </p>
       <p>
-        If that sounds like what you need, <a href="/contact">get in touch</a>.
+        Looking for a software studio for your next project? <a href="/contact">Get in touch</a>.
       </p>
     </Page>
   )
