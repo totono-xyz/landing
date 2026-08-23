@@ -37,7 +37,10 @@ function ContactSection() {
             onClick={handleClick}
           >
             {EMAIL}
-            <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
+            <span
+              aria-hidden="true"
+              className="material-symbols-outlined transition-transform group-hover:translate-x-1"
+            >
               arrow_forward
             </span>
           </a>

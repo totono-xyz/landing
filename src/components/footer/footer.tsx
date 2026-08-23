@@ -20,25 +20,36 @@ function Footer() {
   }, [])
 
   return (
-    <footer className="bg-slate-50 w-full mt-auto">
-      <div className="flex flex-col md:flex-row justify-between items-center w-full px-12 py-10">
+    <footer className="mt-auto w-full bg-slate-50">
+      <div className="flex w-full flex-col items-center justify-between px-12 py-10 md:flex-row">
         <div className="mb-6 md:mb-0">
-          <div className="font-brand font-bold text-on-surface mb-2">TOTONO</div>
-          <p className="font-sans text-xs tracking-widest uppercase text-slate-500">
+          <div className="font-brand text-on-surface mb-2 font-bold">TOTONO</div>
+          <p className="font-sans text-xs tracking-widest text-slate-500 uppercase">
             &copy; {new Date().getFullYear()} TOTONO LLC. Registered in Delaware.
           </p>
+          <nav className="mt-3 flex gap-6 font-sans text-xs tracking-widest text-slate-500 uppercase">
+            <a className="transition-colors hover:text-black" href="/about">
+              About
+            </a>
+            <a className="transition-colors hover:text-black" href="/contact">
+              Contact
+            </a>
+            <a className="transition-colors hover:text-black" href="/privacy">
+              Privacy
+            </a>
+          </nav>
         </div>
 
         <div className="relative">
           <a
-            className="font-sans text-xs tracking-widest uppercase text-slate-500 hover:text-black transition-colors"
+            className="font-sans text-xs tracking-widest text-slate-500 uppercase transition-colors hover:text-black"
             href={`mailto:${EMAIL}`}
             onClick={handleClick}
           >
             {EMAIL}
           </a>
           <span
-            className={`absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs font-sans text-on-surface-variant whitespace-nowrap transition-opacity duration-300 ${copied ? 'opacity-100' : 'opacity-0'}`}
+            className={`text-on-surface-variant absolute -bottom-6 left-1/2 -translate-x-1/2 font-sans text-xs whitespace-nowrap transition-opacity duration-300 ${copied ? 'opacity-100' : 'opacity-0'}`}
           >
             Copied to clipboard
           </span>

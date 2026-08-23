@@ -27,6 +27,8 @@
     "predeploy": "$npm_execpath run build",
     "preview": "vite preview",
     "start": "$npm_execpath run dev",
+    "pretest": "$npm_execpath run build",
+    "test": "node --test test/*.test.mjs",
     "typecheck": "tsc --noEmit",
     "validate": "run-p lint typecheck"
   },

@@ -2,18 +2,20 @@ import { BackgroundText } from '@/components/background-text'
 import { ContactSection } from '@/components/contact-section'
 import { Footer } from '@/components/footer'
 import { HeroSection } from '@/components/hero-section'
+import { ServicesSection } from '@/components/services-section'
 import { TopNavBar } from '@/components/top-nav-bar'
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex min-h-screen flex-col">
       <TopNavBar />
 
-      <main className="flex-grow pt-32 relative overflow-hidden">
+      <main className="relative flex-grow overflow-hidden pt-32">
         <BackgroundText />
 
-        <div className="max-w-7xl mx-auto px-12 h-full flex flex-col">
+        <div className="mx-auto flex h-full max-w-7xl flex-col px-12">
           <HeroSection />
+          <ServicesSection />
           <ContactSection />
         </div>
       </main>
