@@ -3,6 +3,23 @@
 // with a `Link` header and returns 406 when nothing we produce is acceptable.
 // Deploy with `npm run deploy:worker` (needs a Cloudflare login via wrangler).
 
+const AGENTS = [
+  ['claude', /claudebot|claude-user|claude-web|anthropic/i],
+  ['openai', /gptbot|chatgpt-user|oai-searchbot/i],
+  ['perplexity', /perplexity/i],
+  ['google-ai', /google-extended|geminibot/i],
+  ['deepseek', /deepseek/i],
+  ['ora', /ora-agent/i],
+  ['search-crawler', /googlebot|bingbot|duckduckbot|yandex|baiduspider/i],
+  ['script', /curl|wget|python|httpx|axios|node-fetch|go-http-client|java\//i],
+]
+
+export function classifyAgent(ua) {
+  if (!ua) return 'unknown'
+  for (const [name, re] of AGENTS) if (re.test(ua)) return name
+  return /bot|crawl|spider|scrape/i.test(ua) ? 'other-bot' : 'browser'
+}
+
 const PRODUCES = ['text/html', 'text/markdown']
 const PASSTHROUGH = /\.(?:css|js|mjs|map|png|jpe?g|webp|gif|svg|ico|woff2?|ttf|xml|txt|json|md)$/i
 
@@ -65,15 +82,37 @@ export const markdownPath = (pathname) =>
   `/${pathname.replace(/(\/|\.html)$/, '').replace(/^\//, '') || 'index'}.md`
 
 export default {
-  async fetch(request) {
+  async fetch(request, env) {
     const url = new URL(request.url)
-    if (PASSTHROUGH.test(url.pathname)) return fetch(request)
+    const agent = classifyAgent(request.headers.get('user-agent'))
+    // Aggregate traffic datapoint (Workers Analytics Engine): no cookies, no IP stored.
+    const log = (format) =>
+      env?.TRAFFIC?.writeDataPoint({
+        blobs: [
+          url.pathname,
+          request.headers.get('referer') || '',
+          agent,
+          request.cf?.country || '',
+          format,
+        ],
+        doubles: [1],
+        indexes: [agent],
+      })
+
+    if (PASSTHROUGH.test(url.pathname)) {
+      log('asset')
+      return fetch(request)
+    }
 
     const accept = request.headers.get('accept')
     const chosen = preferredType(accept)
-    if (chosen === null) return notAcceptable()
+    if (chosen === null) {
+      log('406')
+      return notAcceptable()
+    }
 
     if (chosen === 'text/markdown') {
+      log('markdown')
       let res = await fetch(new Request(new URL(markdownPath(url.pathname), url), request))
       // Unknown page: answer with the markdown 404 body so agents can recover.
       if (res.status === 404) {
@@ -84,6 +123,7 @@ export default {
       return res
     }
 
+    log('html')
     const res = withVaryAccept(await fetch(request))
     if (res.ok && res.headers.get('content-type')?.includes('text/html')) {
       res.headers.set(

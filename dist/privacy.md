@@ -5,7 +5,7 @@ This policy describes what information TOTONO LLC ("Totono", "we") collects when
 
 ## Information we collect on this website
 
-totono.xyz is a static website. It does not set cookies, does not use analytics or advertising trackers, and does not require an account. We do not collect personal information through the site itself.
+totono.xyz is a static website. It does not set cookies, does not use advertising trackers, and does not require an account. To understand traffic in aggregate we use Cloudflare Web Analytics and Cloudflare edge metrics, which record the page requested, the referring site, country, browser type and whether the request came from an AI agent. These measurements use no cookies and no fingerprinting, and we do not store IP addresses.
 
 The site is hosted on GitHub Pages and served through Cloudflare. Like most hosting providers, they may keep standard server logs (IP address, user agent, requested URL and timestamp) for security and operational purposes, under their own privacy policies. Web fonts are loaded from Google Fonts, which receives your browser's request for the font files.
 
