@@ -11,21 +11,21 @@ type Route = { title: string; description: string; Component: ComponentType }
 
 export const routes: Record<string, Route> = {
   '/': {
-    title: 'Totono | Tailored software services',
+    title: 'Totono | Independent software studio',
     description:
-      'Totono builds tailored software for companies that need reliable systems: web applications, backend services, APIs and technical consulting. TOTONO LLC, Delaware.',
+      'Totono is an independent software studio building custom web applications, backend systems, APIs and learning platforms. Led by Antonio Tralice. Remote, English and Spanish.',
     Component: HomePage,
   },
   '/about': {
-    title: 'About Totono',
+    title: 'About Totono | Software studio led by Antonio Tralice',
     description:
-      'Totono is a software engineering studio led by Toni Tralice, building custom web applications, backend systems and providing technical consulting.',
+      'Totono is a software studio led by Antonio Tralice (YC S20 alumni) building custom web applications, backend systems, learning platforms and providing fractional CTO services.',
     Component: AboutPage,
   },
   '/contact': {
     title: 'Contact Totono',
     description:
-      'Reach Totono by email at toni.tralice@totono.xyz to discuss a software project. Replies usually within two business days.',
+      'Hire Totono for your next software project: email toni.tralice@totono.xyz. Replies from Antonio Tralice within two business days, in English or Spanish.',
     Component: ContactPage,
   },
   '/privacy': {

@@ -1,17 +1,14 @@
 const SERVICES = [
   [
-    'Web applications',
-    'From first prototype to production, built on a stack your team can maintain.',
+    'Custom web applications',
+    'From first prototype to production, on a stack your team can maintain.',
   ],
   [
-    'Backend & APIs',
-    'Services, integrations and data pipelines designed for reliability under load.',
+    'Backend systems & APIs',
+    'Services, integrations and data pipelines built for reliability under load.',
   ],
-  [
-    'Architecture reviews',
-    'Independent assessment of an existing system before you scale or invest.',
-  ],
-  ['Fractional leadership', 'Senior engineering guidance for teams that need it part-time.'],
+  ['Learning platforms & ed-tech', 'Courses, cohorts, assessments and the tooling behind them.'],
+  ['Architecture & fractional CTO', 'Technical due diligence and senior guidance, part-time.'],
 ]
 
 function ServicesSection() {

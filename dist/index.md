@@ -1,14 +1,14 @@
 Version 4.0 // 2026
 
-Bringing your ideas to life with tailored software services. We focus on reliability, structural integrity, and the technical precision your vision deserves.
+Totono is an independent software studio. We design and build tailored web applications, backend systems and learning platforms for companies that need reliability, structural integrity and the technical precision their vision deserves.
 
 # Let's build something great together.
 
 Services
-- **Web applications**: From first prototype to production, built on a stack your team can maintain.
-- **Backend & APIs**: Services, integrations and data pipelines designed for reliability under load.
-- **Architecture reviews**: Independent assessment of an existing system before you scale or invest.
-- **Fractional leadership**: Senior engineering guidance for teams that need it part-time.
+- **Custom web applications**: From first prototype to production, on a stack your team can maintain.
+- **Backend systems & APIs**: Services, integrations and data pipelines built for reliability under load.
+- **Learning platforms & ed-tech**: Courses, cohorts, assessments and the tooling behind them.
+- **Architecture & fractional CTO**: Technical due diligence and senior guidance, part-time.
 
 Contact Information
 ## If you have a project in mind, feel free to reach out.
