@@ -1,7 +1,7 @@
 Contact
 # Let's talk about your project.
 
-The fastest way to reach Totono is by email. Write to [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz) and you will get a reply from Toni Tralice, the engineer who would actually work on your project, usually within two business days.
+The fastest way to reach Totono is by email. Write to [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz) and you will get a reply from Antonio Tralice, the engineer who would actually work on your project, usually within two business days. We read and reply in English and Spanish.
 
 ## What to include
 
@@ -16,4 +16,4 @@ After a first exchange over email we usually schedule a short call to understand
 
 ## Business details
 
-TOTONO LLC is a limited liability company registered in Delaware, United States. We work remotely with clients across the Americas and Europe. Email is the only official channel; we do not use contact forms or social media direct messages for business enquiries.
+TOTONO LLC is a limited liability company registered in Delaware, United States, operated from Buenos Aires, Argentina (UTC-3). We work remotely with clients across the Americas and Europe. Email is the only official channel; we do not use contact forms or social media direct messages for business enquiries.
