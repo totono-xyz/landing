@@ -49,6 +49,7 @@ function Footer() {
             {EMAIL}
           </a>
           <span
+            aria-hidden={!copied}
             className={`text-on-surface-variant absolute -bottom-6 left-1/2 -translate-x-1/2 font-sans text-xs whitespace-nowrap transition-opacity duration-300 ${copied ? 'opacity-100' : 'opacity-0'}`}
           >
             Copied to clipboard

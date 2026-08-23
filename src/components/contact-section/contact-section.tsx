@@ -46,6 +46,7 @@ function ContactSection() {
           </a>
 
           <span
+            aria-hidden={!copied}
             className={`absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs font-sans text-on-surface-variant transition-opacity duration-300 ${copied ? 'opacity-100' : 'opacity-0'}`}
           >
             Copied to clipboard

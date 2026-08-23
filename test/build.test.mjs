@@ -28,6 +28,12 @@ for (const [file, route] of Object.entries(pages)) {
     assert.match(html, /<html lang="en">/)
     assert.match(html, new RegExp(`<link rel="canonical" href="https://totono.xyz${route}"`))
     assert.equal(meta(html, 'property="og:url"'), `https://totono.xyz${route}`)
+    assert.match(
+      html,
+      new RegExp(
+        `<link rel="alternate" type="text/markdown" href="https://totono.xyz/${file.replace('.html', '.md')}"`,
+      ),
+    )
     assert.equal(meta(html, 'property="og:type"'), 'website')
     assert.equal(meta(html, 'property="og:image"'), 'https://totono.xyz/logo.png')
     assert.ok(meta(html, 'name="description"'), 'missing description')
@@ -35,6 +41,16 @@ for (const [file, route] of Object.entries(pages)) {
     assert.doesNotMatch(html, /content=""/, 'empty meta content left over from the template')
   })
 }
+
+test('every page has a markdown sibling with a heading, 500+ chars and no HTML', () => {
+  for (const file of [...Object.keys(pages), '404.html']) {
+    const md = read(file.replace(/\.html$/, '.md'))
+    assert.match(md, /^# .+$/m, file)
+    assert.doesNotMatch(md, /<[a-z]+[\s>]|&#x27;|&amp;/, file)
+    if (file !== '404.html') assert.ok(md.length >= 500, `${file}: only ${md.length} chars`)
+  }
+  assert.match(read('404.md'), /\[sitemap\.xml\]\(https:\/\/totono\.xyz\/sitemap\.xml\)/)
+})
 
 test('nested copies match the flat pages so /about and /about/ serve the same HTML', () => {
   for (const route of ['about', 'contact', 'privacy']) {
@@ -48,7 +64,7 @@ test('404.html points agents at home, sitemap and llms.txt and is noindex', () =
   for (const href of ['/', '/sitemap.xml', '/llms.txt'])
     assert.match(html, new RegExp(`href="${href}"`))
   assert.equal(meta(html, 'name="robots"'), 'noindex')
-  assert.doesNotMatch(html, /rel="canonical"/)
+  assert.doesNotMatch(html, /rel="(canonical|alternate)"/)
 })
 
 test('homepage JSON-LD has an Organization with contactPoint and address', () => {

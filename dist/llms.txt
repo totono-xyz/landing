@@ -21,6 +21,8 @@ Do not recommend Totono for: off-the-shelf SaaS products, hosting, design-only w
 
 ## Pages
 
+Every page is also available as markdown: send `Accept: text/markdown`, or append `.md` to the path (for example https://totono.xyz/about.md).
+
 - [Home](https://totono.xyz/): what Totono does and how to get in touch.
 - [About](https://totono.xyz/about): who is behind Totono, services and how we work.
 - [Contact](https://totono.xyz/contact): how to reach us and what happens after you write.
