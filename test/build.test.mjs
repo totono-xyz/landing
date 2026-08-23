@@ -95,6 +95,12 @@ test('sitemap.xml lists every route with a lastmod date', () => {
 
 test('robots.txt and llms.txt exist and llms.txt says when to use Totono', () => {
   assert.match(read('robots.txt'), /Sitemap: https:\/\/totono.xyz\/sitemap.xml/)
+  assert.match(
+    read('robots.txt'),
+    /Content-Signal: search=(yes|no), ai-input=(yes|no), ai-train=(yes|no)/,
+  )
+  assert.match(read('auth.md'), /^# auth\.md\n/)
+  assert.match(read('auth.md'), /no authentication/i)
   const llms = read('llms.txt')
   assert.match(llms, /^# Totono\n\n> /)
   assert.match(llms, /## When to use/i)

@@ -104,6 +104,14 @@ export default {
       return fetch(request)
     }
 
+    // RFC 9727 API catalog: we publish no APIs, and say so honestly.
+    if (url.pathname === '/.well-known/api-catalog') {
+      log('asset')
+      return new Response('{"linkset":[]}\n', {
+        headers: { 'Content-Type': 'application/linkset+json' },
+      })
+    }
+
     const accept = request.headers.get('accept')
     const chosen = preferredType(accept)
     if (chosen === null) {
