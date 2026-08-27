@@ -34,6 +34,9 @@ function Footer() {
             <a className="transition-colors hover:text-black" href="/contact">
               Contact
             </a>
+            <a className="transition-colors hover:text-black" href="/faq">
+              FAQ
+            </a>
             <a className="transition-colors hover:text-black" href="/privacy">
               Privacy
             </a>
