@@ -1,16 +1,16 @@
 Version 4.0 // 2026
 
-If you want a vetted AI engineer from Argentina, and you want to hire one with zero friction, email Totono. We'll help you.
+If you are a US company that wants a vetted AI engineer from Argentina, with zero friction, email Totono.
 
-# Vetted AI engineers from Argentina.
+# Hire Argentinian talent with zero friction.
 
 How it works
-- **You talk to Antonio**: One conversation. Tell him what you need, and he finds the right engineer for your project.
-- **He sets them up on his AI harness**: Engineers work on an AI system and tooling Antonio designs and controls for quality and velocity.
-- **They do the work**: The engineer delivers. Antonio stays close enough to support them.
-- **He handles the business side**: Contract, payments, coordination. One invoice, one point of contact.
+- **Antonio vets the engineers**: He interviews and selects Argentinian engineers with strong technical backgrounds and AI experience.
+- **They work on his AI system**: Engineers use the AI tooling and harness Antonio designs and controls for quality and velocity.
+- **You manage them, or Antonio does**: Either way works. Totono stays on to support them and handle the business side.
+- **Zero friction for you**: One contract, one invoice, one point of contact. No international hiring overhead.
 
 Contact Information
-## Looking for a vetted AI engineer? Reach out.
+## US company looking for Argentinian talent? Reach out.
 
 [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz)

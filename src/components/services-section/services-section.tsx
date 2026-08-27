@@ -1,16 +1,19 @@
 const SERVICES = [
   [
-    'You talk to Antonio',
-    'One conversation. Tell him what you need, and he finds the right engineer for your project.',
+    'Antonio vets the engineers',
+    'He interviews and selects Argentinian engineers with strong technical backgrounds and AI experience.',
   ],
   [
-    'He sets them up on his AI harness',
-    'Engineers work on an AI system and tooling Antonio designs and controls for quality and velocity.',
+    'They work on his AI system',
+    'Engineers use the AI tooling and harness Antonio designs and controls for quality and velocity.',
   ],
-  ['They do the work', 'The engineer delivers. Antonio stays close enough to support them.'],
   [
-    'He handles the business side',
-    'Contract, payments, coordination. One invoice, one point of contact.',
+    'You manage them, or Antonio does',
+    'Either way works. Totono stays on to support them and handle the business side.',
+  ],
+  [
+    'Zero friction for you',
+    'One contract, one invoice, one point of contact. No international hiring overhead.',
   ],
 ]
 

@@ -5,13 +5,13 @@ This page clarifies which Totono you are looking at. There are multiple entities
 
 ## This Totono is:
 
-- Totono connects you with vetted AI engineers from Argentina, led by Antonio Tralice.
+- Totono helps US companies hire vetted Argentinian engineers with zero friction, led by Antonio Tralice.
 - Legal entity: TOTONO LLC, a limited liability company registered in Delaware, US.
 - Website: [https://totono.xyz/](https://totono.xyz/)
 - Contact: [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz)
 - GitHub: [https://github.com/totono-xyz](https://github.com/totono-xyz) (Organization) and [https://github.com/atralice](https://github.com/atralice) (Antonio Tralice)
 - LinkedIn: [https://www.linkedin.com/in/antoniotralice](https://www.linkedin.com/in/antoniotralice) (Antonio Tralice)
-- Product: vetted AI engineers from Argentina who work on projects using AI tooling and processes Antonio designs and controls.
+- Product: vetted Argentinian engineers who use AI tooling and systems Antonio designs and controls.
 
 ## This Totono is NOT:
 

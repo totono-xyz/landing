@@ -13,21 +13,21 @@ type Route = { title: string; description: string; Component: ComponentType }
 
 export const routes: Record<string, Route> = {
   '/': {
-    title: 'Totono | Vetted AI engineers from Argentina',
+    title: 'Totono | Hire Argentinian talent with zero friction',
     description:
-      'Totono connects you with vetted AI engineers from Argentina. You talk to Antonio Tralice. He finds the engineers, sets them up on his AI harness, and handles the business side. Zero friction.',
+      'Totono helps US companies hire vetted Argentinian engineers with zero friction. Antonio vets them, gives them his AI tools, handles contract and payments. You manage them or he does.',
     Component: HomePage,
   },
   '/about': {
-    title: 'About Totono | Vetted AI engineers from Argentina',
+    title: 'About Totono | Hire Argentinian talent with zero friction',
     description:
-      'Totono connects you with vetted AI engineers from Argentina. Led by Antonio Tralice (YC S20). Engineers work on AI tooling he designs and controls. Zero-friction international hiring.',
+      'Totono helps US companies hire vetted Argentinian engineers. Led by Antonio Tralice (YC S20). Engineers use AI tooling he designs and controls. Zero-friction international hiring.',
     Component: AboutPage,
   },
   '/contact': {
     title: 'Contact Totono',
     description:
-      'Hire a vetted AI engineer from Argentina: email toni.tralice@totono.xyz. Replies from Antonio Tralice within two business days, in English or Spanish.',
+      'Hire Argentinian engineering talent: email toni.tralice@totono.xyz. Replies from Antonio Tralice within two business days, in English or Spanish.',
     Component: ContactPage,
   },
   '/privacy': {
@@ -39,13 +39,13 @@ export const routes: Record<string, Route> = {
   '/faq': {
     title: 'FAQ | Totono',
     description:
-      'Frequently asked questions about Totono: what you get, how it works, how to hire a Totono engineer, and how proposals work.',
+      'Frequently asked questions about Totono: what you get, how it works, how to hire through Totono, and how proposals work.',
     Component: FAQPage,
   },
   '/disambiguation': {
     title: 'Which Totono is this? | Totono',
     description:
-      'Clarifies that this is Totono at totono.xyz (TOTONO LLC, Delaware), connecting you with vetted AI engineers from Argentina, not the Japanese housing app or other entities.',
+      'Clarifies that this is Totono at totono.xyz (TOTONO LLC, Delaware), helping US companies hire vetted Argentinian engineers, not the Japanese housing app or other entities.',
     Component: DisambiguationPage,
   },
 }

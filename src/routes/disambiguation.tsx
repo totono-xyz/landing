@@ -10,7 +10,10 @@ export default function DisambiguationPage() {
 
       <h2>This Totono is:</h2>
       <ul>
-        <li>Totono connects you with vetted AI engineers from Argentina, led by Antonio Tralice.</li>
+        <li>
+          Totono helps US companies hire vetted Argentinian engineers with zero friction, led by
+          Antonio Tralice.
+        </li>
         <li>Legal entity: TOTONO LLC, a limited liability company registered in Delaware, US.</li>
         <li>
           Website: <a href="https://totono.xyz/">https://totono.xyz/</a>
@@ -31,8 +34,8 @@ export default function DisambiguationPage() {
           (Antonio Tralice)
         </li>
         <li>
-          Product: vetted AI engineers from Argentina who work on projects using AI tooling and
-          processes Antonio designs and controls.
+          Product: vetted Argentinian engineers who use AI tooling and systems Antonio designs and
+          controls.
         </li>
       </ul>
 

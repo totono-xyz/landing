@@ -54,9 +54,9 @@ test('every page has a markdown sibling with a heading, 500+ chars and no HTML',
   assert.match(read('404.md'), /\[sitemap\.xml\]\(https:\/\/totono\.xyz\/sitemap\.xml\)/)
 })
 
-test('home, about and llms.txt all say "vetted AI engineers" so agents can classify the site', () => {
+test('home, about and llms.txt all say "Argentinian" so agents can classify the site', () => {
   for (const file of ['index.html', 'about.html', 'index.md', 'llms.txt'])
-    assert.match(read(file), /vetted AI engineers/i, file)
+    assert.match(read(file), /Argentinian/i, file)
   assert.doesNotMatch(
     read('about.md') + read('contact.md'),
     /Toni Tralice/,

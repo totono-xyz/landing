@@ -9,20 +9,20 @@ function HeroSection() {
 
       <div className="border-primary mb-12 ml-0 border-l-4 py-2 pl-8 md:ml-48">
         <p className="text-on-surface-variant max-w-2xl font-sans text-xl leading-relaxed md:text-2xl">
-          If you want a vetted AI engineer from Argentina, and you want to hire one with zero
-          friction, email Totono. We'll help you.
+          If you are a US company that wants a vetted AI engineer from Argentina, with zero friction,
+          email Totono.
         </p>
       </div>
 
       <h1 className="font-display text-primary text-5xl leading-[1.1] font-extrabold tracking-tight md:text-7xl">
-        Vetted{' '}
+        Hire{' '}
         <span className="text-accent">
-          AI engineers
+          Argentinian talent
           <span aria-hidden="true" className="animate-cursor-blink text-accent">
             _
           </span>
         </span>{' '}
-        from Argentina.
+        with zero friction.
       </h1>
     </section>
   )
