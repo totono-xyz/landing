@@ -55,7 +55,7 @@ export default function FAQPage() {
                 name: 'What does Totono NOT do?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Totono is not a staffing agency. We do not place engineers in your company to be managed by you. We provide engineers who work on Totono systems and processes, with Antonio as the point of contact. We also do not provide off-the-shelf SaaS products, hosting-only services, or design-only work without implementation.',
+                  text: 'You can have Antonio run the engineer, or you can manage them yourself. Either way Totono stays on to support them. Totono does not provide off-the-shelf SaaS products, hosting-only services, or design-only work without implementation.',
                 },
               },
               {
@@ -120,10 +120,9 @@ export default function FAQPage() {
 
         <h2>What does Totono NOT do?</h2>
         <p>
-          Totono is not a staffing agency. We do not place engineers in your company to be managed
-          by you. We provide engineers who work on Totono systems and processes, with Antonio as the
-          point of contact. We also do not provide off-the-shelf SaaS products, hosting-only
-          services, or design-only work without implementation.
+          You can have Antonio run the engineer, or you can manage them yourself. Either way Totono
+          stays on to support them. Totono does not provide off-the-shelf SaaS products,
+          hosting-only services, or design-only work without implementation.
         </p>
 
         <h2>How do proposals and pricing work?</h2>

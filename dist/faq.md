@@ -25,7 +25,7 @@ Email [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz) with a short des
 
 ## What does Totono NOT do?
 
-Totono is not a staffing agency. We do not place engineers in your company to be managed by you. We provide engineers who work on Totono systems and processes, with Antonio as the point of contact. We also do not provide off-the-shelf SaaS products, hosting-only services, or design-only work without implementation.
+You can have Antonio run the engineer, or you can manage them yourself. Either way Totono stays on to support them. Totono does not provide off-the-shelf SaaS products, hosting-only services, or design-only work without implementation.
 
 ## How do proposals and pricing work?
 
