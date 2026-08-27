@@ -1,6 +1,8 @@
 import type { ComponentType } from 'react'
 import AboutPage from '@/routes/about'
 import ContactPage from '@/routes/contact'
+import DisambiguationPage from '@/routes/disambiguation'
+import FAQPage from '@/routes/faq'
 import HomePage from '@/routes/home'
 import NotFoundPage from '@/routes/not-found'
 import PrivacyPage from '@/routes/privacy'
@@ -33,6 +35,18 @@ export const routes: Record<string, Route> = {
     description:
       'How TOTONO LLC handles information collected through totono.xyz and email correspondence.',
     Component: PrivacyPage,
+  },
+  '/faq': {
+    title: 'FAQ | Totono',
+    description:
+      'Frequently asked questions about Totono: what is it, who leads it, what services are offered, how to hire, and how proposals work.',
+    Component: FAQPage,
+  },
+  '/disambiguation': {
+    title: 'Which Totono is this? | Totono',
+    description:
+      'Clarifies that this is Antonio Tralice software studio at totono.xyz (TOTONO LLC), not the Japanese housing app totono.sumasapo.co.jp or totono-u.com.',
+    Component: DisambiguationPage,
   },
 }
 

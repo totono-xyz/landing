@@ -18,6 +18,8 @@ const pages = {
   'about.html': '/about',
   'contact.html': '/contact',
   'privacy.html': '/privacy',
+  'faq.html': '/faq',
+  'disambiguation.html': '/disambiguation',
 }
 
 for (const [file, route] of Object.entries(pages)) {
@@ -63,7 +65,7 @@ test('home, about and llms.txt all say "software studio" so agents can classify 
 })
 
 test('nested copies match the flat pages so /about and /about/ serve the same HTML', () => {
-  for (const route of ['about', 'contact', 'privacy']) {
+  for (const route of ['about', 'contact', 'privacy', 'faq', 'disambiguation']) {
     assert.equal(read(`${route}/index.html`), read(`${route}.html`))
   }
 })
@@ -81,11 +83,15 @@ test('homepage JSON-LD has an Organization with contactPoint and address', () =>
   const json = read('index.html').match(
     /<script type="application\/ld\+json">([\s\S]*?)<\/script>/,
   )?.[1]
-  const org = JSON.parse(json)['@graph'].find((n) => n['@type'] === 'Organization')
+  const graph = JSON.parse(json)['@graph']
+  const org = graph.find((n) => n['@type'] === 'Organization' || (Array.isArray(n['@type']) && n['@type'].includes('Organization')))
   assert.equal(org.url, 'https://totono.xyz/')
+  assert.ok(Array.isArray(org['@type']) && org['@type'].includes('ProfessionalService'), 'should include ProfessionalService type')
   assert.equal(org.contactPoint['@type'], 'ContactPoint')
   assert.ok(org.contactPoint.email && org.contactPoint.contactType)
   assert.equal(org.founder.name, 'Antonio Tralice')
+  assert.ok(org.founder.sameAs.includes('https://github.com/atralice'), 'founder should have GitHub sameAs')
+  assert.ok(org.founder.sameAs.includes('https://www.linkedin.com/in/antoniotralice'), 'founder should have LinkedIn sameAs')
   assert.ok(org.makesOffer.length >= 4 && org.knowsAbout.length >= 4)
   assert.equal(org.address['@type'], 'PostalAddress')
   assert.ok(org.address.addressCountry)
@@ -106,11 +112,56 @@ test('sitemap.xml lists every route with a lastmod date', () => {
 })
 
 test('robots.txt and llms.txt exist and llms.txt says when to use Totono', () => {
-  assert.match(read('robots.txt'), /Sitemap: https:\/\/totono.xyz\/sitemap.xml/)
+  const robots = read('robots.txt')
+  assert.match(robots, /Sitemap: https:\/\/totono.xyz\/sitemap.xml/)
+  assert.match(robots, /User-agent: GPTBot/)
+  assert.match(robots, /User-agent: ClaudeBot/)
+  assert.match(robots, /User-agent: Google-Extended/)
   const llms = read('llms.txt')
   assert.match(llms, /^# Totono\n\n> /)
   assert.match(llms, /## When to use/i)
   assert.match(llms, /toni\.tralice@totono\.xyz/)
+  assert.match(llms, /llms-full\.txt/, 'llms.txt should link to llms-full.txt')
   for (const file of ['CNAME', 'logo.png'])
     assert.ok(existsSync(new URL(`../dist/${file}`, import.meta.url)), file)
+})
+
+test('llms-full.txt exists with expanded content, FAQ and disambiguation', () => {
+  const full = read('llms-full.txt')
+  assert.match(full, /^# Totono — Full Agent Briefing/)
+  assert.match(full, /## Entity facts/)
+  assert.match(full, /## Frequently asked questions/)
+  assert.match(full, /## Disambiguation/)
+  assert.match(full, /TOTONO LLC, Delaware/)
+  assert.match(full, /Antonio Tralice/)
+  assert.ok(full.length >= 2000, `llms-full.txt should be comprehensive: ${full.length} chars`)
+})
+
+test('FAQ page has FAQPage JSON-LD schema with questions', () => {
+  const html = read('faq.html')
+  const matches = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)
+  assert.ok(matches && matches.length > 0, 'FAQ page should have JSON-LD')
+  const faqSchema = matches.map(m => {
+    const json = m.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1]
+    return json ? JSON.parse(json) : null
+  }).find(s => s && s['@type'] === 'FAQPage')
+  assert.ok(faqSchema, 'should have FAQPage schema')
+  assert.equal(faqSchema['@type'], 'FAQPage')
+  assert.ok(Array.isArray(faqSchema.mainEntity), 'FAQPage should have mainEntity array')
+  assert.ok(faqSchema.mainEntity.length >= 5, `should have at least 5 questions, got ${faqSchema.mainEntity.length}`)
+  for (const item of faqSchema.mainEntity) {
+    assert.equal(item['@type'], 'Question')
+    assert.ok(item.name, 'each question should have a name')
+    assert.equal(item.acceptedAnswer['@type'], 'Answer')
+    assert.ok(item.acceptedAnswer.text, 'each answer should have text')
+  }
+})
+
+test('disambiguation page clarifies this is Antonio Tralice studio, not other Totonos', () => {
+  const html = read('disambiguation.html')
+  assert.match(html, /Antonio Tralice/)
+  assert.match(html, /TOTONO LLC/)
+  assert.match(html, /totono\.xyz/)
+  assert.match(html, /sumasapo\.co\.jp/, 'should mention the Japanese housing app')
+  assert.match(html, /totono-u\.com/, 'should mention the Japanese company')
 })

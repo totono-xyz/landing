@@ -32,7 +32,7 @@
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "Organization",
+            "@type": ["Organization", "ProfessionalService"],
             "@id": "https://totono.xyz/#organization",
             "name": "Totono",
             "alternateName": ["Totono Software Studio", "TOTONO LLC"],
@@ -49,7 +49,10 @@
               "alternateName": "Toni Tralice",
               "jobTitle": "Founder and Software Engineer",
               "email": "toni.tralice@totono.xyz",
-              "sameAs": ["https://github.com/atralice"]
+              "sameAs": [
+                "https://github.com/atralice",
+                "https://www.linkedin.com/in/antoniotralice"
+              ]
             },
             "contactPoint": {
               "@type": "ContactPoint",
