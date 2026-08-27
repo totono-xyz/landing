@@ -13,15 +13,15 @@ type Route = { title: string; description: string; Component: ComponentType }
 
 export const routes: Record<string, Route> = {
   '/': {
-    title: 'Totono | Vetted AI engineers from Argentina',
+    title: 'Totono | Hire Argentinian talent with zero friction',
     description:
-      'Totono connects you with vetted AI engineers from Argentina. You talk to Antonio Tralice. He finds the engineers, sets them up on his AI harness, and handles the business side. Zero friction.',
+      'Totono helps US companies hire vetted Argentinian talent with zero friction. Antonio Tralice vets the engineers, who work with state-of-the-art AI harnesses and skills automation. He handles the business side.',
     Component: HomePage,
   },
   '/about': {
-    title: 'About Totono | Vetted AI engineers from Argentina',
+    title: 'About Totono | Hire Argentinian talent with zero friction',
     description:
-      'Totono connects you with vetted AI engineers from Argentina. Led by Antonio Tralice (YC S20). Engineers work on AI tooling he designs and controls. Zero-friction international hiring.',
+      'Totono helps US companies hire vetted Argentinian talent. Led by Antonio Tralice (YC S20). Engineers work with state-of-the-art AI harnesses and skills automation. Zero-friction international hiring.',
     Component: AboutPage,
   },
   '/contact': {
@@ -45,7 +45,7 @@ export const routes: Record<string, Route> = {
   '/disambiguation': {
     title: 'Which Totono is this? | Totono',
     description:
-      'Clarifies that this is Totono at totono.xyz (TOTONO LLC, Delaware), connecting you with vetted AI engineers from Argentina, not the Japanese housing app or other entities.',
+      'Clarifies that this is Totono at totono.xyz (TOTONO LLC, Delaware), helping US companies hire vetted Argentinian talent, not the Japanese housing app or other entities.',
     Component: DisambiguationPage,
   },
 }

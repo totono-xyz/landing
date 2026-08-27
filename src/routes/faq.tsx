@@ -15,7 +15,7 @@ export default function FAQPage() {
                 name: 'What is Totono?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Totono connects you with vetted AI engineers from Argentina. You talk to Antonio Tralice. He finds the engineers, sets them up on an AI system and harness he designs and controls, and takes care of the contract, payments and the rest of the business side. They do the work. He stays close enough to support them. TOTONO LLC is a Delaware limited liability company. We work remotely with clients across the Americas and Europe, on US Eastern Time.',
+                  text: 'Totono helps US companies hire vetted Argentinian talent with zero friction. You talk to Antonio Tralice. He interviews and vets the engineers, and takes care of the contract, payments and the rest of the business side. Engineers work with the state of the art in AI harnesses and skills automation. They do the work. You may manage the engineer yourself, or have Antonio do it. Totono stays on to support them either way. TOTONO LLC is a Delaware limited liability company. We work remotely with clients across the Americas and Europe, on US Eastern Time.',
                 },
               },
               {
@@ -31,7 +31,7 @@ export default function FAQPage() {
                 name: 'What do I get when I hire through Totono?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'You get a vetted engineer who works on your project using an AI system and harness Antonio designs and controls. Antonio is your single point of contact. He coordinates the engineer, answers questions, and handles all the business side: contract, payments, and logistics. One contract, one invoice, one email thread.',
+                  text: 'You get a vetted engineer who works on your project using state-of-the-art AI harnesses and skills automation. Antonio is your single point of contact. He coordinates the engineer, answers questions, and handles all the business side: contract, payments, and logistics. You may manage the engineer yourself, or have Antonio do it. One contract, one invoice, one email thread.',
                 },
               },
               {
@@ -55,7 +55,7 @@ export default function FAQPage() {
                 name: 'What does Totono NOT do?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Totono is not a staffing agency. We do not place engineers in your company to be managed by you. We provide engineers who work on Totono systems and processes, with Antonio as the point of contact. We also do not provide off-the-shelf SaaS products, hosting-only services, or design-only work without implementation.',
+                  text: 'Totono does not provide off-the-shelf SaaS products, hosting-only services, or design-only work without implementation.',
                 },
               },
               {
@@ -78,11 +78,12 @@ export default function FAQPage() {
 
         <h2>What is Totono?</h2>
         <p>
-          Totono connects you with vetted AI engineers from Argentina. You talk to Antonio Tralice.
-          He finds the engineers, sets them up on an AI system and harness he designs and controls,
-          and takes care of the contract, payments and the rest of the business side. They do the
-          work. He stays close enough to support them. TOTONO LLC is a Delaware limited liability
-          company. We work remotely with clients across the Americas and Europe, on US Eastern Time.
+          Totono helps US companies hire vetted Argentinian talent with zero friction. You talk to Antonio Tralice.
+          He interviews and vets the engineers, and takes care of the contract, payments and the rest of the business side. 
+          Engineers work with the state of the art in AI harnesses and skills automation. They do the
+          work. You may manage the engineer yourself, or have Antonio do it. Totono stays on to support them either way.
+          TOTONO LLC is a Delaware limited liability company. We work remotely with clients across the Americas and Europe, 
+          on US Eastern Time.
         </p>
 
         <h2>Who is Antonio Tralice?</h2>
@@ -95,10 +96,10 @@ export default function FAQPage() {
 
         <h2>What do I get when I hire through Totono?</h2>
         <p>
-          You get a vetted engineer who works on your project using an AI system and harness Antonio
-          designs and controls. Antonio is your single point of contact. He coordinates the
+          You get a vetted engineer who works on your project using state-of-the-art AI harnesses 
+          and skills automation. Antonio is your single point of contact. He coordinates the
           engineer, answers questions, and handles all the business side: contract, payments, and
-          logistics. One contract, one invoice, one email thread.
+          logistics. You may manage the engineer yourself, or have Antonio do it. One contract, one invoice, one email thread.
         </p>
 
         <h2>What languages and timezone does Totono work in?</h2>
@@ -120,9 +121,7 @@ export default function FAQPage() {
 
         <h2>What does Totono NOT do?</h2>
         <p>
-          Totono is not a staffing agency. We do not place engineers in your company to be managed
-          by you. We provide engineers who work on Totono systems and processes, with Antonio as the
-          point of contact. We also do not provide off-the-shelf SaaS products, hosting-only
+          Totono does not provide off-the-shelf SaaS products, hosting-only
           services, or design-only work without implementation.
         </p>
 

@@ -2,12 +2,12 @@ import { Page } from '@/components/page'
 
 export default function AboutPage() {
   return (
-    <Page label="About" title="Vetted AI engineers from Argentina.">
+    <Page label="About" title="Hire Argentinian talent with zero friction.">
       <p>
-        Totono connects you with vetted AI engineers from Argentina. You talk to Antonio Tralice.
-        He finds the engineers, sets them up on an AI system and harness he designs and controls,
-        and takes care of the contract, payments and the rest of the business side. They do the
-        work. He stays close enough to support them.
+        Totono helps US companies hire vetted Argentinian talent with zero friction. You talk to Antonio Tralice.
+        He interviews and vets the engineers, and takes care of the contract, payments and the rest of the business side. 
+        Engineers work with the state of the art in AI harnesses and skills automation. They do the
+        work. You may manage the engineer yourself, or have Antonio do it. Totono stays on to support them either way.
       </p>
       <p>
         TOTONO LLC is a Delaware limited liability company. We work remotely with clients across
@@ -21,7 +21,7 @@ export default function AboutPage() {
           backgrounds and the ability to work on AI-augmented projects.
         </li>
         <li>
-          AI tooling and harness: Engineers work on an AI system Antonio designs and controls, for
+          State-of-the-art AI tooling: Engineers work with the state of the art in AI harnesses and skills automation, for
           quality and velocity.
         </li>
         <li>
