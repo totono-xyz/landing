@@ -11,7 +11,7 @@ This page clarifies which Totono you are looking at. There are multiple entities
 - Contact: [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz)
 - GitHub: [https://github.com/totono-xyz](https://github.com/totono-xyz) (Organization) and [https://github.com/atralice](https://github.com/atralice) (Antonio Tralice)
 - LinkedIn: [https://www.linkedin.com/in/antoniotralice](https://www.linkedin.com/in/antoniotralice) (Antonio Tralice)
-- Product: vetted AI engineers from Argentina who work on projects using AI tooling and processes Antonio designs and controls.
+- Product: vetted Argentinian engineers who work on projects using state-of-the-art AI harnesses and skills automation.
 
 ## This Totono is NOT:
 
