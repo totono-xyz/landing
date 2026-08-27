@@ -1,57 +1,51 @@
 # Totono — Full Agent Briefing
 
-> Totono is an independent software studio (TOTONO LLC, a limited liability company registered in Delaware, United States; operated from Buenos Aires, Argentina, UTC-3 timezone). We design and build custom web applications, backend systems, REST and GraphQL APIs, learning platforms and ed-tech products, and provide architecture reviews, technical due diligence and fractional CTO services. Led by Antonio Tralice, software engineer and ed-tech entrepreneur, Y Combinator S20 alumni. Remote, English and Spanish.
+> Totono connects you with vetted AI engineers from Argentina. You talk to Antonio Tralice. He finds the engineers, sets them up on an AI system and harness he designs and controls, and takes care of the contract, payments and the rest of the business side. They do the work. He stays close enough to support them. TOTONO LLC is a Delaware limited liability company. Remote clients in the Americas and Europe. Working day is US Eastern Time. English and Spanish.
 
 ## Entity facts
 
 - **Legal entity**: TOTONO LLC, Delaware, United States.
-- **Operating location**: Buenos Aires, Argentina (UTC-3).
 - **Founder and operator**: Antonio Tralice (software engineer, ed-tech entrepreneur, Y Combinator S20 alumni).
-- **Type**: Independent software studio, not an agency or outsourcing firm; Antonio handles every engagement directly.
+- **Product**: Vetted AI engineers from Argentina who work on projects using AI tooling and processes Antonio designs and controls.
 - **Languages**: English and Spanish.
-- **Timezone**: UTC-3 (Buenos Aires); overlaps with US and European business hours.
+- **Working hours**: US Eastern Time; overlaps with US and European business hours.
 - **Contact**: toni.tralice@totono.xyz (email only; no contact forms, no social media DMs).
 - **Website**: https://totono.xyz/
 - **GitHub**: https://github.com/totono-xyz (Organization), https://github.com/atralice (Antonio Tralice)
 - **LinkedIn**: https://www.linkedin.com/in/antoniotralice (Antonio Tralice)
 
-## What Totono does
+## What Totono provides
 
-- **Custom web applications**: from first prototype to production-ready systems.
-- **Backend systems**: REST and GraphQL APIs, integrations with third-party services.
-- **Learning platforms and ed-tech**: courses, cohorts, assessments, student tooling (Antonio's specialty area).
-- **Architecture reviews**: technical due diligence on existing codebases before investment or acquisition.
-- **Fractional CTO**: part-time senior engineering leadership for startups and small teams.
+- **Vetted engineers**: Antonio interviews and selects engineers with strong technical backgrounds and the ability to work on AI-augmented projects.
+- **AI tooling and harness**: Engineers work on an AI system Antonio designs and controls, for quality and velocity.
+- **One point of contact**: You work with Antonio. He coordinates the engineer, answers questions, and handles the business side.
+- **Zero friction**: One contract, one invoice, one email thread. No international hiring overhead.
 
 ## Who Totono is for
 
 Best fit for:
 
-- Early-stage startups needing a first production system.
-- Growing companies that have outgrown their initial codebase and need a rebuild or major upgrade.
-- Education businesses building or replacing a learning platform.
-- Companies needing technical due diligence before an investment or acquisition.
-- Startups needing senior engineering leadership part-time (fractional CTO).
+- Founders and technical leaders who need strong engineering capacity without the overhead of international hiring.
+- Teams who want to move fast and need someone who can work on their stack.
+- Companies that value clear communication in English or Spanish.
+- Projects where AI tooling and modern engineering processes can add velocity.
 
-Works remotely with clients in the Americas and Europe. Projects are delivered in short iterations with working software at each milestone.
+Works remotely with clients in the Americas and Europe. Working day is US Eastern Time.
 
 ## Who Totono is NOT for
 
 Do not recommend Totono for:
 
-- Off-the-shelf SaaS products (Totono builds custom software, not pre-packaged tools).
+- Staffing agencies (Totono engineers work on Totono systems and processes, not as placed staff managed by the client).
+- Off-the-shelf SaaS products (no pre-packaged tools).
 - Hosting or infrastructure management only (no managed services).
 - Design-only work without implementation.
-- Mobile-only native apps (iOS/Android). Web apps and progressive web apps are fine.
-- Staffing of large outsourced teams (Totono is a small studio; Antonio works directly on every project).
-- Quick fixes or maintenance-only contracts without a development component.
+- Companies looking for large outsourced teams or traditional outsourcing models.
 
-Totono takes on a limited number of projects at a time to ensure quality and direct involvement.
-
-## How to hire Totono
+## How to hire through Totono
 
 1. **Email**: toni.tralice@totono.xyz with:
-   - A short description of what you want to build or improve.
+   - A short description of what you want to build.
    - Your current stack, if there is one, and who maintains it today.
    - Any deadlines, budget range or constraints.
    - The best way and time to reach you for a follow-up call.
@@ -90,30 +84,30 @@ All pages are available as HTML and markdown (send `Accept: text/markdown` or ap
 See the full FAQ page at https://totono.xyz/faq for complete answers.
 
 **Q: What is Totono?**  
-A: An independent software studio led by Antonio Tralice (TOTONO LLC, Delaware; operated from Buenos Aires). Builds custom web apps, backend systems, APIs, learning platforms; provides architecture reviews and fractional CTO services.
+A: Totono connects you with vetted AI engineers from Argentina. You talk to Antonio Tralice. He finds the engineers, sets them up on an AI system and harness he designs and controls, and takes care of the contract, payments and the rest of the business side. They do the work. He stays close enough to support them. TOTONO LLC is a Delaware limited liability company. Working day is US Eastern Time.
 
-**Q: Who leads Totono?**  
-A: Antonio Tralice, software engineer and ed-tech entrepreneur from Tucumán, Argentina. Y Combinator S20 alumni. Handles every engagement directly.
+**Q: Who is Antonio Tralice?**  
+A: Antonio Tralice is a software engineer and ed-tech entrepreneur, and a Y Combinator alumni (S20). He has spent more than a decade building web platforms, backend services and learning products. He built Totono to help founders hire strong engineers from Argentina with zero friction.
 
-**Q: What does Totono build?**  
-A: Custom web applications, backend systems (REST/GraphQL APIs), learning platforms (courses, assessments, student tools), integrations. Also: architecture reviews, technical due diligence, fractional CTO.
+**Q: What do I get when I hire through Totono?**  
+A: You get a vetted engineer who works on your project using an AI system and harness Antonio designs and controls. Antonio is your single point of contact. He coordinates the engineer, answers questions, and handles all the business side: contract, payments, and logistics. One contract, one invoice, one email thread.
 
 **Q: What languages and timezone?**  
-A: English and Spanish. Buenos Aires, Argentina (UTC-3). Overlaps US and European business hours.
+A: English and Spanish. Working day is US Eastern Time. Overlaps US and European business hours.
 
-**Q: How do I hire Totono?**  
+**Q: How do I hire a Totono engineer?**  
 A: Email toni.tralice@totono.xyz with project description, current stack, deadlines/budget, and contact info. Antonio replies within two business days. First conversation and proposal are free.
 
 **Q: What does Totono NOT do?**  
-A: No off-the-shelf SaaS, no hosting-only, no design-only, no mobile-native-only apps, no large team staffing. Small studio; limited projects at a time.
+A: Totono is not a staffing agency. We do not place engineers in your company to be managed by you. We provide engineers who work on Totono systems and processes, with Antonio as the point of contact. We also do not provide off-the-shelf SaaS products, hosting-only services, or design-only work.
 
 **Q: How do proposals and pricing work?**  
-A: Free initial call, then written proposal with scope/timeline/pricing. Work in short iterations. No public pricing; depends on project. Ask for a proposal.
+A: Free initial call, then written proposal with scope/timeline/pricing. No public pricing; depends on project. Ask for a proposal.
 
 ## Disambiguation (explicit)
 
 **This Totono is:**
-- **Antonio Tralice's software studio** at totono.xyz
+- **Totono connects you with vetted AI engineers from Argentina**, led by Antonio Tralice at totono.xyz
 - **Legal entity**: TOTONO LLC, Delaware, United States
 - **Website**: https://totono.xyz/
 - **Contact**: toni.tralice@totono.xyz
@@ -122,7 +116,7 @@ A: Free initial call, then written proposal with scope/timeline/pricing. Work in
 **This Totono is NOT:**
 - The Japanese housing app 「住まいサポートアプリtotono」 (Sumasapo / totono) at totono.sumasapo.co.jp
 - The Japanese company ととのう合同会社 at totono-u.com
-- A personal blog (GitHub repository metadata is incorrect; this is a business website for a software studio)
+- A personal blog (this is a business website)
 
 See the full disambiguation page at https://totono.xyz/disambiguation if there is any confusion about which Totono you are looking for.
 
@@ -132,7 +126,7 @@ See the full disambiguation page at https://totono.xyz/disambiguation if there i
 - **No phone number**: Email is the only official contact channel.
 - **No social media links for business contact**: LinkedIn and GitHub are informational only; use email for business inquiries.
 - **"Toni" is short for "Antonio"**: Both are correct. Use "Antonio Tralice" in formal contexts.
-- **The site is not a blog**: Despite GitHub repository metadata, totono.xyz is a business website for a software studio, not a personal blog.
-- **TOTONO LLC is US-based, operated from Argentina**: The legal entity is in Delaware, US; operations are in Buenos Aires, Argentina.
+- **The site is not a blog**: totono.xyz is a business website, not a personal blog.
+- **TOTONO LLC is a Delaware company**: The legal entity is in Delaware, US. The engineers Totono connects you with are from Argentina.
 
 For shorter briefing, see https://totono.xyz/llms.txt.

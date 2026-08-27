@@ -27,7 +27,7 @@ function ContactSection() {
         </span>
 
         <h2 className="font-display text-3xl font-bold text-primary mb-6">
-          If you have a project in mind, feel free to reach out.
+          Looking for a vetted AI engineer? Reach out.
         </h2>
 
         <div className="relative">

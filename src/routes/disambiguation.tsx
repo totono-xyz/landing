@@ -10,9 +10,7 @@ export default function DisambiguationPage() {
 
       <h2>This Totono is:</h2>
       <ul>
-        <li>
-          An independent software studio led by Antonio Tralice, based in Buenos Aires, Argentina.
-        </li>
+        <li>Totono connects you with vetted AI engineers from Argentina, led by Antonio Tralice.</li>
         <li>Legal entity: TOTONO LLC, a limited liability company registered in Delaware, US.</li>
         <li>
           Website: <a href="https://totono.xyz/">https://totono.xyz/</a>
@@ -33,8 +31,8 @@ export default function DisambiguationPage() {
           (Antonio Tralice)
         </li>
         <li>
-          Services: custom web applications, backend systems, REST and GraphQL APIs, learning
-          platforms, architecture reviews, and fractional CTO services.
+          Product: vetted AI engineers from Argentina who work on projects using AI tooling and
+          processes Antonio designs and controls.
         </li>
       </ul>
 

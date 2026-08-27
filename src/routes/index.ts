@@ -13,21 +13,21 @@ type Route = { title: string; description: string; Component: ComponentType }
 
 export const routes: Record<string, Route> = {
   '/': {
-    title: 'Totono | Independent software studio',
+    title: 'Totono | Vetted AI engineers from Argentina',
     description:
-      'Totono is an independent software studio building custom web applications, backend systems, APIs and learning platforms. Led by Antonio Tralice. Remote, English and Spanish.',
+      'Totono connects you with vetted AI engineers from Argentina. You talk to Antonio Tralice. He finds the engineers, sets them up on his AI harness, and handles the business side. Zero friction.',
     Component: HomePage,
   },
   '/about': {
-    title: 'About Totono | Software studio led by Antonio Tralice',
+    title: 'About Totono | Vetted AI engineers from Argentina',
     description:
-      'Totono is a software studio led by Antonio Tralice (YC S20 alumni) building custom web applications, backend systems, learning platforms and providing fractional CTO services.',
+      'Totono connects you with vetted AI engineers from Argentina. Led by Antonio Tralice (YC S20). Engineers work on AI tooling he designs and controls. Zero-friction international hiring.',
     Component: AboutPage,
   },
   '/contact': {
     title: 'Contact Totono',
     description:
-      'Hire Totono for your next software project: email toni.tralice@totono.xyz. Replies from Antonio Tralice within two business days, in English or Spanish.',
+      'Hire a vetted AI engineer from Argentina: email toni.tralice@totono.xyz. Replies from Antonio Tralice within two business days, in English or Spanish.',
     Component: ContactPage,
   },
   '/privacy': {
@@ -39,13 +39,13 @@ export const routes: Record<string, Route> = {
   '/faq': {
     title: 'FAQ | Totono',
     description:
-      'Frequently asked questions about Totono: what is it, who leads it, what services are offered, how to hire, and how proposals work.',
+      'Frequently asked questions about Totono: what you get, how it works, how to hire a Totono engineer, and how proposals work.',
     Component: FAQPage,
   },
   '/disambiguation': {
     title: 'Which Totono is this? | Totono',
     description:
-      'Clarifies that this is Antonio Tralice software studio at totono.xyz (TOTONO LLC), not the Japanese housing app totono.sumasapo.co.jp or totono-u.com.',
+      'Clarifies that this is Totono at totono.xyz (TOTONO LLC, Delaware), connecting you with vetted AI engineers from Argentina, not the Japanese housing app or other entities.',
     Component: DisambiguationPage,
   },
 }

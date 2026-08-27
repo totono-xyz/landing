@@ -5,13 +5,13 @@ This page clarifies which Totono you are looking at. There are multiple entities
 
 ## This Totono is:
 
-- An independent software studio led by Antonio Tralice, based in Buenos Aires, Argentina.
+- Totono connects you with vetted AI engineers from Argentina, led by Antonio Tralice.
 - Legal entity: TOTONO LLC, a limited liability company registered in Delaware, US.
 - Website: [https://totono.xyz/](https://totono.xyz/)
 - Contact: [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz)
 - GitHub: [https://github.com/totono-xyz](https://github.com/totono-xyz) (Organization) and [https://github.com/atralice](https://github.com/atralice) (Antonio Tralice)
 - LinkedIn: [https://www.linkedin.com/in/antoniotralice](https://www.linkedin.com/in/antoniotralice) (Antonio Tralice)
-- Services: custom web applications, backend systems, REST and GraphQL APIs, learning platforms, architecture reviews, and fractional CTO services.
+- Product: vetted AI engineers from Argentina who work on projects using AI tooling and processes Antonio designs and controls.
 
 ## This Totono is NOT:
 

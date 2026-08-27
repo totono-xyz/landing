@@ -9,21 +9,20 @@ function HeroSection() {
 
       <div className="border-primary mb-12 ml-0 border-l-4 py-2 pl-8 md:ml-48">
         <p className="text-on-surface-variant max-w-2xl font-sans text-xl leading-relaxed md:text-2xl">
-          Totono is an independent software studio. We design and build tailored web applications,
-          backend systems and learning platforms for companies that need reliability, structural
-          integrity and the technical precision their vision deserves.
+          If you want a vetted AI engineer from Argentina, and you want to hire one with zero
+          friction, email Totono. We'll help you.
         </p>
       </div>
 
       <h1 className="font-display text-primary text-5xl leading-[1.1] font-extrabold tracking-tight md:text-7xl">
-        Let's{' '}
+        Vetted{' '}
         <span className="text-accent">
-          build
+          AI engineers
           <span aria-hidden="true" className="animate-cursor-blink text-accent">
             _
           </span>
         </span>{' '}
-        something great together.
+        from Argentina.
       </h1>
     </section>
   )
