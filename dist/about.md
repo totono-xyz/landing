@@ -1,14 +1,14 @@
 About
-# Vetted AI engineers from Argentina.
+# Hire Argentinian talent with zero friction.
 
-Totono connects you with vetted AI engineers from Argentina. You talk to Antonio Tralice. He finds the engineers, sets them up on an AI system and harness he designs and controls, and takes care of the contract, payments and the rest of the business side. They do the work. He stays close enough to support them.
+Totono helps US companies hire vetted Argentinian talent with zero friction. You talk to Antonio Tralice. He interviews and vets the engineers, and takes care of the contract, payments and the rest of the business side. Engineers work with the state of the art in AI harnesses and skills automation. They do the work. You may manage the engineer yourself, or have Antonio do it. Totono stays on to support them either way.
 
 TOTONO LLC is a Delaware limited liability company. We work remotely with clients across the Americas and Europe, on US Eastern Time.
 
 ## What you get
 
 - Vetted engineers: Antonio interviews and selects engineers with strong technical backgrounds and the ability to work on AI-augmented projects.
-- AI tooling and harness: Engineers work on an AI system Antonio designs and controls, for quality and velocity.
+- State-of-the-art AI tooling: Engineers work with the state of the art in AI harnesses and skills automation, for quality and velocity.
 - One point of contact: You work with Antonio. He coordinates the engineer, answers questions, and handles the business side.
 - Zero friction: One contract, one invoice, one email thread.
 

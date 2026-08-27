@@ -31,8 +31,7 @@ export default function DisambiguationPage() {
           (Antonio Tralice)
         </li>
         <li>
-          Product: vetted AI engineers from Argentina who work on projects using AI tooling and
-          processes Antonio designs and controls.
+          Product: vetted Argentinian engineers who work on projects using state-of-the-art AI harnesses and skills automation.
         </li>
       </ul>
 

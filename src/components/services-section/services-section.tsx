@@ -4,8 +4,8 @@ const SERVICES = [
     'One conversation. Tell him what you need, and he finds the right engineer for your project.',
   ],
   [
-    'He sets them up on his AI harness',
-    'Engineers work on an AI system and tooling Antonio designs and controls for quality and velocity.',
+    'Engineers work with state-of-the-art AI tools',
+    'They use the state of the art in AI harnesses and skills automation for quality and velocity.',
   ],
   ['They do the work', 'The engineer delivers. Antonio stays close enough to support them.'],
   [
