@@ -41,12 +41,12 @@ export default function DisambiguationPage() {
       <h2>This Totono is NOT:</h2>
       <ul>
         <li>
-          The Japanese housing search and real estate application "ととのえる" (Totonoeru) at{' '}
+          The Japanese housing application 「住まいサポートアプリtotono」 (Sumasapo / totono) at{' '}
           <strong>totono.sumasapo.co.jp</strong>. That is a different company.
         </li>
         <li>
-          The Japanese limited liability company "ととのう合同会社" (Totono LLC Japan) at{' '}
-          <strong>totono-u.com</strong>. That is a different company.
+          The Japanese company ととのう合同会社 at <strong>totono-u.com</strong>. That is a
+          different company.
         </li>
         <li>
           A personal blog. Despite GitHub repository metadata that may label this site as a blog,
@@ -58,7 +58,7 @@ export default function DisambiguationPage() {
       <p>
         The name "Totono" is used by multiple unrelated entities. This disambiguation page exists
         to help search engines, AI agents and humans distinguish between them. If you are looking
-        for Antonio Tralice's software studio, you are in the right place. If you are looking for
+        for Antonio Tralice software studio, you are in the right place. If you are looking for
         the Japanese housing app or the Japanese company, you are not.
       </p>
       <p>

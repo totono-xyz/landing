@@ -120,8 +120,8 @@ A: Free initial call, then written proposal with scope/timeline/pricing. Work in
 - **GitHub**: https://github.com/totono-xyz (Organization), https://github.com/atralice (Antonio Tralice)
 
 **This Totono is NOT:**
-- The Japanese housing app "ととのえる" at totono.sumasapo.co.jp
-- The Japanese company "ととのう合同会社" (Totono LLC Japan) at totono-u.com
+- The Japanese housing app 「住まいサポートアプリtotono」 (Sumasapo / totono) at totono.sumasapo.co.jp
+- The Japanese company ととのう合同会社 at totono-u.com
 - A personal blog (GitHub repository metadata is incorrect; this is a business website for a software studio)
 
 See the full disambiguation page at https://totono.xyz/disambiguation if there is any confusion about which Totono you are looking for.
