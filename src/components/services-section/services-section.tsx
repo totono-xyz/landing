@@ -1,21 +1,24 @@
 const SERVICES = [
   [
-    'Custom web applications',
-    'From first prototype to production, on a stack your team can maintain.',
+    'You talk to Antonio',
+    'One conversation. Tell him what you need, and he finds the right engineer for your project.',
   ],
   [
-    'Backend systems & APIs',
-    'Services, integrations and data pipelines built for reliability under load.',
+    'He sets them up on his AI harness',
+    'Engineers work on an AI system and tooling Antonio designs and controls for quality and velocity.',
   ],
-  ['Learning platforms & ed-tech', 'Courses, cohorts, assessments and the tooling behind them.'],
-  ['Architecture & fractional CTO', 'Technical due diligence and senior guidance, part-time.'],
+  ['They do the work', 'The engineer delivers. Antonio stays close enough to support them.'],
+  [
+    'He handles the business side',
+    'Contract, payments, coordination. One invoice, one point of contact.',
+  ],
 ]
 
 function ServicesSection() {
   return (
     <section className="relative z-10 mt-32 max-w-4xl">
       <span className="text-secondary mb-8 block font-sans text-[0.6875rem] font-bold tracking-[0.2em] uppercase">
-        Services
+        How it works
       </span>
       <dl className="grid gap-8 md:grid-cols-2">
         {SERVICES.map(([name, description]) => (
