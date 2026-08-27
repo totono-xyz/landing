@@ -1,24 +1,23 @@
 About
-# An independent software studio.
+# Vetted AI engineers from Argentina.
 
-Totono is a software studio operated by TOTONO LLC, a limited liability company registered in Delaware, United States, and run from Buenos Aires, Argentina. We design and build tailored software for startups and established companies that need dependable systems rather than one-size-fits-all products.
+Totono connects you with vetted AI engineers from Argentina. You talk to Antonio Tralice. He finds the engineers, sets them up on an AI system and harness he designs and controls, and takes care of the contract, payments and the rest of the business side. They do the work. He stays close enough to support them.
 
-The studio is led by Antonio Tralice, a software engineer and ed-tech entrepreneur from Tucumán, Argentina, and a Y Combinator alumni (S20). Antonio has spent more than a decade building web platforms, backend services and learning products, and every Totono engagement is handled directly by him: no account managers, no hand-offs, no surprises.
+TOTONO LLC is a Delaware limited liability company. We work remotely with clients across the Americas and Europe, on US Eastern Time.
 
-## What we do
+## What you get
 
-- Custom web applications, from first prototype to production.
-- Backend systems, REST and GraphQL APIs, and integrations with third-party services.
-- Learning platforms and ed-tech products: courses, cohorts, assessments and tooling.
-- Architecture reviews and technical due diligence on existing codebases.
-- Fractional CTO and engineering leadership for teams that need senior guidance.
+- Vetted engineers: Antonio interviews and selects engineers with strong technical backgrounds and the ability to work on AI-augmented projects.
+- AI tooling and harness: Engineers work on an AI system Antonio designs and controls, for quality and velocity.
+- One point of contact: You work with Antonio. He coordinates the engineer, answers questions, and handles the business side.
+- Zero friction: One contract, one invoice, one email thread.
 
-## Who we work with
+## Who Antonio is
 
-Early-stage startups that need a first production system, growing companies that have outgrown their initial codebase, and education businesses building or replacing a learning platform. We work remotely in English and Spanish with clients across the Americas and Europe, and overlap with both US and European business hours.
+Antonio Tralice is a software engineer and ed-tech entrepreneur, and a Y Combinator alumni (S20). He has spent more than a decade building web platforms, backend services and learning products. He built Totono to help founders hire strong engineers from Argentina with zero friction.
 
-## How we work
+## Who this is for
 
-We favour small, well-defined projects with clear outcomes. Work is delivered in short iterations with working software at the end of each one, so you can evaluate progress and change direction early. We focus on reliability, structural integrity and the technical precision your vision deserves.
+Founders and technical leaders who need strong engineering capacity without the overhead of international hiring. If you want to move fast, need someone who can work on your stack, and value clear communication in English or Spanish, this is for you.
 
-Looking for a software studio for your next project? [Get in touch](https://totono.xyz/contact).
+Looking for a vetted AI engineer? [Get in touch](https://totono.xyz/contact).

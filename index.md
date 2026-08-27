@@ -1,16 +1,16 @@
 Version 4.0 // 2026
 
-Totono is an independent software studio. We design and build tailored web applications, backend systems and learning platforms for companies that need reliability, structural integrity and the technical precision their vision deserves.
+If you want a vetted AI engineer from Argentina, and you want to hire one with zero friction, email Totono. We'll help you.
 
-# Let's build something great together.
+# Vetted AI engineers from Argentina.
 
-Services
-- **Custom web applications**: From first prototype to production, on a stack your team can maintain.
-- **Backend systems & APIs**: Services, integrations and data pipelines built for reliability under load.
-- **Learning platforms & ed-tech**: Courses, cohorts, assessments and the tooling behind them.
-- **Architecture & fractional CTO**: Technical due diligence and senior guidance, part-time.
+How it works
+- **You talk to Antonio**: One conversation. Tell him what you need, and he finds the right engineer for your project.
+- **He sets them up on his AI harness**: Engineers work on an AI system and tooling Antonio designs and controls for quality and velocity.
+- **They do the work**: The engineer delivers. Antonio stays close enough to support them.
+- **He handles the business side**: Contract, payments, coordination. One invoice, one point of contact.
 
 Contact Information
-## If you have a project in mind, feel free to reach out.
+## Looking for a vetted AI engineer? Reach out.
 
 [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz)
