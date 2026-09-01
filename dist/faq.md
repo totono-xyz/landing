@@ -5,7 +5,7 @@ Common questions about Totono and how we connect you with vetted AI engineers fr
 
 ## What is Totono?
 
-Totono helps US companies hire vetted Argentinian talent with zero friction. You talk to Antonio Tralice. He interviews and vets the engineers, and takes care of the contract, payments and the rest of the business side. Engineers work with the state of the art in AI harnesses and skills automation. They do the work. You may manage the engineer yourself, or have Antonio do it. Totono stays on to support them either way. TOTONO LLC is a Delaware limited liability company. We work remotely with clients across the Americas and Europe, on US Eastern Time.
+Totono helps US companies hire vetted Argentinian talent with zero friction. Totono vets the engineers and handles contract, payments, and the rest of the business side. Engineers work with the state of the art in AI harnesses and skills automation. They do the work. You may manage the engineer yourself, or have Totono do it. Totono stays on to support them either way. Totono is run by Antonio Tralice. TOTONO LLC is a Delaware limited liability company. We work remotely with clients across the Americas and Europe, on US Eastern Time.
 
 ## Who is Antonio Tralice?
 
@@ -13,7 +13,7 @@ Antonio Tralice is a software engineer and ed-tech entrepreneur, and a Y Combina
 
 ## What do I get when I hire through Totono?
 
-You get a vetted engineer who works on your project using state-of-the-art AI harnesses and skills automation. Antonio is your single point of contact. He coordinates the engineer, answers questions, and handles all the business side: contract, payments, and logistics. You may manage the engineer yourself, or have Antonio do it. One contract, one invoice, one email thread.
+You get a vetted engineer who works on your project using state-of-the-art AI harnesses and skills automation. Totono is your single point of contact: coordinates the engineer, answers questions, and handles the business side (contract, payments, and logistics). You may manage the engineer yourself, or have Totono do it. One contract, one invoice, one email thread.
 
 ## What languages and timezone does Totono work in?
 
@@ -21,7 +21,7 @@ Totono works in English and Spanish. The working day is US Eastern Time, which m
 
 ## How do I hire a Totono engineer?
 
-Email [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz) with a short description of what you want to build, your current stack if there is one, any deadlines or budget constraints, and the best way to reach you. Antonio will reply, usually within two business days. After a first exchange over email, he schedules a short call to understand the problem in more depth, and then you receive a written proposal with scope, timeline and pricing. The first conversation and proposal are free of charge and obligation.
+Email [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz) with a short description of what you want to build, your current stack if there is one, any deadlines or budget constraints, and the best way to reach you. Totono will reply, usually within two business days. After a first exchange over email, Totono schedules a short call to understand the problem in more depth, and then you receive a written proposal with scope, timeline and pricing. The first conversation and proposal are free of charge and obligation.
 
 ## What does Totono NOT do?
 

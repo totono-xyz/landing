@@ -15,7 +15,7 @@ export const routes: Record<string, Route> = {
   '/': {
     title: 'Totono | Hire Argentinian talent with zero friction',
     description:
-      'Totono helps US companies hire vetted Argentinian talent with zero friction. Antonio Tralice vets the engineers, who work with state-of-the-art AI harnesses and skills automation. He handles the business side.',
+      'Totono helps US companies hire vetted Argentinian talent with zero friction. Totono vets the engineers, who work with state-of-the-art AI harnesses and skills automation. Totono handles the business side. Run by Antonio Tralice.',
     Component: HomePage,
   },
   '/about': {
@@ -27,7 +27,7 @@ export const routes: Record<string, Route> = {
   '/contact': {
     title: 'Contact Totono',
     description:
-      'Hire a vetted AI engineer from Argentina: email toni.tralice@totono.xyz. Replies from Antonio Tralice within two business days, in English or Spanish.',
+      'Hire a vetted AI engineer from Argentina: email toni.tralice@totono.xyz. Totono will reply, usually within two business days, in English or Spanish.',
     Component: ContactPage,
   },
   '/privacy': {
