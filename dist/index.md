@@ -15,7 +15,7 @@ How it works
 ## Hire us, and agents ship on your codebase within days.
 
 - One conversation: Then we plug into your stack (repo, CI, issue tracker, deploys) and start shipping in days, not months.
-- Agents learn the code: A map in your repo shows them what matters.
+- Agents understand your code: We create a map so agents know your app's features, decisions and critical paths.
 - You set the rules: What agents can touch, and what needs a human.
 - Everyone sees the state: Features, owners, changes, risk.
 
