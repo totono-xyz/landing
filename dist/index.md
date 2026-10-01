@@ -28,8 +28,8 @@ The harness
 It lives in your repo. Agents read it, developers control it, everyone sees it.
 
 For agents
-Context before changes:
-Features, decisions, owners, critical paths. Fewer broken things.
+Understand the code before changing it:
+A small, high-signal slice of the map: features, decisions, owners and critical paths. Less rediscovery, fewer broken things.
 
 $
 map pack checkout

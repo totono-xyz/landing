@@ -51,8 +51,8 @@ function HarnessSection() {
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6">
           <Card
             label="For agents"
-            title="Context before changes"
-            body="Features, decisions, owners, critical paths. Fewer broken things."
+            title="Understand the code before changing it"
+            body="A small, high-signal slice of the map: features, decisions, owners and critical paths. Less rediscovery, fewer broken things."
           >
             <div className="bg-dark text-on-dark rounded-md p-4 font-mono text-[13px] leading-[1.7]">
               <div>
