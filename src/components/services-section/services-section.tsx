@@ -32,10 +32,10 @@ function ServicesSection() {
         {SERVICES.map(([name, description], i) => (
           <li key={name} className="row-span-3 grid grid-rows-subgrid gap-3 pb-8">
             <div className="flex items-center gap-4">
-              <StepIcon index={i} />
               <span aria-hidden="true" className="text-secondary font-mono text-sm">
                 {String(i + 1).padStart(2, '0')}
               </span>
+              <StepIcon index={i} />
             </div>
             <h3 className="font-display text-primary mt-3 text-[22px] leading-tight font-extrabold">
               {name}
