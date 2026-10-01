@@ -3,7 +3,7 @@ v1.1 // 2026
 
 We connect to your codebase and agents start shipping. The control plane decides what they touch and what needs a human, and shows you the state of your app.
 
-[Get in touch](https://totono.xyz/#contact)[See the control plane](https://totono.xyz/#control-plane)
+[Get in touch](https://totono.xyz/#contact)[How you stay in control](https://totono.xyz/#control-plane)
 Engineers in Argentina · US hours · US contract
 
 Bring your own harness

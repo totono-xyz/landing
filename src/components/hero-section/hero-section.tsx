@@ -140,7 +140,7 @@ function HeroSection() {
               href="#control-plane"
               className="border-primary text-primary font-display hover:bg-surface inline-flex min-h-13 items-center rounded-md border px-5 text-base font-bold transition-colors"
             >
-              See the control plane
+              How you stay in control
             </a>
           </div>
 
