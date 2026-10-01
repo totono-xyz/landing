@@ -1,5 +1,8 @@
 const SERVICES = [
-  ['Plug in', 'Your repo, CI, tracker and deploys.'],
+  [
+    'One conversation',
+    'Then we plug into your stack (repo, CI, issue tracker, deploys) and start shipping in days, not months.',
+  ],
   ['Agents learn the code', 'A map in your repo shows them what matters.'],
   ['You set the rules', 'What agents can touch, and what needs a human.'],
   ['Everyone sees the state', 'Features, owners, changes, risk.'],
