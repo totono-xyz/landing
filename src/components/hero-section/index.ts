@@ -1,1 +1,1 @@
-export { default as HeroSection } from './hero-section'
+export { default as HeroSection, ArrowIcon } from './hero-section'

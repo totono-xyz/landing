@@ -2,51 +2,49 @@ import { Page } from '@/components/page'
 
 export default function AboutPage() {
   return (
-    <Page label="About" title="Hire Argentinian talent with zero friction.">
+    <Page
+      label="About"
+      title="A nearshore agentic software factory, and the control plane to run it."
+    >
       <p>
-        Totono helps US companies hire vetted Argentinian talent with zero friction. You talk to Antonio Tralice.
-        He interviews and vets the engineers, and takes care of the contract, payments and the rest of the business side. 
-        Engineers work with the state of the art in AI harnesses and skills automation. They do the
-        work. You may manage the engineer yourself, or have Antonio do it. Totono stays on to support them either way.
-      </p>
-      <p>
-        TOTONO LLC is a Delaware limited liability company. We work remotely with clients across
-        the Americas and Europe, on US Eastern Time.
+        One engineer and a fleet of agents, working on your codebase. We connect to your stack and
+        start shipping in days. The control plane keeps your team in control.
       </p>
 
-      <h2>What you get</h2>
+      <h2>Why it works</h2>
+      <p>
+        Human attention is the scarce asset now. The control plane points it at the decisions that
+        matter, and leaves everything else to agents.
+      </p>
+
+      <h2>The control plane</h2>
       <ul>
+        <li>For agents: a map of your app's features, decisions and critical paths.</li>
         <li>
-          Vetted engineers: Antonio interviews and selects engineers with strong technical
-          backgrounds and the ability to work on AI-augmented projects.
+          For developers: decide what agents may touch, which tools they run, and which decisions
+          need a human.
         </li>
-        <li>
-          State-of-the-art AI tooling: Engineers work with the state of the art in AI harnesses and skills automation, for
-          quality and velocity.
-        </li>
-        <li>
-          One point of contact: You work with Antonio. He coordinates the engineer, answers
-          questions, and handles the business side.
-        </li>
-        <li>Zero friction: One contract, one invoice, one email thread.</li>
+        <li>For stakeholders: features, owners, what changed this week and where the risk is.</li>
       </ul>
-
-      <h2>Who Antonio is</h2>
       <p>
-        Antonio Tralice is a software engineer and ed-tech entrepreneur, and a Y Combinator alumni
-        (S20). He has spent more than a decade building web platforms, backend services and learning
-        products. He built Totono to help founders hire strong engineers from Argentina with zero
-        friction.
+        The map lives in your repo. It works with Claude Code, Codex, Cursor and Grok. Our own tool,
+        early and improving every week.
       </p>
 
-      <h2>Who this is for</h2>
+      <h2>Nearshore</h2>
       <p>
-        Founders and technical leaders who need strong engineering capacity without the overhead of
-        international hiring. If you want to move fast, need someone who can work on your stack, and
-        value clear communication in English or Spanish, this is for you.
+        Engineers in Argentina, on US Eastern Time. You contract with a US company (TOTONO LLC,
+        Delaware). We handle contract, pricing and coordination. One invoice, one point of contact.
       </p>
+
+      <h2>Who's behind it</h2>
       <p>
-        Looking for a vetted AI engineer? <a href="/contact">Get in touch</a>.
+        Antonio Tralice: software engineer and Y Combinator alum (S20), with more than a decade of
+        experience building software.
+      </p>
+
+      <p>
+        Want your own software factory? <a href="/contact">Get in touch</a>.
       </p>
     </Page>
   )

@@ -10,7 +10,7 @@ export default function DisambiguationPage() {
 
       <h2>This Totono is:</h2>
       <ul>
-        <li>Totono connects you with vetted AI engineers from Argentina, led by Antonio Tralice.</li>
+        <li>Totono is a nearshore agentic software factory, led by Antonio Tralice.</li>
         <li>Legal entity: TOTONO LLC, a limited liability company registered in Delaware, US.</li>
         <li>
           Website: <a href="https://totono.xyz/">https://totono.xyz/</a>
@@ -20,8 +20,8 @@ export default function DisambiguationPage() {
         </li>
         <li>
           GitHub: <a href="https://github.com/totono-xyz">https://github.com/totono-xyz</a>{' '}
-          (Organization) and{' '}
-          <a href="https://github.com/atralice">https://github.com/atralice</a> (Antonio Tralice)
+          (Organization) and <a href="https://github.com/atralice">https://github.com/atralice</a>{' '}
+          (Antonio Tralice)
         </li>
         <li>
           LinkedIn:{' '}
@@ -31,7 +31,8 @@ export default function DisambiguationPage() {
           (Antonio Tralice)
         </li>
         <li>
-          Product: vetted Argentinian engineers who work on projects using state-of-the-art AI harnesses and skills automation.
+          Product: engineers in Argentina working with a fleet of agents on your codebase, plus a
+          control plane that keeps your team in control.
         </li>
       </ul>
 
@@ -47,16 +48,16 @@ export default function DisambiguationPage() {
         </li>
         <li>
           A personal blog. Despite GitHub repository metadata that may label this site as a blog,
-          totono.xyz is a business website for an independent software studio, not a personal blog.
+          totono.xyz is a business website for an agentic software factory, not a personal blog.
         </li>
       </ul>
 
       <h2>Why this page exists</h2>
       <p>
-        The name "Totono" is used by multiple unrelated entities. This disambiguation page exists
-        to help search engines, AI agents and humans distinguish between them. If you are looking
-        for Antonio Tralice software studio, you are in the right place. If you are looking for
-        the Japanese housing app or the Japanese company, you are not.
+        The name "Totono" is used by multiple unrelated entities. This disambiguation page exists to
+        help search engines, AI agents and humans distinguish between them. If you are looking for
+        Antonio Tralice's agentic software factory, you are in the right place. If you are looking
+        for the Japanese housing app or the Japanese company, you are not.
       </p>
       <p>
         For more information about this Totono, see the <a href="/about">About page</a> or{' '}
