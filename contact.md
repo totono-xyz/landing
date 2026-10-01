@@ -1,19 +1,16 @@
 Contact
-# Let's talk about your project.
+# Let's build your software factory.
 
-The fastest way to reach Totono is by email. Write to [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz) and you will get a reply from Antonio Tralice, usually within two business days. We read and reply in English and Spanish.
+Email [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz). We reply within two business days, in English or Spanish.
 
-## What to include
+## Include
 
-- A short description of what you need built.
-- Your current stack, if there is one, and who maintains it today.
-- Any deadlines, budget range or constraints we should know about.
-- The best way and time to reach you for a follow-up call.
+- Your product, and what you want shipped.
+- Your stack and tooling: repo host, CI, issue tracker.
+- Deadlines or budget, if any.
 
-## What happens next
+## Next
 
-After a first exchange over email, Antonio usually schedules a short call to understand the problem in more depth. From there you receive a written proposal with scope, timeline and pricing. There is no cost or obligation for this initial conversation.
+A short call, then a written proposal with scope, timeline and price. Both free.
 
-## Business details
-
-TOTONO LLC is a Delaware limited liability company. We work remotely with clients across the Americas and Europe, on US Eastern Time. Email is the only official channel; we do not use contact forms or social media direct messages for business enquiries.
+TOTONO LLC, Delaware. Engineers in Argentina, on US Eastern Time. Email is our only official channel.
