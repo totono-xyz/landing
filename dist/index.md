@@ -12,7 +12,7 @@ Works with
 - Grok
 
 How it works
-## Shipping in days.
+## Hire us, and agents ship on your codebase within days.
 
 - Plug in: Your repo, CI, tracker and deploys.
 - Agents learn the code: A map in your repo shows them what matters.

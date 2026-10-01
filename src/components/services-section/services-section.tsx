@@ -12,7 +12,7 @@ function ServicesSection() {
         How it works
       </span>
       <h2 className="font-display text-primary mb-14 max-w-[620px] text-[clamp(32px,4vw,48px)] leading-[1.08] font-extrabold tracking-[-0.03em]">
-        Shipping in days.
+        Hire us, and agents ship on your codebase within days.
       </h2>
       <ol className="border-primary grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] border-t-2">
         {SERVICES.map(([name, description], i) => (
