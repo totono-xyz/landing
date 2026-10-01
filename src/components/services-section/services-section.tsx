@@ -11,7 +11,10 @@ const SERVICES = [
     'Developers stay in control',
     'Your team decides what agents may touch, which tools they can use, and which critical decisions should go through a human.',
   ],
-  ['Everyone sees the state', 'Features, owners, changes, risk.'],
+  [
+    'Everyone sees the state',
+    'Stakeholders get a plain view of features, owners, what changed this week and where the risk is.',
+  ],
 ]
 
 function ServicesSection() {
@@ -37,6 +40,21 @@ function ServicesSection() {
           </li>
         ))}
       </ol>
+
+      <div className="border-line mt-16 grid gap-10 border-t pt-12 md:grid-cols-[3fr_2fr]">
+        <p className="font-display text-primary text-[clamp(24px,2.6vw,32px)] leading-snug font-extrabold tracking-[-0.02em]">
+          Human attention is the scarce asset now. We point it at the decisions that matter, and
+          leave everything else to agents.
+        </p>
+        <div className="flex flex-col gap-2">
+          <h3 className="text-secondary font-mono text-xs tracking-[0.14em] uppercase">
+            The business side
+          </h3>
+          <p className="text-on-surface-variant leading-relaxed">
+            We handle contract, pricing and coordination. One invoice, one point of contact.
+          </p>
+        </div>
+      </div>
     </section>
   )
 }

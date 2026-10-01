@@ -17,7 +17,10 @@ How it works
 - One conversation: Then we plug into your stack (repo, CI, issue tracker, deploys) and start shipping in days, not months.
 - Agents understand your code: We create a map so agents know your app's features, decisions and critical paths.
 - Developers stay in control: Your team decides what agents may touch, which tools they can use, and which critical decisions should go through a human.
-- Everyone sees the state: Features, owners, changes, risk.
+- Everyone sees the state: Stakeholders get a plain view of features, owners, what changed this week and where the risk is.
+Human attention is the scarce asset now. We point it at the decisions that matter, and leave everything else to agents.
+
+The business sideWe handle contract, pricing and coordination. One invoice, one point of contact.
 
 The harness
 ## One map. Three jobs.
