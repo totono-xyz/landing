@@ -3,13 +3,14 @@ v1.1 // 2026
 
 We connect to your codebase and agents start shipping. The control plane decides what they touch and what needs a human, and shows you the state of your app.
 
-[Get in touch](https://totono.xyz/#contact)[See the control plane](https://totono.xyz/#control-plane)
+[Get in touch](https://totono.xyz/#contact)[How you stay in control](https://totono.xyz/#control-plane)
+Engineers in Argentina · US hours · US contract
 
-Works with
-- Claude Code
-- Codex
-- Cursor
-- Grok
+Bring your own harness
+- [Claude Code](https://claude.com/product/claude-code)
+- [Codex](https://openai.com/codex/)
+- [Cursor](https://cursor.com/)
+- [Grok](https://grok.com/)
 
 How it works
 ## Hire us, and agents ship on your codebase within days.
@@ -51,7 +52,7 @@ Features, owners, what changed this week and where the risk is. No code, no stan
 
 FeatureThis weekCheckout1 decision waitingOnboardingShippedReportsNo owner yet
 
-Our own tool. Early, and improving every week.
+Built in-house. Improved every week on real projects.
 
 Contact
 ## One engineer. A fleet of agents. Your software factory.
