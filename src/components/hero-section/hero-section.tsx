@@ -102,32 +102,28 @@ function ControlPlanePreview() {
 function HeroSection() {
   return (
     <>
-      <section className="mx-auto flex max-w-6xl flex-wrap items-center gap-14 px-6 pt-20 pb-24 md:pt-24">
-        <div className="flex min-w-0 flex-1 basis-[460px] flex-col gap-7">
+      <section className="mx-auto flex max-w-6xl flex-wrap items-center gap-14 px-6 pt-14 pb-16 md:pt-16">
+        <div className="flex min-w-0 flex-1 basis-[460px] flex-col gap-6">
           <div className="border-line bg-surface text-muted inline-flex items-center gap-2.5 self-start rounded-full border px-3 py-1.5 font-mono text-xs tracking-[0.08em] uppercase">
             <span className="bg-accent size-2 rounded-full" />
             v1.1 // {new Date().getFullYear()}
           </div>
 
-          <h1 className="font-display text-primary text-[clamp(44px,6vw,76px)] leading-[1.02] font-extrabold tracking-[-0.035em]">
+          <h1 className="font-display text-primary text-[clamp(38px,4.4vw,60px)] leading-[1.04] font-extrabold tracking-[-0.035em]">
             A nearshore
-            <svg
-              role="img"
-              aria-label="(Argentina)"
-              viewBox="0 0 18 12"
-              className="ring-line relative -top-[0.62em] ml-[0.06em] inline-block h-[0.3em] w-[0.45em] rounded-[2px] align-baseline ring-1"
+            <span
+              aria-hidden="true"
+              className="text-accent ml-[0.04em] align-[0.35em] text-[0.55em]"
             >
-              <rect width="18" height="12" fill="#74acdf" />
-              <rect y="4" width="18" height="4" fill="#fff" />
-              <circle cx="9" cy="6" r="1.4" fill="#f6b40e" />
-            </svg>{' '}
+              *
+            </span>{' '}
             agentic software factory,{' '}
             <span className="bg-[linear-gradient(transparent_62%,var(--color-highlight)_62%,var(--color-highlight)_92%,transparent_92%)]">
               and the control plane to run it.
             </span>
           </h1>
 
-          <p className="text-on-surface-variant max-w-[540px] text-xl leading-relaxed">
+          <p className="text-on-surface-variant max-w-[520px] text-lg leading-relaxed">
             We connect to your codebase and agents start shipping. The control plane decides what
             they touch and what needs a human, and shows you the state of your app.
           </p>
@@ -144,31 +140,58 @@ function HeroSection() {
               href="#control-plane"
               className="border-primary text-primary font-display hover:bg-surface inline-flex min-h-13 items-center rounded-md border px-5 text-base font-bold transition-colors"
             >
-              See the control plane
+              How you stay in control
             </a>
           </div>
+
+          <p id="nearshore" className="text-muted flex items-center gap-2 font-mono text-xs">
+            <span aria-hidden="true" className="text-accent">
+              *
+            </span>
+            Engineers in Argentina
+            <svg
+              role="img"
+              aria-label="(flag of Argentina)"
+              viewBox="0 0 18 12"
+              className="ring-line h-3 w-[18px] rounded-[2px] ring-1"
+            >
+              <rect width="18" height="12" fill="#74acdf" />
+              <rect y="4" width="18" height="4" fill="#fff" />
+              <circle cx="9" cy="6" r="1.4" fill="#f6b40e" />
+            </svg>{' '}
+            · US hours · US contract
+          </p>
         </div>
 
         <ControlPlanePreview />
       </section>
 
-      <section aria-label="Works with" className="border-line bg-surface border-y">
+      <section aria-label="Supported harnesses" className="border-line bg-surface border-y">
         <div className="text-muted mx-auto flex max-w-6xl flex-wrap items-center gap-x-10 gap-y-4 px-6 py-5">
-          <span className="font-mono text-xs tracking-[0.12em] uppercase">Works with</span>
+          <span className="font-mono text-xs tracking-[0.12em] uppercase">
+            Bring your own harness
+          </span>
           <ul className="text-on-surface flex flex-wrap items-center gap-x-9 gap-y-3">
-            {AGENT_LOGOS.map(([name, path]) => (
-              <li key={name} className="flex items-center gap-2.5 font-medium">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  fillRule="evenodd"
-                  aria-hidden="true"
+            {AGENT_LOGOS.map(([name, url, path]) => (
+              <li key={name}>
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-secondary flex items-center gap-2.5 font-medium transition-colors"
                 >
-                  <path d={path} />
-                </svg>
-                {name}
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    fillRule="evenodd"
+                    aria-hidden="true"
+                  >
+                    <path d={path} />
+                  </svg>
+                  {name}
+                </a>
               </li>
             ))}
           </ul>

@@ -27,7 +27,7 @@ function ContactSection() {
           Contact
         </span>
 
-        <h2 className="font-display max-w-[820px] text-[clamp(36px,5vw,64px)] leading-[1.04] font-extrabold tracking-[-0.035em]">
+        <h2 className="max-w-[820px] font-serif text-[clamp(34px,4.6vw,58px)] leading-[1.08] font-semibold tracking-[-0.02em]">
           One engineer. A fleet of agents. Your software factory.
         </h2>
 
@@ -37,7 +37,7 @@ function ContactSection() {
 
         <div className="relative">
           <a
-            className="bg-accent hover:bg-accent-hover font-display inline-flex min-h-14 items-center gap-3 rounded-md px-7 text-lg font-extrabold text-white transition-colors"
+            className="bg-attention hover:bg-attention-hover inline-flex min-h-14 items-center gap-3 rounded-md px-7 font-serif text-lg font-bold text-white transition-colors"
             href={`mailto:${EMAIL}`}
             onClick={handleClick}
           >
