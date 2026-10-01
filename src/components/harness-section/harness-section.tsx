@@ -97,8 +97,8 @@ function HarnessSection() {
 
           <Card
             label="For stakeholders"
-            title="The state of the app"
-            body="Features, owners, changes, risk. No code."
+            title="Know the state of the app"
+            body="Features, owners, what changed this week and where the risk is. No code, no standups to decode."
           >
             <table className="border-line bg-surface w-full border-collapse border text-sm">
               <thead>

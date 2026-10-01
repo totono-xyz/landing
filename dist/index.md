@@ -46,8 +46,8 @@ Set which zones agents may touch, which tools they may run, and which decisions 
 - onboarding/**Agents ship
 
 For stakeholders
-The state of the app:
-Features, owners, changes, risk. No code.
+Know the state of the app:
+Features, owners, what changed this week and where the risk is. No code, no standups to decode.
 
 FeatureThis weekCheckout1 decision waitingOnboardingShippedReportsNo owner yet
 
