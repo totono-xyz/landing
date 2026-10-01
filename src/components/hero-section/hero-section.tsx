@@ -106,11 +106,22 @@ function HeroSection() {
         <div className="flex min-w-0 flex-1 basis-[460px] flex-col gap-7">
           <div className="border-line bg-surface text-muted inline-flex items-center gap-2.5 self-start rounded-full border px-3 py-1.5 font-mono text-xs tracking-[0.08em] uppercase">
             <span className="bg-accent size-2 rounded-full" />
-            v5.0 // 2026
+            v1.1 // {new Date().getFullYear()}
           </div>
 
           <h1 className="font-display text-primary text-[clamp(44px,6vw,76px)] leading-[1.02] font-extrabold tracking-[-0.035em]">
-            An agentic software factory,{' '}
+            A nearshore
+            <svg
+              role="img"
+              aria-label="(Argentina)"
+              viewBox="0 0 18 12"
+              className="ring-line relative -top-[0.62em] ml-[0.06em] inline-block h-[0.3em] w-[0.45em] rounded-[2px] align-baseline ring-1"
+            >
+              <rect width="18" height="12" fill="#74acdf" />
+              <rect y="4" width="18" height="4" fill="#fff" />
+              <circle cx="9" cy="6" r="1.4" fill="#f6b40e" />
+            </svg>{' '}
+            agentic software factory,{' '}
             <span className="bg-[linear-gradient(transparent_62%,var(--color-highlight)_62%,var(--color-highlight)_92%,transparent_92%)]">
               and the harness to control it.
             </span>

@@ -1,5 +1,5 @@
-v5.0 // 2026
-# An agentic software factory, and the harness to control it.
+v1.1 // 2026
+# A nearshore agentic software factory, and the harness to control it.
 
 We plug into your codebase. Agents ship. You stay in control.
 
