@@ -7,7 +7,10 @@ const SERVICES = [
     'Agents understand your code',
     "We create a map so agents know your app's features, decisions and critical paths.",
   ],
-  ['You set the rules', 'What agents can touch, and what needs a human.'],
+  [
+    'Developers stay in control',
+    'Your team decides what agents may touch, which tools they can use, and which critical decisions should go through a human.',
+  ],
   ['Everyone sees the state', 'Features, owners, changes, risk.'],
 ]
 
