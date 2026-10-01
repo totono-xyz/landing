@@ -3,7 +3,7 @@ v1.1 // 2026
 
 We connect to your codebase and agents start shipping. The harness controls what they touch and what needs a human, and shows you the state of your app.
 
-[Start shipping](https://totono.xyz/#contact)[See the harness](https://totono.xyz/#harness)
+[Get in touch](https://totono.xyz/#contact)[See the harness](https://totono.xyz/#harness)
 
 Works with
 - Claude Code

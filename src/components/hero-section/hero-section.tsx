@@ -137,7 +137,7 @@ function HeroSection() {
               href="#contact"
               className="bg-accent hover:bg-accent-hover font-display inline-flex min-h-13 items-center gap-2.5 rounded-md px-6 text-base font-extrabold text-white transition-colors"
             >
-              Start shipping
+              Get in touch
               <ArrowIcon />
             </a>
             <a
