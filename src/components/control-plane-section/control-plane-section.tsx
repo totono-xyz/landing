@@ -69,9 +69,9 @@ function ControlPlaneSection() {
             body="Set which zones agents may touch, which tools they may run, and which decisions block until a human signs off."
           >
             <ul className="flex flex-col gap-2 text-sm">
-              <li className="border-attention/50 bg-attention/5 shadow-attention/20 flex items-center justify-between gap-3 rounded-md border px-3.5 py-2.5 shadow-[0_0_24px_-6px]">
+              <li className="border-attention/50 bg-attention/5 shadow-attention/20 flex h-12 items-center justify-between gap-3 rounded-md border px-3.5 shadow-[0_0_24px_-6px]">
                 <span className="font-mono">auth/**</span>
-                <span className="bg-attention relative inline-flex items-center gap-2 overflow-hidden rounded-full px-3 py-1 text-xs font-semibold text-white">
+                <span className="bg-attention relative inline-flex items-center gap-2 overflow-hidden rounded-full px-3 py-1.5 text-xs leading-none font-semibold text-white">
                   <span className="relative flex size-2">
                     <span className="absolute inline-flex size-full rounded-full bg-white opacity-75 motion-safe:animate-ping" />
                     <span className="relative inline-flex size-2 rounded-full bg-white" />
@@ -86,7 +86,7 @@ function ControlPlaneSection() {
               {RULES.map(([scope, rule, color]) => (
                 <li
                   key={scope}
-                  className="border-line bg-surface flex justify-between gap-3 rounded-md border px-3.5 py-3"
+                  className="border-line bg-surface flex h-12 items-center justify-between gap-3 rounded-md border px-3.5"
                 >
                   <span className="font-mono">{scope}</span>
                   <span className={`font-semibold ${color}`}>{rule}</span>
@@ -125,7 +125,7 @@ function ControlPlaneSection() {
 
         <p className="text-muted mt-10 flex items-center gap-2.5 font-mono text-[13px]">
           <span className="bg-accent size-2 shrink-0 rounded-full" />
-          Our own tool. Early, and improving every week.
+          Built in-house. Improved every week on real projects.
         </p>
       </div>
     </section>

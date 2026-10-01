@@ -1,3 +1,5 @@
+import { StepIcon } from './step-icons'
+
 const SERVICES = [
   [
     'One conversation',
@@ -29,7 +31,8 @@ function ServicesSection() {
       <ol className="border-primary grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] border-t-2">
         {SERVICES.map(([name, description], i) => (
           <li key={name} className="flex flex-col gap-3 pt-7 pr-7 pb-2">
-            <span aria-hidden="true" className="text-secondary font-mono text-sm">
+            <StepIcon index={i} />
+            <span aria-hidden="true" className="text-secondary mt-2 font-mono text-sm">
               {String(i + 1).padStart(2, '0')}
             </span>
             <h3 className="font-display text-primary text-[22px] leading-tight font-extrabold">
