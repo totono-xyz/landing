@@ -32,8 +32,7 @@ function ContactSection() {
         </h2>
 
         <p className="text-dark-body max-w-[560px] text-lg leading-relaxed">
-          Tell us about your product, your stack and what you want shipped. We reply within two
-          business days, in English or Spanish. The first call and proposal are free.
+          Tell us what you want shipped. We reply within two business days.
         </p>
 
         <div className="relative">

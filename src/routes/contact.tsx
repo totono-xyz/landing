@@ -6,31 +6,23 @@ export default function ContactPage() {
   return (
     <Page label="Contact" title="Let's get agents shipping on your codebase.">
       <p>
-        The fastest way to reach Totono is by email. Write to{' '}
-        <a href={`mailto:${EMAIL}`}>{EMAIL}</a> and you will get a reply from Antonio Tralice,
-        usually within two business days. We read and reply in English and Spanish.
+        Email <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. We reply within two business days, in English
+        or Spanish.
       </p>
 
-      <h2>What to include</h2>
+      <h2>Include</h2>
       <ul>
-        <li>A short description of your product and what you want shipped.</li>
-        <li>Your stack and tooling (repo host, CI, issue tracker), and who maintains it today.</li>
-        <li>Any deadlines, budget range or constraints we should know about.</li>
-        <li>The best way and time to reach you for a follow-up call.</li>
+        <li>Your product, and what you want shipped.</li>
+        <li>Your stack and tooling: repo host, CI, issue tracker.</li>
+        <li>Deadlines or budget, if any.</li>
       </ul>
 
-      <h2>What happens next</h2>
-      <p>
-        After a first exchange over email, Antonio usually schedules a short call to understand the
-        problem in more depth. From there you receive a written proposal with scope, timeline and
-        pricing. There is no cost or obligation for this initial conversation.
-      </p>
+      <h2>Next</h2>
+      <p>A short call, then a written proposal with scope, timeline and price. Both free.</p>
 
-      <h2>Business details</h2>
       <p>
-        TOTONO LLC is a Delaware limited liability company. We work remotely with clients across the
-        Americas and Europe, on US Eastern Time. Email is the only official channel; we do not use
-        contact forms or social media direct messages for business enquiries.
+        TOTONO LLC, Delaware. Clients in the Americas and Europe, on US Eastern Time. Email is our
+        only official channel.
       </p>
     </Page>
   )

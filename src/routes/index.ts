@@ -15,7 +15,7 @@ export const routes: Record<string, Route> = {
   '/': {
     title: 'Totono | An agentic software factory, and the harness to control it',
     description:
-      'Totono connects to your codebase and tooling, and agents start shipping. You get the harness to control them: agents understand the code, developers control what they can do, stakeholders see the state of the app.',
+      'We plug into your codebase. Agents ship. You stay in control, through a harness that works with Claude Code, Codex, Cursor and Grok.',
     Component: HomePage,
   },
   '/about': {

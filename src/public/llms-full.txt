@@ -20,7 +20,7 @@
 - **Agents that understand the code**: a map of features, decisions, owners and critical paths lives in your repo. Agents read it before making a change, so they do not break what matters.
 - **Developer control**: your team decides what agents may touch, which tools they can use, and which decisions (architecture, money, auth, data, security) must go through a human. Every decision is recorded.
 - **Stakeholder visibility**: a dashboard with features, owners, what changed this week and where the risk is.
-- **Harness-agnostic**: works with Claude Code, Codex, Cursor and other agent harnesses. The map lives in your repo, not with Totono.
+- **Harness-agnostic**: works with Claude Code, Codex, Cursor, Grok and other agent harnesses. The map lives in your repo, not with Totono.
 - **Status**: the harness is Totono's own tool. It is early and changes every week, because Totono uses it on every engagement.
 - **Zero friction**: one contract, one invoice, one email thread.
 

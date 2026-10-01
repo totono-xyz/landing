@@ -1,3 +1,5 @@
+import { AGENT_LOGOS } from './agent-logos'
+
 function ArrowIcon() {
   return (
     <svg
@@ -115,8 +117,7 @@ function HeroSection() {
           </h1>
 
           <p className="text-on-surface-variant max-w-[540px] text-xl leading-relaxed">
-            We connect to your codebase and tooling, and agents start shipping. You get the harness
-            to control them: what they can touch, what needs a human, and what state your app is in.
+            We plug into your codebase. Agents ship. You stay in control.
           </p>
 
           <div className="flex flex-wrap gap-3">
@@ -140,12 +141,25 @@ function HeroSection() {
       </section>
 
       <section aria-label="Works with" className="border-line bg-surface border-y">
-        <div className="text-muted mx-auto flex max-w-6xl flex-wrap items-center gap-x-10 gap-y-3 px-6 py-5 font-mono text-sm">
-          <span className="text-xs tracking-[0.12em] uppercase">Works with any agent harness</span>
-          <span className="text-on-surface font-medium">Claude Code</span>
-          <span className="text-on-surface font-medium">Codex</span>
-          <span className="text-on-surface font-medium">Cursor</span>
-          <span>and your existing repo, CI and issue tracker</span>
+        <div className="text-muted mx-auto flex max-w-6xl flex-wrap items-center gap-x-10 gap-y-4 px-6 py-5">
+          <span className="font-mono text-xs tracking-[0.12em] uppercase">Works with</span>
+          <ul className="text-on-surface flex flex-wrap items-center gap-x-9 gap-y-3">
+            {AGENT_LOGOS.map(([name, path]) => (
+              <li key={name} className="flex items-center gap-2.5 font-medium">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  fillRule="evenodd"
+                  aria-hidden="true"
+                >
+                  <path d={path} />
+                </svg>
+                {name}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
     </>

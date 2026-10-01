@@ -1,32 +1,32 @@
 v5.0 // 2026
 # An agentic software factory, and the harness to control it.
 
-We connect to your codebase and tooling, and agents start shipping. You get the harness to control them: what they can touch, what needs a human, and what state your app is in.
+We plug into your codebase. Agents ship. You stay in control.
 
 [Start shipping](https://totono.xyz/#contact)[See the harness](https://totono.xyz/#harness)
 
-Works with any agent harness
-Claude Code
-Codex
-Cursor
-and your existing repo, CI and issue tracker
+Works with
+- Claude Code
+- Codex
+- Cursor
+- Grok
 
 How it works
-## Hire us, and agents ship on your codebase within days.
+## Shipping in days.
 
-- We plug into your stack: Repo, CI, issue tracker, deploys. We connect to what you already use and start shipping in days, not months.
-- Agents understand your code: A map of features, decisions and critical paths lives in your repo. Agents read it before they change anything.
-- Developers stay in control: Your team decides what agents may touch, which tools they can use, and which decisions go through a human.
-- Everyone sees the state: Stakeholders get a plain view of features, owners, what changed this week and where the risk is.
+- Plug in: Your repo, CI, tracker and deploys.
+- Agents learn the code: A map in your repo shows them what matters.
+- You set the rules: What agents can touch, and what needs a human.
+- Everyone sees the state: Features, owners, changes, risk.
 
 The harness
 ## One map. Three jobs.
 
-The map lives in your repo, not with us. Any agent can read it, your developers set the rules, and everyone else sees the result.
+It lives in your repo. Agents read it, developers control it, everyone sees it.
 
 For agents
-Understand the code before changing it:
-A small, high-signal slice of the map: features, decisions, owners and critical paths. Less rediscovery, fewer broken things.
+Context before changes:
+Features, decisions, owners, critical paths. Fewer broken things.
 
 $
 map pack checkout
@@ -35,24 +35,24 @@ owner @payments-lead
 rule no schema changes w/o review
 
 For developers
-Decide what agents can do:
-Set which zones agents may touch, which tools they may run, and which decisions block until a human signs off.
+Rules for agents:
+Zones, tools, and which decisions need a human.
 
 - auth/**Human decides
 - db:writeOwner only
 - onboarding/**Agents ship
 
 For stakeholders
-Know the state of the app:
-Features, owners, what changed this week and where the risk is. No code, no standups to decode.
+The state of the app:
+Features, owners, changes, risk. No code.
 
 FeatureThis weekCheckout1 decision waitingOnboardingShippedReportsNo owner yet
 
-Our own tool. Early, and changing every week, because we use it on every engagement.
+Our own tool. Early, and improving every week.
 
 Contact
 ## Want agents shipping on your codebase?
 
-Tell us about your product, your stack and what you want shipped. We reply within two business days, in English or Spanish. The first call and proposal are free.
+Tell us what you want shipped. We reply within two business days.
 
 [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz)

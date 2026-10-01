@@ -45,15 +45,14 @@ function HarnessSection() {
           One map. Three jobs.
         </h2>
         <p className="text-on-surface-variant mb-14 max-w-[620px] text-lg leading-relaxed">
-          The map lives in your repo, not with us. Any agent can read it, your developers set the
-          rules, and everyone else sees the result.
+          It lives in your repo. Agents read it, developers control it, everyone sees it.
         </p>
 
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6">
           <Card
             label="For agents"
-            title="Understand the code before changing it"
-            body="A small, high-signal slice of the map: features, decisions, owners and critical paths. Less rediscovery, fewer broken things."
+            title="Context before changes"
+            body="Features, decisions, owners, critical paths. Fewer broken things."
           >
             <div className="bg-dark text-on-dark rounded-md p-4 font-mono text-[13px] leading-[1.7]">
               <div>
@@ -67,8 +66,8 @@ function HarnessSection() {
 
           <Card
             label="For developers"
-            title="Decide what agents can do"
-            body="Set which zones agents may touch, which tools they may run, and which decisions block until a human signs off."
+            title="Rules for agents"
+            body="Zones, tools, and which decisions need a human."
           >
             <ul className="flex flex-col gap-2 text-sm">
               {RULES.map(([scope, rule, color]) => (
@@ -85,8 +84,8 @@ function HarnessSection() {
 
           <Card
             label="For stakeholders"
-            title="Know the state of the app"
-            body="Features, owners, what changed this week and where the risk is. No code, no standups to decode."
+            title="The state of the app"
+            body="Features, owners, changes, risk. No code."
           >
             <table className="border-line bg-surface w-full border-collapse border text-sm">
               <thead>
@@ -113,7 +112,7 @@ function HarnessSection() {
 
         <p className="text-muted mt-10 flex items-center gap-2.5 font-mono text-[13px]">
           <span className="bg-accent size-2 shrink-0 rounded-full" />
-          Our own tool. Early, and changing every week, because we use it on every engagement.
+          Our own tool. Early, and improving every week.
         </p>
       </div>
     </section>

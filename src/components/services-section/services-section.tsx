@@ -1,20 +1,8 @@
 const SERVICES = [
-  [
-    'We plug into your stack',
-    'Repo, CI, issue tracker, deploys. We connect to what you already use and start shipping in days, not months.',
-  ],
-  [
-    'Agents understand your code',
-    'A map of features, decisions and critical paths lives in your repo. Agents read it before they change anything.',
-  ],
-  [
-    'Developers stay in control',
-    'Your team decides what agents may touch, which tools they can use, and which decisions go through a human.',
-  ],
-  [
-    'Everyone sees the state',
-    'Stakeholders get a plain view of features, owners, what changed this week and where the risk is.',
-  ],
+  ['Plug in', 'Your repo, CI, tracker and deploys.'],
+  ['Agents learn the code', 'A map in your repo shows them what matters.'],
+  ['You set the rules', 'What agents can touch, and what needs a human.'],
+  ['Everyone sees the state', 'Features, owners, changes, risk.'],
 ]
 
 function ServicesSection() {
@@ -24,7 +12,7 @@ function ServicesSection() {
         How it works
       </span>
       <h2 className="font-display text-primary mb-14 max-w-[620px] text-[clamp(32px,4vw,48px)] leading-[1.08] font-extrabold tracking-[-0.03em]">
-        Hire us, and agents ship on your codebase within days.
+        Shipping in days.
       </h2>
       <ol className="border-primary grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] border-t-2">
         {SERVICES.map(([name, description], i) => (
