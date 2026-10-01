@@ -1,7 +1,7 @@
 v1.1 // 2026
 # A nearshore agentic software factory, and the harness to control it.
 
-We plug into your codebase. Agents ship. You stay in control.
+We connect to your codebase and agents start shipping. The harness controls what they touch and what needs a human, and shows you the state of your app.
 
 [Start shipping](https://totono.xyz/#contact)[See the harness](https://totono.xyz/#harness)
 

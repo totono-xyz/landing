@@ -128,7 +128,8 @@ function HeroSection() {
           </h1>
 
           <p className="text-on-surface-variant max-w-[540px] text-xl leading-relaxed">
-            We plug into your codebase. Agents ship. You stay in control.
+            We connect to your codebase and agents start shipping. The harness controls what they
+            touch and what needs a human, and shows you the state of your app.
           </p>
 
           <div className="flex flex-wrap gap-3">
