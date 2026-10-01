@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react'
+import { ArrowIcon } from '@/components/hero-section'
 
 const EMAIL = 'toni.tralice@totono.xyz'
 
@@ -20,34 +21,34 @@ function ContactSection() {
   }, [])
 
   return (
-    <section id="contact" className="mt-32 mb-40 flex flex-col md:flex-row gap-8">
-      <div className="flex flex-col justify-center items-start p-8 mx-auto items-center text-center">
-        <span className="font-sans text-[0.6875rem] uppercase tracking-[0.2em] font-bold text-secondary mb-4">
-          Contact Information
+    <section id="contact" className="bg-dark text-on-dark scroll-mt-16">
+      <div className="mx-auto flex max-w-6xl flex-col items-start gap-7 px-6 py-30">
+        <span className="text-accent-on-dark font-mono text-xs tracking-[0.14em] uppercase">
+          Contact
         </span>
 
-        <h2 className="font-display text-3xl font-bold text-primary mb-6">
-          Want agents shipping on your codebase? Reach out.
+        <h2 className="font-display max-w-[820px] text-[clamp(36px,5vw,64px)] leading-[1.04] font-extrabold tracking-[-0.035em]">
+          Want agents shipping on your codebase?
         </h2>
+
+        <p className="text-dark-body max-w-[560px] text-lg leading-relaxed">
+          Tell us about your product, your stack and what you want shipped. We reply within two
+          business days, in English or Spanish. The first call and proposal are free.
+        </p>
 
         <div className="relative">
           <a
-            className="group flex items-center gap-4 text-xl font-sans font-medium text-primary hover:text-secondary transition-colors"
+            className="bg-accent hover:bg-accent-hover font-display inline-flex min-h-14 items-center gap-3 rounded-md px-7 text-lg font-extrabold text-white transition-colors"
             href={`mailto:${EMAIL}`}
             onClick={handleClick}
           >
             {EMAIL}
-            <span
-              aria-hidden="true"
-              className="material-symbols-outlined transition-transform group-hover:translate-x-1"
-            >
-              arrow_forward
-            </span>
+            <ArrowIcon />
           </a>
 
           <span
             aria-hidden={!copied}
-            className={`absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs font-sans text-on-surface-variant transition-opacity duration-300 ${copied ? 'opacity-100' : 'opacity-0'}`}
+            className={`text-dark-body absolute -bottom-8 left-0 font-sans text-xs transition-opacity duration-300 ${copied ? 'opacity-100' : 'opacity-0'}`}
           >
             Copied to clipboard
           </span>

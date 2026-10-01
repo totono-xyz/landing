@@ -20,8 +20,8 @@ export default function DisambiguationPage() {
         </li>
         <li>
           GitHub: <a href="https://github.com/totono-xyz">https://github.com/totono-xyz</a>{' '}
-          (Organization) and{' '}
-          <a href="https://github.com/atralice">https://github.com/atralice</a> (Antonio Tralice)
+          (Organization) and <a href="https://github.com/atralice">https://github.com/atralice</a>{' '}
+          (Antonio Tralice)
         </li>
         <li>
           LinkedIn:{' '}
@@ -55,10 +55,10 @@ export default function DisambiguationPage() {
 
       <h2>Why this page exists</h2>
       <p>
-        The name "Totono" is used by multiple unrelated entities. This disambiguation page exists
-        to help search engines, AI agents and humans distinguish between them. If you are looking
-        for Antonio Tralice's agentic software factory, you are in the right place. If you are looking for
-        the Japanese housing app or the Japanese company, you are not.
+        The name "Totono" is used by multiple unrelated entities. This disambiguation page exists to
+        help search engines, AI agents and humans distinguish between them. If you are looking for
+        Antonio Tralice's agentic software factory, you are in the right place. If you are looking
+        for the Japanese housing app or the Japanese company, you are not.
       </p>
       <p>
         For more information about this Totono, see the <a href="/about">About page</a> or{' '}

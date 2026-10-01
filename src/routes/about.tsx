@@ -9,8 +9,8 @@ export default function AboutPage() {
         control them.
       </p>
       <p>
-        TOTONO LLC is a Delaware limited liability company. We work remotely with clients across
-        the Americas and Europe, on US Eastern Time.
+        TOTONO LLC is a Delaware limited liability company. We work remotely with clients across the
+        Americas and Europe, on US Eastern Time.
       </p>
 
       <h2>What the harness does</h2>

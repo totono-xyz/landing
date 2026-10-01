@@ -20,24 +20,24 @@ function Footer() {
   }, [])
 
   return (
-    <footer className="mt-auto w-full bg-slate-50">
-      <div className="flex w-full flex-col items-center justify-between px-12 py-10 md:flex-row">
-        <div className="mb-6 md:mb-0">
-          <div className="font-brand text-on-surface mb-2 font-bold">TOTONO</div>
-          <p className="font-sans text-xs tracking-widest text-slate-500 uppercase">
+    <footer className="bg-dark text-dark-muted border-dark-line mt-auto w-full border-t">
+      <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-6 py-9 md:flex-row md:items-center">
+        <div>
+          <div className="font-brand text-on-dark mb-2 text-lg font-bold">TOTONO</div>
+          <p className="font-mono text-xs tracking-widest uppercase">
             &copy; {new Date().getFullYear()} TOTONO LLC. Registered in Delaware.
           </p>
-          <nav className="mt-3 flex gap-6 font-sans text-xs tracking-widest text-slate-500 uppercase">
-            <a className="transition-colors hover:text-black" href="/about">
+          <nav className="mt-3 flex flex-wrap gap-6 font-mono text-xs tracking-widest uppercase">
+            <a className="transition-colors hover:text-white" href="/about">
               About
             </a>
-            <a className="transition-colors hover:text-black" href="/contact">
+            <a className="transition-colors hover:text-white" href="/contact">
               Contact
             </a>
-            <a className="transition-colors hover:text-black" href="/faq">
+            <a className="transition-colors hover:text-white" href="/faq">
               FAQ
             </a>
-            <a className="transition-colors hover:text-black" href="/privacy">
+            <a className="transition-colors hover:text-white" href="/privacy">
               Privacy
             </a>
           </nav>
@@ -45,7 +45,7 @@ function Footer() {
 
         <div className="relative">
           <a
-            className="font-sans text-xs tracking-widest text-slate-500 uppercase transition-colors hover:text-black"
+            className="font-mono text-xs tracking-widest uppercase transition-colors hover:text-white"
             href={`mailto:${EMAIL}`}
             onClick={handleClick}
           >
@@ -53,7 +53,7 @@ function Footer() {
           </a>
           <span
             aria-hidden={!copied}
-            className={`text-on-surface-variant absolute -bottom-6 left-1/2 -translate-x-1/2 font-sans text-xs whitespace-nowrap transition-opacity duration-300 ${copied ? 'opacity-100' : 'opacity-0'}`}
+            className={`text-dark-body absolute -bottom-6 left-1/2 -translate-x-1/2 font-sans text-xs whitespace-nowrap transition-opacity duration-300 ${copied ? 'opacity-100' : 'opacity-0'}`}
           >
             Copied to clipboard
           </span>

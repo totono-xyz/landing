@@ -1,30 +1,156 @@
-function HeroSection() {
+function ArrowIcon() {
   return (
-    <section className="relative z-10 mt-20 max-w-4xl md:mt-32">
-      <div className="bg-surface-container-high mb-8 inline-block rounded-full px-3 py-1">
-        <span className="text-on-surface-variant font-sans text-[0.6875rem] font-semibold tracking-[0.2em] uppercase">
-          Version 5.0 // 2026
-        </span>
-      </div>
-
-      <div className="border-primary mb-12 ml-0 border-l-4 py-2 pl-8 md:ml-48">
-        <p className="text-on-surface-variant max-w-2xl font-sans text-xl leading-relaxed md:text-2xl">
-          We connect to your codebase and tooling, and agents start shipping. You get the harness to control them: what they can touch, what needs a human, and what state your app is in.
-        </p>
-      </div>
-
-      <h1 className="font-display text-primary text-5xl leading-[1.1] font-extrabold tracking-tight md:text-7xl">
-        An{' '}
-        <span className="text-accent">
-          agentic software factory
-          <span aria-hidden="true" className="animate-cursor-blink text-accent">
-            _
-          </span>
-        </span>{' '}
-        and the harness to control it.
-      </h1>
-    </section>
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M5 12h14" />
+      <path d="M13 6l6 6-6 6" />
+    </svg>
   )
 }
 
+const ZONES = [
+  ['checkout', 'critical · owner: you', true],
+  ['auth', 'critical · owner: you', true],
+  ['onboarding', 'open to agents', false],
+] as const
+
+const LOG = [
+  ['agent', 'reads map, plans change'],
+  ['agent', 'edits checkout/charge.ts'],
+  ['gate', 'critical zone: needs a human'],
+]
+
+/** Illustrative example of the harness, not live data. */
+function HarnessPreview() {
+  return (
+    <figure
+      aria-label="Example of the harness: an agent change waiting for human approval"
+      className="bg-dark text-on-dark m-0 min-w-0 flex-1 basis-[460px] overflow-hidden rounded-xl font-mono text-[13px] shadow-[0_30px_60px_-30px_rgba(20,22,26,0.45)]"
+    >
+      <div aria-hidden="true">
+        <div className="border-dark-line flex items-center justify-between border-b px-4 py-3.5">
+          <div className="flex gap-1.5" aria-hidden="true">
+            <span className="bg-dark-line-strong size-2.5 rounded-full" />
+            <span className="bg-dark-line-strong size-2.5 rounded-full" />
+            <span className="bg-dark-line-strong size-2.5 rounded-full" />
+          </div>
+          <span className="text-dark-muted">harness · your-app</span>
+        </div>
+
+        <div className="flex flex-col gap-4.5 px-4 py-5">
+          <div className="flex flex-col gap-2">
+            <div className="text-dark-muted text-[11px] tracking-[0.12em] uppercase">Map</div>
+            <div className="grid grid-cols-3 gap-2">
+              {ZONES.map(([name, label, critical]) => (
+                <div
+                  key={name}
+                  className={`rounded-md border p-2.5 ${critical ? 'border-accent-on-dark' : 'border-dark-line-strong'}`}
+                >
+                  <div>{name}</div>
+                  <div
+                    className={`mt-1 text-[11px] ${critical ? 'text-accent-on-dark' : 'text-dark-muted'}`}
+                  >
+                    {label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-dark-raised flex flex-col gap-1.5 rounded-md p-3.5">
+            {LOG.map(([who, what]) => (
+              <div key={what}>
+                <span className={who === 'gate' ? 'text-accent-on-dark' : 'text-[#7fb4e8]'}>
+                  {who}
+                </span>{' '}
+                <span className="text-dark-muted">→</span> {what}
+              </div>
+            ))}
+          </div>
+
+          <div className="border-accent-on-dark flex flex-wrap items-center justify-between gap-3 rounded-md border p-3.5 font-sans text-sm">
+            <div>
+              <div className="font-semibold">Change retry policy on failed charges?</div>
+              <div className="text-dark-muted mt-0.5 text-xs">Decision recorded either way</div>
+            </div>
+            <div className="flex gap-2">
+              <span className="border-dark-line-strong inline-flex min-h-9 items-center rounded-[5px] border px-3.5 font-semibold">
+                Reject
+              </span>
+              <span className="bg-accent inline-flex min-h-9 items-center rounded-[5px] px-3.5 font-semibold text-white">
+                Approve
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </figure>
+  )
+}
+
+function HeroSection() {
+  return (
+    <>
+      <section className="mx-auto flex max-w-6xl flex-wrap items-center gap-14 px-6 pt-20 pb-24 md:pt-24">
+        <div className="flex min-w-0 flex-1 basis-[460px] flex-col gap-7">
+          <div className="border-line bg-surface text-muted inline-flex items-center gap-2.5 self-start rounded-full border px-3 py-1.5 font-mono text-xs tracking-[0.08em] uppercase">
+            <span className="bg-accent size-2 rounded-full" />
+            v5.0 // 2026
+          </div>
+
+          <h1 className="font-display text-primary text-[clamp(44px,6vw,76px)] leading-[1.02] font-extrabold tracking-[-0.035em]">
+            An agentic software factory,{' '}
+            <span className="bg-[linear-gradient(transparent_62%,var(--color-highlight)_62%,var(--color-highlight)_92%,transparent_92%)]">
+              and the harness to control it.
+            </span>
+          </h1>
+
+          <p className="text-on-surface-variant max-w-[540px] text-xl leading-relaxed">
+            We connect to your codebase and tooling, and agents start shipping. You get the harness
+            to control them: what they can touch, what needs a human, and what state your app is in.
+          </p>
+
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="#contact"
+              className="bg-accent hover:bg-accent-hover font-display inline-flex min-h-13 items-center gap-2.5 rounded-md px-6 text-base font-extrabold text-white transition-colors"
+            >
+              Start shipping
+              <ArrowIcon />
+            </a>
+            <a
+              href="#harness"
+              className="border-primary text-primary font-display hover:bg-surface inline-flex min-h-13 items-center rounded-md border px-5 text-base font-bold transition-colors"
+            >
+              See the harness
+            </a>
+          </div>
+        </div>
+
+        <HarnessPreview />
+      </section>
+
+      <section aria-label="Works with" className="border-line bg-surface border-y">
+        <div className="text-muted mx-auto flex max-w-6xl flex-wrap items-center gap-x-10 gap-y-3 px-6 py-5 font-mono text-sm">
+          <span className="text-xs tracking-[0.12em] uppercase">Works with any agent harness</span>
+          <span className="text-on-surface font-medium">Claude Code</span>
+          <span className="text-on-surface font-medium">Codex</span>
+          <span className="text-on-surface font-medium">Cursor</span>
+          <span>and your existing repo, CI and issue tracker</span>
+        </div>
+      </section>
+    </>
+  )
+}
+
+export { ArrowIcon }
 export default HeroSection

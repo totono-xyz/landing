@@ -2,119 +2,43 @@
 
 @theme {
   /* Fonts */
-  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
   --font-brand: 'Silkscreen', monospace;
 
   /* Reset default colors */
   --color-*: initial;
 
-  /* Core */
-  --color-black: #000000;
   --color-white: #ffffff;
 
-  /* Primary */
-  --color-primary: #000000;
+  /* Light page: warm paper, near-black ink, blue accent */
+  --color-background: #f3f1ec;
+  --color-surface: #fbfaf7;
+  --color-primary: #14161a;
   --color-on-primary: #ffffff;
-  --color-primary-container: #0f1c2c;
-  --color-on-primary-container: #778598;
+  --color-on-surface: #14161a;
+  --color-on-surface-variant: #3a3d42;
+  --color-muted: #55585e;
+  --color-line: #dcd8cf;
+  --color-line-soft: #eae7e0;
+  --color-secondary: #2348c4;
+  --color-accent: #2a55e5;
+  --color-accent-hover: #1f45c4;
+  --color-highlight: #ccd7fa;
+  --color-ok: #1f7a45;
 
-  /* Secondary */
-  --color-secondary: #47607e;
-  --color-on-secondary: #ffffff;
-  --color-secondary-container: #c2dcff;
-  --color-on-secondary-container: #48617e;
-
-  /* Tertiary */
-  --color-tertiary: #000000;
-  --color-on-tertiary: #ffffff;
-  --color-tertiary-container: #001f24;
-  --color-on-tertiary-container: #0091a2;
-
-  /* Error */
-  --color-error: #ba1a1a;
-  --color-on-error: #ffffff;
-  --color-error-container: #ffdad6;
-  --color-on-error-container: #93000a;
-
-  /* Background */
-  --color-background: #f8f9fa;
-  --color-on-background: #191c1d;
-
-  /* Surface */
-  --color-surface: #f8f9fa;
-  --color-on-surface: #191c1d;
-  --color-on-surface-variant: #44474c;
-  --color-surface-dim: #d9dadb;
-  --color-surface-bright: #f8f9fa;
-  --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f3f4f5;
-  --color-surface-container: #edeeef;
-  --color-surface-container-high: #e7e8e9;
-  --color-surface-container-highest: #e1e3e4;
-  --color-surface-tint: #525f71;
-
-  /* Outline */
-  --color-outline: #74777d;
-  --color-outline-variant: #c4c6cc;
-
-  /* Inverse */
-  --color-inverse-surface: #2e3132;
-  --color-inverse-on-surface: #f0f1f2;
-  --color-inverse-primary: #bac8dc;
-
-  /* Accent */
-  --color-accent: #c78400;
-
-  /* Slate (for footer/nav fallback) */
-  --color-slate-400: #94a3b8;
-  --color-slate-500: #64748b;
-  --color-slate-50: #f8fafc;
-
-  /* Border radius */
-  --radius: 0.125rem;
-  --radius-lg: 0.25rem;
-  --radius-xl: 0.5rem;
-  --radius-full: 0.75rem;
-
-  /* Animations */
-  --animate-marquee: marquee 30s linear infinite;
-  --animate-cursor-blink: cursor-blink 1.2s step-end infinite;
-}
-
-@keyframes cursor-blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  /* Dark panels and sections */
+  --color-dark: #14161a;
+  --color-dark-raised: #1c1f24;
+  --color-dark-line: #262b33;
+  --color-dark-line-strong: #3a404a;
+  --color-dark-muted: #9ba3ae;
+  --color-dark-body: #b7bdc6;
+  --color-on-dark: #e9ebee;
+  --color-accent-on-dark: #8fa8ff;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-.text-huge {
-  font-size: clamp(4rem, 15vw, 12rem);
-  line-height: 0.8;
-}
-
-.material-symbols-outlined {
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24;
 }

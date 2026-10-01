@@ -5,35 +5,41 @@ const SERVICES = [
   ],
   [
     'Agents understand your code',
-    'A map of features, decisions and critical paths lives in your repo. Agents read it before they change anything, so they do not break what matters.',
+    'A map of features, decisions and critical paths lives in your repo. Agents read it before they change anything.',
   ],
   [
     'Developers stay in control',
-    'Your team decides what agents may touch, which tools they can use, and which decisions must go through a human.',
+    'Your team decides what agents may touch, which tools they can use, and which decisions go through a human.',
   ],
   [
-    'Everyone sees the state of the app',
-    'Stakeholders get a plain view of features, owners, what changed this week and where the risk is. No need to read code.',
+    'Everyone sees the state',
+    'Stakeholders get a plain view of features, owners, what changed this week and where the risk is.',
   ],
 ]
+
 function ServicesSection() {
   return (
-    <section className="relative z-10 mt-32 max-w-4xl">
-      <span className="text-secondary mb-8 block font-sans text-[0.6875rem] font-bold tracking-[0.2em] uppercase">
+    <section id="how" className="mx-auto max-w-6xl scroll-mt-20 px-6 py-28">
+      <span className="text-secondary mb-3.5 block font-mono text-xs tracking-[0.14em] uppercase">
         How it works
       </span>
-      <dl className="grid gap-8 md:grid-cols-2">
-        {SERVICES.map(([name, description]) => (
-          <div key={name}>
-            <dt className="font-display text-primary mb-2 text-xl font-bold">{name}</dt>
-            <dd className="text-on-surface-variant font-sans leading-relaxed">{description}</dd>
-          </div>
+      <h2 className="font-display text-primary mb-14 max-w-[620px] text-[clamp(32px,4vw,48px)] leading-[1.08] font-extrabold tracking-[-0.03em]">
+        Hire us, and agents ship on your codebase within days.
+      </h2>
+      <ol className="border-primary grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] border-t-2">
+        {SERVICES.map(([name, description], i) => (
+          <li key={name} className="flex flex-col gap-3 pt-7 pr-7 pb-2">
+            <span aria-hidden="true" className="text-secondary font-mono text-sm">
+              {String(i + 1).padStart(2, '0')}
+            </span>
+            <h3 className="font-display text-primary text-[22px] leading-tight font-extrabold">
+              {name}
+            </h3>
+            <span className="sr-only">: </span>
+            <p className="text-on-surface-variant leading-relaxed">{description}</p>
+          </li>
         ))}
-      </dl>
-      <p className="text-on-surface-variant mt-12 max-w-2xl font-sans text-sm leading-relaxed">
-        The harness is our own tool. It is early and it changes every week, because we use it on
-        every engagement.
-      </p>
+      </ol>
     </section>
   )
 }
