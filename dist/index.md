@@ -23,7 +23,7 @@ Human attention is the scarce asset now. We point it at the decisions that matte
 The business sideWe handle contract, pricing and coordination. One invoice, one point of contact.
 
 The harness
-## One map. Three jobs.
+## One map of your app. For agents, developers and stakeholders.
 
 It lives in your repo. Agents read it, developers control it, everyone sees it.
 

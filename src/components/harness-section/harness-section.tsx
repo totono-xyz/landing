@@ -42,7 +42,7 @@ function HarnessSection() {
           The harness
         </span>
         <h2 className="font-display text-primary mb-4 text-[clamp(32px,4vw,48px)] leading-[1.08] font-extrabold tracking-[-0.03em]">
-          One map. Three jobs.
+          One map of your app. For agents, developers and stakeholders.
         </h2>
         <p className="text-on-surface-variant mb-14 max-w-[620px] text-lg leading-relaxed">
           It lives in your repo. Agents read it, developers control it, everyone sees it.
