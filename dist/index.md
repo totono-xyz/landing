@@ -54,7 +54,7 @@ FeatureThis weekCheckout1 decision waitingOnboardingShippedReportsNo owner yet
 Our own tool. Early, and improving every week.
 
 Contact
-## Want agents shipping on your codebase?
+## One engineer. A fleet of agents. Your software factory.
 
 Tell us what you want shipped. We reply within two business days.
 

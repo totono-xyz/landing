@@ -28,7 +28,7 @@ function ContactSection() {
         </span>
 
         <h2 className="font-display max-w-[820px] text-[clamp(36px,5vw,64px)] leading-[1.04] font-extrabold tracking-[-0.035em]">
-          Want agents shipping on your codebase?
+          One engineer. A fleet of agents. Your software factory.
         </h2>
 
         <p className="text-dark-body max-w-[560px] text-lg leading-relaxed">
