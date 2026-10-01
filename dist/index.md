@@ -1,16 +1,18 @@
-Version 4.0 // 2026
+Version 5.0 // 2026
 
-If you are a US company that wants a vetted AI engineer from Argentina, with zero friction, email Totono.
+We connect to your codebase and tooling, and agents start shipping. You get the harness to control them: what they can touch, what needs a human, and what state your app is in.
 
-# Hire Argentinian talent with zero friction.
+# An agentic software factory and the harness to control it.
 
 How it works
-- **You talk to Antonio**: One conversation. Describe the project. He vets the engineers and finds the right match.
-- **Engineers work with state-of-the-art AI tools**: They use the state of the art in AI harnesses and skills automation for quality and velocity.
-- **They do the work**: The engineer delivers. You can manage them yourself. Totono stays close enough to support.
-- **Totono handles the business side**: Contract, payments, coordination. One invoice, one point of contact.
+- **We plug into your stack**: Repo, CI, issue tracker, deploys. We connect to what you already use and start shipping in days, not months.
+- **Agents understand your code**: A map of features, decisions and critical paths lives in your repo. Agents read it before they change anything, so they do not break what matters.
+- **Developers stay in control**: Your team decides what agents may touch, which tools they can use, and which decisions must go through a human.
+- **Everyone sees the state of the app**: Stakeholders get a plain view of features, owners, what changed this week and where the risk is. No need to read code.
+
+The harness is our own tool. It is early and it changes every week, because we use it on every engagement.
 
 Contact Information
-## Looking for a vetted AI engineer? Reach out.
+## Want agents shipping on your codebase? Reach out.
 
 [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz)

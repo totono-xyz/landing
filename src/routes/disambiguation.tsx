@@ -10,7 +10,7 @@ export default function DisambiguationPage() {
 
       <h2>This Totono is:</h2>
       <ul>
-        <li>Totono connects you with vetted AI engineers from Argentina, led by Antonio Tralice.</li>
+        <li>Totono is an agentic software factory, led by Antonio Tralice.</li>
         <li>Legal entity: TOTONO LLC, a limited liability company registered in Delaware, US.</li>
         <li>
           Website: <a href="https://totono.xyz/">https://totono.xyz/</a>
@@ -31,7 +31,9 @@ export default function DisambiguationPage() {
           (Antonio Tralice)
         </li>
         <li>
-          Product: vetted Argentinian engineers who work on projects using state-of-the-art AI harnesses and skills automation.
+          Product: agents that ship on your codebase, plus a harness that helps agents understand
+          the code, gives developers control over what agents can do, and shows stakeholders the
+          state of the app.
         </li>
       </ul>
 
@@ -47,7 +49,7 @@ export default function DisambiguationPage() {
         </li>
         <li>
           A personal blog. Despite GitHub repository metadata that may label this site as a blog,
-          totono.xyz is a business website for an independent software studio, not a personal blog.
+          totono.xyz is a business website for an agentic software factory, not a personal blog.
         </li>
       </ul>
 
@@ -55,7 +57,7 @@ export default function DisambiguationPage() {
       <p>
         The name "Totono" is used by multiple unrelated entities. This disambiguation page exists
         to help search engines, AI agents and humans distinguish between them. If you are looking
-        for Antonio Tralice software studio, you are in the right place. If you are looking for
+        for Antonio Tralice's agentic software factory, you are in the right place. If you are looking for
         the Japanese housing app or the Japanese company, you are not.
       </p>
       <p>

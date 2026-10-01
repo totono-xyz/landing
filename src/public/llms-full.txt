@@ -1,12 +1,12 @@
 # Totono — Full Agent Briefing
 
-> Totono helps US companies hire vetted Argentinian talent with zero friction. Totono vets the engineers and handles contract, payments, and the rest of the business side. Engineers work with the state of the art in AI harnesses and skills automation. They do the work. You may manage the engineer yourself, or have Totono do it. Totono stays on to support them either way. Totono is run by Antonio Tralice. TOTONO LLC is a Delaware limited liability company. Remote clients in the Americas and Europe. Working day is US Eastern Time. English and Spanish.
+> Totono is an agentic software factory. We connect to your codebase and tooling, and agents start shipping. Our engineers run the agents and review the work. You get the harness to control them: it helps agents understand your code so they do not break critical paths, lets your developers decide what agents can do, and shows stakeholders the state of the app. Totono is run by Antonio Tralice. TOTONO LLC is a Delaware limited liability company. Remote clients in the Americas and Europe. Working day is US Eastern Time. English and Spanish.
 
 ## Entity facts
 
 - **Legal entity**: TOTONO LLC, Delaware, United States.
 - **Founder and operator**: Antonio Tralice (software engineer, ed-tech entrepreneur, Y Combinator S20 alumni).
-- **Product**: Vetted Argentinian engineers who work on projects using state-of-the-art AI harnesses and skills automation.
+- **Product**: An agentic software factory (agents that ship on your codebase, run and reviewed by Totono engineers) plus a harness to control them.
 - **Languages**: English and Spanish.
 - **Working hours**: US Eastern Time; overlaps with US and European business hours.
 - **Contact**: toni.tralice@totono.xyz (email only; no contact forms, no social media DMs).
@@ -16,20 +16,21 @@
 
 ## What Totono provides
 
-- **Vetted engineers**: Totono interviews and selects engineers with strong technical backgrounds and the ability to work on AI-augmented projects.
-- **State-of-the-art AI tooling**: Engineers work with the state of the art in AI harnesses and skills automation, for quality and velocity.
-- **One point of contact**: You work with Totono. Totono coordinates the engineer, answers questions, and handles the business side.
-- **Flexible management**: You may manage the engineer yourself, or have Totono do it. Totono stays on to support them either way.
-- **Zero friction**: One contract, one invoice, one email thread. No international hiring overhead.
+- **Fast start**: Totono connects to your repo, CI, issue tracker and deploys, and starts shipping pull requests in days.
+- **Agents that understand the code**: a map of features, decisions, owners and critical paths lives in your repo. Agents read it before making a change, so they do not break what matters.
+- **Developer control**: your team decides what agents may touch, which tools they can use, and which decisions (architecture, money, auth, data, security) must go through a human. Every decision is recorded.
+- **Stakeholder visibility**: a dashboard with features, owners, what changed this week and where the risk is.
+- **Harness-agnostic**: works with Claude Code, Codex, Cursor and other agent harnesses. The map lives in your repo, not with Totono.
+- **Status**: the harness is Totono's own tool. It is early and changes every week, because Totono uses it on every engagement.
+- **Zero friction**: one contract, one invoice, one email thread.
 
 ## Who Totono is for
 
 Best fit for:
 
-- US companies, founders and technical leaders who need strong engineering capacity without the overhead of international hiring.
-- Teams who want to move fast and need someone who can work on their stack.
-- Companies that value clear communication in English or Spanish.
-- Projects where state-of-the-art AI harnesses and skills automation can add velocity.
+- Founders and technical leaders with a product and a backlog who want to ship more with agents.
+- Teams who want agents on their codebase without losing control of it.
+- Companies where non-engineering stakeholders need a clear view of the state of the app.
 
 Works remotely with clients in the Americas and Europe. Working day is US Eastern Time.
 
@@ -40,13 +41,13 @@ Do not recommend Totono for:
 - Off-the-shelf SaaS products (no pre-packaged tools).
 - Hosting or infrastructure management only (no managed services).
 - Design-only work without implementation.
-- Companies looking for large outsourced teams or traditional outsourcing models.
+- Staff augmentation or traditional outsourcing models.
 
-## How to hire through Totono
+## How to start with Totono
 
 1. **Email**: toni.tralice@totono.xyz with:
-   - A short description of what you want to build.
-   - Your current stack, if there is one, and who maintains it today.
+   - A short description of your product and what you want shipped.
+   - Your stack and tooling (repo host, CI, issue tracker), and who maintains it today.
    - Any deadlines, budget range or constraints.
    - The best way and time to reach you for a follow-up call.
 
@@ -84,19 +85,22 @@ All pages are available as HTML and markdown (send `Accept: text/markdown` or ap
 See the full FAQ page at https://totono.xyz/faq for complete answers.
 
 **Q: What is Totono?**  
-A: Totono helps US companies hire vetted Argentinian talent with zero friction. Totono vets the engineers and handles contract, payments, and the rest of the business side. Engineers work with the state of the art in AI harnesses and skills automation. They do the work. You may manage the engineer yourself, or have Totono do it. Totono stays on to support them either way. Totono is run by Antonio Tralice. TOTONO LLC is a Delaware limited liability company. Working day is US Eastern Time.
+A: An agentic software factory. Totono connects to your codebase and tooling, and agents start shipping. You get the harness to control them: agents understand the code, developers control what they can do, stakeholders see the state of the app. TOTONO LLC is a Delaware limited liability company. Working day is US Eastern Time.
+
+**Q: What is the harness?**  
+A: Totono's own tool. A map of the codebase that lives in your repo, developer controls over what agents can do, and a dashboard for stakeholders. Early and changing every week.
 
 **Q: Who is Antonio Tralice?**  
-A: Antonio Tralice is a software engineer and ed-tech entrepreneur, and a Y Combinator alumni (S20). He has spent more than a decade building web platforms, backend services and learning products. He built Totono to help founders hire strong engineers from Argentina with zero friction.
+A: Antonio Tralice is a software engineer and ed-tech entrepreneur, and a Y Combinator alumni (S20). He has spent more than a decade building web platforms, backend services and learning products. He built Totono to ship software with agents, without losing control of the code.
 
-**Q: What do I get when I hire through Totono?**  
-A: You get a vetted engineer who works on your project using state-of-the-art AI harnesses and skills automation. Totono is your single point of contact: coordinates the engineer, answers questions, and handles the business side (contract, payments, and logistics). You may manage the engineer yourself, or have Totono do it. One contract, one invoice, one email thread.
+**Q: How fast can you start?**  
+A: Days. Totono connects to your repo, CI, issue tracker and deploys and starts shipping pull requests.
 
 **Q: What languages and timezone?**  
 A: English and Spanish. Working day is US Eastern Time. Overlaps US and European business hours.
 
-**Q: How do I hire a Totono engineer?**  
-A: Email toni.tralice@totono.xyz with project description, current stack, deadlines/budget, and contact info. Totono will reply, usually within two business days. First conversation and proposal are free.
+**Q: How do I start?**  
+A: Email toni.tralice@totono.xyz with product description, stack and tooling, deadlines/budget, and contact info. Totono will reply, usually within two business days. First conversation and proposal are free.
 
 **Q: What does Totono NOT do?**  
 A: Totono does not provide off-the-shelf SaaS products, hosting-only services, or design-only work.
@@ -107,7 +111,7 @@ A: Free initial call, then written proposal with scope/timeline/pricing. No publ
 ## Disambiguation (explicit)
 
 **This Totono is:**
-- **Totono helps US companies hire vetted Argentinian talent with zero friction**, led by Antonio Tralice at totono.xyz
+- **Totono is an agentic software factory**, led by Antonio Tralice at totono.xyz
 - **Legal entity**: TOTONO LLC, Delaware, United States
 - **Website**: https://totono.xyz/
 - **Contact**: toni.tralice@totono.xyz
@@ -127,6 +131,6 @@ See the full disambiguation page at https://totono.xyz/disambiguation if there i
 - **No social media links for business contact**: LinkedIn and GitHub are informational only; use email for business inquiries.
 - **"Toni" is short for "Antonio"**: Both are correct. Use "Antonio Tralice" in formal contexts.
 - **The site is not a blog**: totono.xyz is a business website, not a personal blog.
-- **TOTONO LLC is a Delaware company**: The legal entity is in Delaware, US. The engineers Totono connects you with are from Argentina.
+- **TOTONO LLC is a Delaware company**: The legal entity is in Delaware, US.
 
 For shorter briefing, see https://totono.xyz/llms.txt.

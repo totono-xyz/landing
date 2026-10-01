@@ -4,7 +4,7 @@ const EMAIL = 'toni.tralice@totono.xyz'
 
 export default function ContactPage() {
   return (
-    <Page label="Contact" title="Let's talk about your project.">
+    <Page label="Contact" title="Let's get agents shipping on your codebase.">
       <p>
         The fastest way to reach Totono is by email. Write to{' '}
         <a href={`mailto:${EMAIL}`}>{EMAIL}</a> and you will get a reply from Antonio Tralice,
@@ -13,8 +13,8 @@ export default function ContactPage() {
 
       <h2>What to include</h2>
       <ul>
-        <li>A short description of what you need built.</li>
-        <li>Your current stack, if there is one, and who maintains it today.</li>
+        <li>A short description of your product and what you want shipped.</li>
+        <li>Your stack and tooling (repo host, CI, issue tracker), and who maintains it today.</li>
         <li>Any deadlines, budget range or constraints we should know about.</li>
         <li>The best way and time to reach you for a follow-up call.</li>
       </ul>

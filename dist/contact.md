@@ -1,12 +1,12 @@
 Contact
-# Let's talk about your project.
+# Let's get agents shipping on your codebase.
 
 The fastest way to reach Totono is by email. Write to [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz) and you will get a reply from Antonio Tralice, usually within two business days. We read and reply in English and Spanish.
 
 ## What to include
 
-- A short description of what you need built.
-- Your current stack, if there is one, and who maintains it today.
+- A short description of your product and what you want shipped.
+- Your stack and tooling (repo host, CI, issue tracker), and who maintains it today.
 - Any deadlines, budget range or constraints we should know about.
 - The best way and time to reach you for a follow-up call.
 

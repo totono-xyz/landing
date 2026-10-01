@@ -1,7 +1,7 @@
 function BackgroundText() {
   const marqueeContent = (
     <span className="text-huge font-display font-extrabold tracking-tighter whitespace-nowrap">
-      ENGINEERING_SYSTEMS&nbsp;&nbsp;&nbsp;&nbsp;ENGINEERING_SYSTEMS&nbsp;&nbsp;&nbsp;&nbsp;
+      AGENTIC_SOFTWARE_FACTORY&nbsp;&nbsp;&nbsp;&nbsp;AGENTIC_SOFTWARE_FACTORY&nbsp;&nbsp;&nbsp;&nbsp;
     </span>
   )
 
