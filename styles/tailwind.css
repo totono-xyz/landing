@@ -27,6 +27,9 @@
   --color-accent-hover: #1f45c4;
   --color-highlight: #ccd7fa;
   --color-ok: #1f7a45;
+  --color-attention: #c2410c;
+
+  --animate-shimmer: shimmer 3.2s ease-in-out infinite;
 
   /* Dark panels and sections */
   --color-dark: #14161a;
@@ -37,6 +40,16 @@
   --color-dark-body: #b7bdc6;
   --color-on-dark: #e9ebee;
   --color-accent-on-dark: #8fa8ff;
+}
+
+@keyframes shimmer {
+  0%,
+  55% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 html {

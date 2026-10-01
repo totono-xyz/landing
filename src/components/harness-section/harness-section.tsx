@@ -23,7 +23,6 @@ function Card({
 }
 
 const RULES = [
-  ['auth/**', 'Human decides', 'text-secondary'],
   ['db:write', 'Owner only', 'text-secondary'],
   ['onboarding/**', 'Agents ship', 'text-ok'],
 ]
@@ -66,10 +65,24 @@ function HarnessSection() {
 
           <Card
             label="For developers"
-            title="Rules for agents"
-            body="Zones, tools, and which decisions need a human."
+            title="Decide what agents can do"
+            body="Set which zones agents may touch, which tools they may run, and which decisions block until a human signs off."
           >
             <ul className="flex flex-col gap-2 text-sm">
+              <li className="border-attention/50 bg-attention/5 shadow-attention/20 flex items-center justify-between gap-3 rounded-md border px-3.5 py-2.5 shadow-[0_0_24px_-6px]">
+                <span className="font-mono">auth/**</span>
+                <span className="bg-attention relative inline-flex items-center gap-2 overflow-hidden rounded-full px-3 py-1 text-xs font-semibold text-white">
+                  <span className="relative flex size-2">
+                    <span className="absolute inline-flex size-full rounded-full bg-white opacity-75 motion-safe:animate-ping" />
+                    <span className="relative inline-flex size-2 rounded-full bg-white" />
+                  </span>
+                  Human decides
+                  <span
+                    aria-hidden="true"
+                    className="motion-safe:animate-shimmer absolute inset-0 -translate-x-full bg-[linear-gradient(100deg,transparent_30%,rgba(255,255,255,0.45)_50%,transparent_70%)]"
+                  />
+                </span>
+              </li>
               {RULES.map(([scope, rule, color]) => (
                 <li
                   key={scope}

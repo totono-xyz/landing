@@ -38,8 +38,8 @@ owner @payments-lead
 rule no schema changes w/o review
 
 For developers
-Rules for agents:
-Zones, tools, and which decisions need a human.
+Decide what agents can do:
+Set which zones agents may touch, which tools they may run, and which decisions block until a human signs off.
 
 - auth/**Human decides
 - db:writeOwner only
