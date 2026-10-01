@@ -13,21 +13,21 @@ type Route = { title: string; description: string; Component: ComponentType }
 
 export const routes: Record<string, Route> = {
   '/': {
-    title: 'Totono | An agentic software factory, and the harness to control it',
+    title: 'Totono | A nearshore agentic software factory',
     description:
-      'We plug into your codebase. Agents ship. You stay in control, through a harness that works with Claude Code, Codex, Cursor and Grok.',
+      'A nearshore agentic software factory. Engineers in Argentina and a fleet of agents ship on your codebase; the control plane keeps you in control. Works with Claude Code, Codex, Cursor and Grok.',
     Component: HomePage,
   },
   '/about': {
-    title: 'About Totono | Agentic software factory',
+    title: 'About Totono | A nearshore agentic software factory',
     description:
-      'Totono is an agentic software factory led by Antonio Tralice (YC S20). Agents ship on your codebase; the harness keeps developers in control and stakeholders informed.',
+      'One engineer and a fleet of agents on your codebase, and a control plane to run it. Engineers in Argentina, a US company. Led by Antonio Tralice (YC S20).',
     Component: AboutPage,
   },
   '/contact': {
     title: 'Contact Totono',
     description:
-      'Get agents shipping on your codebase: email toni.tralice@totono.xyz. Totono will reply, usually within two business days, in English or Spanish.',
+      "Let's build your software factory: email toni.tralice@totono.xyz. We reply within two business days, in English or Spanish.",
     Component: ContactPage,
   },
   '/privacy': {
@@ -39,13 +39,13 @@ export const routes: Record<string, Route> = {
   '/faq': {
     title: 'FAQ | Totono',
     description:
-      'Frequently asked questions about Totono: the agentic software factory, the harness, how fast we start, and how proposals work.',
+      'Frequently asked questions about Totono: the nearshore agentic software factory, the control plane, who does the work, and pricing.',
     Component: FAQPage,
   },
   '/disambiguation': {
     title: 'Which Totono is this? | Totono',
     description:
-      'Clarifies that this is Totono at totono.xyz (TOTONO LLC, Delaware), an agentic software factory, not the Japanese housing app or other entities.',
+      'Clarifies that this is Totono at totono.xyz (TOTONO LLC, Delaware), a nearshore agentic software factory, not the Japanese housing app or other entities.',
     Component: DisambiguationPage,
   },
 }

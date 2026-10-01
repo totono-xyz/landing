@@ -5,13 +5,13 @@ This page clarifies which Totono you are looking at. There are multiple entities
 
 ## This Totono is:
 
-- Totono is an agentic software factory, led by Antonio Tralice.
+- Totono is a nearshore agentic software factory, led by Antonio Tralice.
 - Legal entity: TOTONO LLC, a limited liability company registered in Delaware, US.
 - Website: [https://totono.xyz/](https://totono.xyz/)
 - Contact: [toni.tralice@totono.xyz](mailto:toni.tralice@totono.xyz)
 - GitHub: [https://github.com/totono-xyz](https://github.com/totono-xyz) (Organization) and [https://github.com/atralice](https://github.com/atralice) (Antonio Tralice)
 - LinkedIn: [https://www.linkedin.com/in/antoniotralice](https://www.linkedin.com/in/antoniotralice) (Antonio Tralice)
-- Product: agents that ship on your codebase, plus a harness that helps agents understand the code, gives developers control over what agents can do, and shows stakeholders the state of the app.
+- Product: engineers in Argentina working with a fleet of agents on your codebase, plus a control plane that keeps your team in control.
 
 ## This Totono is NOT:
 

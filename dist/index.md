@@ -1,9 +1,9 @@
 v1.1 // 2026
-# A nearshore agentic software factory, and the harness to control it.
+# A nearshore agentic software factory, and the control plane to run it.
 
-We connect to your codebase and agents start shipping. The harness controls what they touch and what needs a human, and shows you the state of your app.
+We connect to your codebase and agents start shipping. The control plane decides what they touch and what needs a human, and shows you the state of your app.
 
-[Get in touch](https://totono.xyz/#contact)[See the harness](https://totono.xyz/#harness)
+[Get in touch](https://totono.xyz/#contact)[See the control plane](https://totono.xyz/#control-plane)
 
 Works with
 - Claude Code
@@ -22,7 +22,7 @@ Human attention is the scarce asset now. We point it at the decisions that matte
 
 The business sideWe handle contract, pricing and coordination. One invoice, one point of contact.
 
-The harness
+The control plane
 ## One map of your app. For agents, developers and stakeholders.
 
 It lives in your repo. Agents read it, developers control it, everyone sees it.

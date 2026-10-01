@@ -33,12 +33,12 @@ const STATE = [
   ['Reports', 'No owner yet'],
 ]
 
-function HarnessSection() {
+function ControlPlaneSection() {
   return (
-    <section id="harness" className="border-line bg-surface scroll-mt-20 border-y">
+    <section id="control-plane" className="border-line bg-surface scroll-mt-20 border-y">
       <div className="mx-auto max-w-6xl px-6 py-28">
         <span className="text-secondary mb-3.5 block font-mono text-xs tracking-[0.14em] uppercase">
-          The harness
+          The control plane
         </span>
         <h2 className="font-display text-primary mb-4 text-[clamp(32px,4vw,48px)] leading-[1.08] font-extrabold tracking-[-0.03em]">
           One map of your app. For agents, developers and stakeholders.
@@ -132,4 +132,4 @@ function HarnessSection() {
   )
 }
 
-export default HarnessSection
+export default ControlPlaneSection

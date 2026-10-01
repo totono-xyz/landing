@@ -1,18 +1,26 @@
 About
-# An agentic software factory, and the harness to control it.
+# A nearshore agentic software factory, and the control plane to run it.
 
-We plug into your codebase and tooling. Agents ship, our engineers review. You control it all through the harness.
+One engineer and a fleet of agents, working on your codebase. We connect to your stack and start shipping in days. The control plane keeps your team in control.
 
-## The harness
+## Why it works
 
-- For agents: a map of your code, so they don't break what matters.
-- For developers: rules for what agents can touch, and what needs a human.
-- For stakeholders: the state of the app, without reading code.
+Human attention is the scarce asset now. The control plane points it at the decisions that matter, and leaves everything else to agents.
+
+## The control plane
+
+- For agents: a map of your app's features, decisions and critical paths.
+- For developers: decide what agents may touch, which tools they run, and which decisions need a human.
+- For stakeholders: features, owners, what changed this week and where the risk is.
 
 The map lives in your repo. It works with Claude Code, Codex, Cursor and Grok. Our own tool, early and improving every week.
 
+## Nearshore
+
+Engineers in Argentina, on US Eastern Time. You contract with a US company (TOTONO LLC, Delaware). We handle contract, pricing and coordination. One invoice, one point of contact.
+
 ## Who's behind it
 
-Antonio Tralice: software engineer, Y Combinator alum (S20), a decade building web platforms. TOTONO LLC is a Delaware company working with clients in the Americas and Europe, on US Eastern Time.
+Antonio Tralice: software engineer and Y Combinator alum (S20), with more than a decade of experience building software.
 
-Want agents shipping on your codebase? [Get in touch](https://totono.xyz/contact).
+Want your own software factory? [Get in touch](https://totono.xyz/contact).

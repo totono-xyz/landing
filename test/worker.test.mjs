@@ -65,11 +65,11 @@ test('Accept: text/markdown serves the markdown sibling with Vary: Accept', asyn
     assert.equal(res.headers.get('vary'), 'Accept-Encoding, Accept')
     assert.match(
       await res.text(),
-      /^About\n# An agentic software factory, and the harness to control it\./,
+      /^About\n# A nearshore agentic software factory, and the control plane to run it\./,
     )
   }
   const home = await get('/', 'text/markdown, text/html;q=0.8')
-  assert.match(await home.text(), /# A nearshore agentic software factory, and the harness to control it\./)
+  assert.match(await home.text(), /# A nearshore agentic software factory, and the control plane to run it\./)
 })
 
 test('HTML clients get HTML, Vary: Accept and a Link to the markdown sibling', async () => {

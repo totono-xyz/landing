@@ -11,8 +11,8 @@ function TopNavBar() {
             <a className="hover:text-secondary" href="/#how">
               How it works
             </a>
-            <a className="hover:text-secondary" href="/#harness">
-              The harness
+            <a className="hover:text-secondary" href="/#control-plane">
+              The control plane
             </a>
             <a className="hover:text-secondary" href="/faq">
               FAQ

@@ -31,11 +31,11 @@ const LOG = [
   ['gate', 'critical zone: needs a human'],
 ]
 
-/** Illustrative example of the harness, not live data. */
-function HarnessPreview() {
+/** Illustrative example of the control plane, not live data. */
+function ControlPlanePreview() {
   return (
     <figure
-      aria-label="Example of the harness: an agent change waiting for human approval"
+      aria-label="Example of the control plane: an agent change waiting for human approval"
       className="bg-dark text-on-dark m-0 min-w-0 flex-1 basis-[460px] overflow-hidden rounded-xl font-mono text-[13px] shadow-[0_30px_60px_-30px_rgba(20,22,26,0.45)]"
     >
       <div aria-hidden="true">
@@ -45,7 +45,7 @@ function HarnessPreview() {
             <span className="bg-dark-line-strong size-2.5 rounded-full" />
             <span className="bg-dark-line-strong size-2.5 rounded-full" />
           </div>
-          <span className="text-dark-muted">harness · your-app</span>
+          <span className="text-dark-muted">control plane · your-app</span>
         </div>
 
         <div className="flex flex-col gap-4.5 px-4 py-5">
@@ -123,13 +123,13 @@ function HeroSection() {
             </svg>{' '}
             agentic software factory,{' '}
             <span className="bg-[linear-gradient(transparent_62%,var(--color-highlight)_62%,var(--color-highlight)_92%,transparent_92%)]">
-              and the harness to control it.
+              and the control plane to run it.
             </span>
           </h1>
 
           <p className="text-on-surface-variant max-w-[540px] text-xl leading-relaxed">
-            We connect to your codebase and agents start shipping. The harness controls what they
-            touch and what needs a human, and shows you the state of your app.
+            We connect to your codebase and agents start shipping. The control plane decides what
+            they touch and what needs a human, and shows you the state of your app.
           </p>
 
           <div className="flex flex-wrap gap-3">
@@ -141,15 +141,15 @@ function HeroSection() {
               <ArrowIcon />
             </a>
             <a
-              href="#harness"
+              href="#control-plane"
               className="border-primary text-primary font-display hover:bg-surface inline-flex min-h-13 items-center rounded-md border px-5 text-base font-bold transition-colors"
             >
-              See the harness
+              See the control plane
             </a>
           </div>
         </div>
 
-        <HarnessPreview />
+        <ControlPlanePreview />
       </section>
 
       <section aria-label="Works with" className="border-line bg-surface border-y">

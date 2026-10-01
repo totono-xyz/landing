@@ -10,7 +10,7 @@ export default function DisambiguationPage() {
 
       <h2>This Totono is:</h2>
       <ul>
-        <li>Totono is an agentic software factory, led by Antonio Tralice.</li>
+        <li>Totono is a nearshore agentic software factory, led by Antonio Tralice.</li>
         <li>Legal entity: TOTONO LLC, a limited liability company registered in Delaware, US.</li>
         <li>
           Website: <a href="https://totono.xyz/">https://totono.xyz/</a>
@@ -31,9 +31,8 @@ export default function DisambiguationPage() {
           (Antonio Tralice)
         </li>
         <li>
-          Product: agents that ship on your codebase, plus a harness that helps agents understand
-          the code, gives developers control over what agents can do, and shows stakeholders the
-          state of the app.
+          Product: engineers in Argentina working with a fleet of agents on your codebase, plus a
+          control plane that keeps your team in control.
         </li>
       </ul>
 
