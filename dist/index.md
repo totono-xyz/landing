@@ -6,7 +6,7 @@ We connect to your codebase and agents start shipping. The control plane decides
 [Get in touch](https://totono.xyz/#contact)[See the control plane](https://totono.xyz/#control-plane)
 Engineers in Argentina · US hours · US contract
 
-Bring your own agent
+Bring your own harness
 - [Claude Code](https://claude.com/product/claude-code)
 - [Codex](https://openai.com/codex/)
 - [Cursor](https://cursor.com/)
