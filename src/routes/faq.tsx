@@ -65,7 +65,7 @@ export default function FAQPage() {
           Not answered here? <a href="/contact">Get in touch</a>.
         </p>
         {FAQ.map(([question, answer]) => (
-          <section key={question}>
+          <section key={question} className="space-y-4">
             <h2>{question}</h2>
             <p>{answer}</p>
           </section>

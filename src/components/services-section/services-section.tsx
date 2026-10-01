@@ -28,17 +28,19 @@ function ServicesSection() {
       <h2 className="font-display text-primary mb-14 max-w-[620px] text-[clamp(32px,4vw,48px)] leading-[1.08] font-extrabold tracking-[-0.03em]">
         Hire us, and agents ship on your codebase within days.
       </h2>
-      <ol className="border-primary grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] border-t-2">
+      <ol className="border-primary grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-x-7 border-t-2 pt-7">
         {SERVICES.map(([name, description], i) => (
-          <li key={name} className="flex flex-col gap-3 pt-7 pr-7 pb-2">
-            <StepIcon index={i} />
-            <span aria-hidden="true" className="text-secondary mt-2 font-mono text-sm">
-              {String(i + 1).padStart(2, '0')}
-            </span>
-            <h3 className="font-display text-primary text-[22px] leading-tight font-extrabold">
+          <li key={name} className="row-span-3 grid grid-rows-subgrid gap-3 pb-8">
+            <div className="flex items-center gap-4">
+              <StepIcon index={i} />
+              <span aria-hidden="true" className="text-secondary font-mono text-sm">
+                {String(i + 1).padStart(2, '0')}
+              </span>
+            </div>
+            <h3 className="font-display text-primary mt-3 text-[22px] leading-tight font-extrabold">
               {name}
+              <span className="sr-only">: </span>
             </h3>
-            <span className="sr-only">: </span>
             <p className="text-on-surface-variant leading-relaxed">{description}</p>
           </li>
         ))}

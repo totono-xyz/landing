@@ -124,15 +124,26 @@ function State() {
 
 export const STEP_ICONS = [Conversation, UnderstandCode, Control, State]
 
+/** Nudges each drawing so its bounding box sits in the middle of the 64×64 box. */
+const OFFSETS = [
+  [0, -1.5],
+  [0, -1],
+  [1, 0.5],
+  [0, 2.5],
+]
+
 export function StepIcon({ index }: { index: number }) {
   const Icon = STEP_ICONS[index]
+  const [dx, dy] = OFFSETS[index]
   return (
     <div
       className="border-line bg-surface grid size-20 place-items-center rounded-xl border"
       aria-hidden="true"
     >
-      <svg viewBox="0 0 64 60" className="size-[68px] overflow-visible">
-        <Icon />
+      <svg viewBox="0 0 64 64" className="size-[68px] overflow-visible">
+        <g transform={`translate(${dx} ${dy})`}>
+          <Icon />
+        </g>
       </svg>
     </div>
   )
