@@ -212,6 +212,16 @@ test('redirect honors CF-Visitor header from Cloudflare', async () => {
   assert.equal(res.headers.get('location'), 'https://totono.xyz/about')
 })
 
+test('malformed CF-Visitor header does not crash the worker', async () => {
+  const res = await worker.fetch(
+    new Request('https://totono.xyz/about', {
+      headers: { 'cf-visitor': 'not-valid-json{' }
+    })
+  )
+  assert.equal(res.status, 200)
+  assert.match(await res.text(), /<h1/)
+})
+
 test('HTTPS requests on apex continue to work normally', async () => {
   const res = await worker.fetch(new Request('https://totono.xyz/about'))
   assert.equal(res.status, 200)

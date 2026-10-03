@@ -89,8 +89,18 @@ export default {
     const proto = url.protocol
     const cfVisitor = request.headers.get('cf-visitor')
     const xForwardedProto = request.headers.get('x-forwarded-proto')
+    
+    let cfVisitorScheme = null
+    if (cfVisitor) {
+      try {
+        cfVisitorScheme = JSON.parse(cfVisitor).scheme
+      } catch {
+        // Malformed CF-Visitor header; treat as not-http
+      }
+    }
+    
     const isHttp = proto === 'http:' || 
-                   (cfVisitor && JSON.parse(cfVisitor).scheme === 'http') ||
+                   cfVisitorScheme === 'http' ||
                    xForwardedProto === 'http'
     
     // Redirect www to apex and http to https
