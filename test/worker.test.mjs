@@ -69,7 +69,10 @@ test('Accept: text/markdown serves the markdown sibling with Vary: Accept', asyn
     )
   }
   const home = await get('/', 'text/markdown, text/html;q=0.8')
-  assert.match(await home.text(), /# A nearshore agentic software factory, and the control plane to run it\./)
+  assert.match(
+    await home.text(),
+    /# A nearshore agentic software factory, and the control plane to run it\./,
+  )
 })
 
 test('HTML clients get HTML, Vary: Accept and a Link to the markdown sibling', async () => {
@@ -196,7 +199,7 @@ test('HTTP www subdomain redirects to HTTPS apex in one hop', async () => {
 
 test('redirect honors X-Forwarded-Proto header from Cloudflare', async () => {
   const res = await worker.fetch(
-    new Request('https://totono.xyz/about', { headers: { 'x-forwarded-proto': 'http' } })
+    new Request('https://totono.xyz/about', { headers: { 'x-forwarded-proto': 'http' } }),
   )
   assert.equal(res.status, 301)
   assert.equal(res.headers.get('location'), 'https://totono.xyz/about')
@@ -205,8 +208,8 @@ test('redirect honors X-Forwarded-Proto header from Cloudflare', async () => {
 test('redirect honors CF-Visitor header from Cloudflare', async () => {
   const res = await worker.fetch(
     new Request('https://totono.xyz/about', {
-      headers: { 'cf-visitor': JSON.stringify({ scheme: 'http' }) }
-    })
+      headers: { 'cf-visitor': JSON.stringify({ scheme: 'http' }) },
+    }),
   )
   assert.equal(res.status, 301)
   assert.equal(res.headers.get('location'), 'https://totono.xyz/about')
@@ -215,8 +218,8 @@ test('redirect honors CF-Visitor header from Cloudflare', async () => {
 test('malformed CF-Visitor header does not crash the worker', async () => {
   const res = await worker.fetch(
     new Request('https://totono.xyz/about', {
-      headers: { 'cf-visitor': 'not-valid-json{' }
-    })
+      headers: { 'cf-visitor': 'not-valid-json{' },
+    }),
   )
   assert.equal(res.status, 200)
   assert.match(await res.text(), /<h1/)
@@ -226,4 +229,12 @@ test('HTTPS requests on apex continue to work normally', async () => {
   const res = await worker.fetch(new Request('https://totono.xyz/about'))
   assert.equal(res.status, 200)
   assert.match(await res.text(), /<h1/)
+})
+
+test('fonts get a one-year immutable cache; pages do not', async () => {
+  const font = await get('/fonts/manrope-var.woff2')
+  assert.equal(font.status, 200)
+  assert.equal(font.headers.get('cache-control'), 'public, max-age=31536000, immutable')
+  const home = await get('/', CHROME)
+  assert.notEqual(home.headers.get('cache-control'), 'public, max-age=31536000, immutable')
 })

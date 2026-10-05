@@ -1,17 +1,13 @@
 import React from 'react'
-import { createRoot, hydrateRoot } from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 import App from './app'
 import { normalizePath } from './routes'
 
 import './assets/styles.css'
 
-const root = document.getElementById('root') as HTMLElement
-const app = (
+// Dev server only: production pages are prerendered and ship without this bundle.
+createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <App path={normalizePath(window.location.pathname)} />
-  </React.StrictMode>
+  </React.StrictMode>,
 )
-
-// Production HTML is prerendered at build time; the dev server serves an empty root.
-if (root.hasChildNodes()) hydrateRoot(root, app)
-else createRoot(root).render(app)

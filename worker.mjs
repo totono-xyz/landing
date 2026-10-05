@@ -21,6 +21,8 @@ export function classifyAgent(ua) {
 }
 
 const PRODUCES = ['text/html', 'text/markdown']
+// Font files are renamed whenever they change, so they never change in place.
+const IMMUTABLE = /^\/fonts\//
 const PASSTHROUGH = /\.(?:css|js|mjs|map|png|jpe?g|webp|gif|svg|ico|woff2?|ttf|xml|txt|json|md)$/i
 
 /** RFC 9110 §12.5.1: most specific matching range wins, then highest q, then client order. */
@@ -84,12 +86,12 @@ export const markdownPath = (pathname) =>
 export default {
   async fetch(request, env) {
     const url = new URL(request.url)
-    
+
     // HTTP → HTTPS redirect: check protocol from request and Cloudflare headers
     const proto = url.protocol
     const cfVisitor = request.headers.get('cf-visitor')
     const xForwardedProto = request.headers.get('x-forwarded-proto')
-    
+
     let cfVisitorScheme = null
     if (cfVisitor) {
       try {
@@ -98,18 +100,16 @@ export default {
         // Malformed CF-Visitor header; treat as not-http
       }
     }
-    
-    const isHttp = proto === 'http:' || 
-                   cfVisitorScheme === 'http' ||
-                   xForwardedProto === 'http'
-    
+
+    const isHttp = proto === 'http:' || cfVisitorScheme === 'http' || xForwardedProto === 'http'
+
     // Redirect www to apex and http to https
     if (isHttp || url.hostname === 'www.totono.xyz') {
       url.protocol = 'https:'
       url.hostname = 'totono.xyz'
       return Response.redirect(url.toString(), 301)
     }
-    
+
     const agent = classifyAgent(request.headers.get('user-agent'))
     // Aggregate traffic datapoint (Workers Analytics Engine): no cookies, no IP stored.
     const log = (format) =>
@@ -127,7 +127,11 @@ export default {
 
     if (PASSTHROUGH.test(url.pathname)) {
       log('asset')
-      return fetch(request)
+      const res = await fetch(request)
+      if (!res.ok || !IMMUTABLE.test(url.pathname)) return res
+      const cached = new Response(res.body, res)
+      cached.headers.set('Cache-Control', 'public, max-age=31536000, immutable')
+      return cached
     }
 
     const accept = request.headers.get('accept')
