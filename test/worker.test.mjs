@@ -169,3 +169,11 @@ test('the worker still works with no analytics binding', async () => {
   const res = await worker.fetch(new Request('https://totono.xyz/about'), {})
   assert.equal(res.status, 200)
 })
+
+test('fonts get a one-year immutable cache; pages do not', async () => {
+  const font = await get('/fonts/manrope-var.woff2')
+  assert.equal(font.status, 200)
+  assert.equal(font.headers.get('cache-control'), 'public, max-age=31536000, immutable')
+  const home = await get('/', CHROME)
+  assert.notEqual(home.headers.get('cache-control'), 'public, max-age=31536000, immutable')
+})

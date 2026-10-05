@@ -1,13 +1,13 @@
 Privacy
 # Privacy policy.
 
-This policy describes what information TOTONO LLC ("Totono", "we") collects when you visit totono.xyz or contact us, and how that information is used. Last updated on 23 August 2026.
+This policy describes what information TOTONO LLC ("Totono", "we") collects when you visit totono.xyz or contact us, and how that information is used. Last updated on 5 October 2026.
 
 ## Information we collect on this website
 
 totono.xyz is a static website. It does not set cookies, does not use advertising trackers, and does not require an account. To understand traffic in aggregate we use Cloudflare Web Analytics and Cloudflare edge metrics, which record the page requested, the referring site, country, browser type and whether the request came from an AI agent. These measurements use no cookies and no fingerprinting, and we do not store IP addresses.
 
-The site is hosted on GitHub Pages and served through Cloudflare. Like most hosting providers, they may keep standard server logs (IP address, user agent, requested URL and timestamp) for security and operational purposes, under their own privacy policies. Web fonts are loaded from Google Fonts, which receives your browser's request for the font files.
+The site is hosted on GitHub Pages and served through Cloudflare. Like most hosting providers, they may keep standard server logs (IP address, user agent, requested URL and timestamp) for security and operational purposes, under their own privacy policies. Fonts are served from totono.xyz itself; no third-party font service is used.
 
 ## Information you send us
 

@@ -1,25 +1,8 @@
-import { useState, useCallback } from 'react'
 import { ArrowIcon } from '@/components/hero-section'
 
 const EMAIL = 'toni.tralice@totono.xyz'
 
-function isMobile() {
-  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
-}
-
 function ContactSection() {
-  const [copied, setCopied] = useState(false)
-
-  const handleClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (isMobile()) return
-
-    e.preventDefault()
-    navigator.clipboard.writeText(EMAIL).then(() => {
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-    })
-  }, [])
-
   return (
     <section id="contact" className="bg-dark text-on-dark scroll-mt-16">
       <div className="mx-auto flex max-w-6xl flex-col items-start gap-7 px-6 py-30">
@@ -39,18 +22,17 @@ function ContactSection() {
           <a
             className="bg-attention hover:bg-attention-hover inline-flex min-h-14 items-center gap-3 rounded-md px-7 font-serif text-lg font-bold text-white transition-colors"
             href={`mailto:${EMAIL}`}
-            onClick={handleClick}
+            data-copy={EMAIL}
           >
             {EMAIL}
             <ArrowIcon />
           </a>
 
           <span
-            aria-hidden={!copied}
-            className={`text-dark-body absolute -bottom-8 left-0 font-sans text-xs transition-opacity duration-300 ${copied ? 'opacity-100' : 'opacity-0'}`}
-          >
-            Copied to clipboard
-          </span>
+            role="status"
+            data-copied
+            className="text-dark-body absolute -bottom-8 left-0 font-sans text-xs opacity-0 transition-opacity duration-300"
+          />
         </div>
       </div>
     </section>
