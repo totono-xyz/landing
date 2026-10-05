@@ -86,30 +86,6 @@ export const markdownPath = (pathname) =>
 export default {
   async fetch(request, env) {
     const url = new URL(request.url)
-
-    // HTTP → HTTPS redirect: check protocol from request and Cloudflare headers
-    const proto = url.protocol
-    const cfVisitor = request.headers.get('cf-visitor')
-    const xForwardedProto = request.headers.get('x-forwarded-proto')
-
-    let cfVisitorScheme = null
-    if (cfVisitor) {
-      try {
-        cfVisitorScheme = JSON.parse(cfVisitor).scheme
-      } catch {
-        // Malformed CF-Visitor header; treat as not-http
-      }
-    }
-
-    const isHttp = proto === 'http:' || cfVisitorScheme === 'http' || xForwardedProto === 'http'
-
-    // Redirect www to apex and http to https
-    if (isHttp || url.hostname === 'www.totono.xyz') {
-      url.protocol = 'https:'
-      url.hostname = 'totono.xyz'
-      return Response.redirect(url.toString(), 301)
-    }
-
     const agent = classifyAgent(request.headers.get('user-agent'))
     // Aggregate traffic datapoint (Workers Analytics Engine): no cookies, no IP stored.
     const log = (format) =>

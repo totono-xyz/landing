@@ -173,64 +173,6 @@ test('the worker still works with no analytics binding', async () => {
   assert.equal(res.status, 200)
 })
 
-test('HTTP requests redirect to HTTPS with 301', async () => {
-  const res = await worker.fetch(new Request('http://totono.xyz/about'))
-  assert.equal(res.status, 301)
-  assert.equal(res.headers.get('location'), 'https://totono.xyz/about')
-})
-
-test('HTTP with query string preserves the query in redirect', async () => {
-  const res = await worker.fetch(new Request('http://totono.xyz/about?utm_source=test'))
-  assert.equal(res.status, 301)
-  assert.equal(res.headers.get('location'), 'https://totono.xyz/about?utm_source=test')
-})
-
-test('www subdomain redirects to apex on HTTPS', async () => {
-  const res = await worker.fetch(new Request('https://www.totono.xyz/contact'))
-  assert.equal(res.status, 301)
-  assert.equal(res.headers.get('location'), 'https://totono.xyz/contact')
-})
-
-test('HTTP www subdomain redirects to HTTPS apex in one hop', async () => {
-  const res = await worker.fetch(new Request('http://www.totono.xyz/'))
-  assert.equal(res.status, 301)
-  assert.equal(res.headers.get('location'), 'https://totono.xyz/')
-})
-
-test('redirect honors X-Forwarded-Proto header from Cloudflare', async () => {
-  const res = await worker.fetch(
-    new Request('https://totono.xyz/about', { headers: { 'x-forwarded-proto': 'http' } }),
-  )
-  assert.equal(res.status, 301)
-  assert.equal(res.headers.get('location'), 'https://totono.xyz/about')
-})
-
-test('redirect honors CF-Visitor header from Cloudflare', async () => {
-  const res = await worker.fetch(
-    new Request('https://totono.xyz/about', {
-      headers: { 'cf-visitor': JSON.stringify({ scheme: 'http' }) },
-    }),
-  )
-  assert.equal(res.status, 301)
-  assert.equal(res.headers.get('location'), 'https://totono.xyz/about')
-})
-
-test('malformed CF-Visitor header does not crash the worker', async () => {
-  const res = await worker.fetch(
-    new Request('https://totono.xyz/about', {
-      headers: { 'cf-visitor': 'not-valid-json{' },
-    }),
-  )
-  assert.equal(res.status, 200)
-  assert.match(await res.text(), /<h1/)
-})
-
-test('HTTPS requests on apex continue to work normally', async () => {
-  const res = await worker.fetch(new Request('https://totono.xyz/about'))
-  assert.equal(res.status, 200)
-  assert.match(await res.text(), /<h1/)
-})
-
 test('fonts get a one-year immutable cache; pages do not', async () => {
   const font = await get('/fonts/manrope-var.woff2')
   assert.equal(font.status, 200)
