@@ -1,24 +1,6 @@
-import { useState, useCallback } from 'react'
-
 const EMAIL = 'toni.tralice@totono.xyz'
 
-function isMobile() {
-  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
-}
-
 function Footer() {
-  const [copied, setCopied] = useState(false)
-
-  const handleClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (isMobile()) return
-
-    e.preventDefault()
-    navigator.clipboard.writeText(EMAIL).then(() => {
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-    })
-  }, [])
-
   return (
     <footer className="bg-dark text-dark-muted border-dark-line mt-auto w-full border-t">
       <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-6 py-9 md:flex-row md:items-center">
@@ -47,16 +29,15 @@ function Footer() {
           <a
             className="font-mono text-xs tracking-widest uppercase transition-colors hover:text-white"
             href={`mailto:${EMAIL}`}
-            onClick={handleClick}
+            data-copy={EMAIL}
           >
             {EMAIL}
           </a>
           <span
-            aria-hidden={!copied}
-            className={`text-dark-body absolute -bottom-6 left-1/2 -translate-x-1/2 font-sans text-xs whitespace-nowrap transition-opacity duration-300 ${copied ? 'opacity-100' : 'opacity-0'}`}
-          >
-            Copied to clipboard
-          </span>
+            role="status"
+            data-copied
+            className="text-dark-body absolute -bottom-6 left-1/2 -translate-x-1/2 font-sans text-xs whitespace-nowrap opacity-0 transition-opacity duration-300"
+          />
         </div>
       </div>
     </footer>

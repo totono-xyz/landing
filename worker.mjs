@@ -21,6 +21,8 @@ export function classifyAgent(ua) {
 }
 
 const PRODUCES = ['text/html', 'text/markdown']
+// Font files are renamed whenever they change, so they never change in place.
+const IMMUTABLE = /^\/fonts\//
 const PASSTHROUGH = /\.(?:css|js|mjs|map|png|jpe?g|webp|gif|svg|ico|woff2?|ttf|xml|txt|json|md)$/i
 
 /** RFC 9110 §12.5.1: most specific matching range wins, then highest q, then client order. */
@@ -101,7 +103,11 @@ export default {
 
     if (PASSTHROUGH.test(url.pathname)) {
       log('asset')
-      return fetch(request)
+      const res = await fetch(request)
+      if (!res.ok || !IMMUTABLE.test(url.pathname)) return res
+      const cached = new Response(res.body, res)
+      cached.headers.set('Cache-Control', 'public, max-age=31536000, immutable')
+      return cached
     }
 
     const accept = request.headers.get('accept')

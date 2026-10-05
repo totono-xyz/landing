@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from 'fs'
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'fs'
 import path from 'path'
 import { createElement } from 'react'
 import { renderToString } from 'react-dom/server'
@@ -67,7 +67,7 @@ export function toMarkdown(html: string, base: string): string {
   )
 }
 
-/** Renders every route into static HTML (plus a markdown sibling) so crawlers get real content without JavaScript. */
+/** Renders every route into static HTML (plus a markdown sibling); production pages ship no JavaScript bundle. */
 export function prerender(): Plugin {
   return {
     name: 'prerender',
@@ -79,7 +79,17 @@ export function prerender(): Plugin {
           server.ssrLoadModule('/app.tsx'),
           server.ssrLoadModule('/routes/index.ts'),
         ])
-        const template = readFileSync(path.join(OUT, 'index.html'), 'utf8')
+        // Pages are fully static: no JavaScript bundle (the email copy script is inline) and the
+        // small stylesheet is inlined, so nothing blocks the first paint.
+        let template = readFileSync(path.join(OUT, 'index.html'), 'utf8').replace(
+          /\s*<script type="module"[^>]*src="\/assets\/[^"]+\.js"><\/script>/,
+          '',
+        )
+        template = template.replace(
+          /<link rel="stylesheet"[^>]*href="\/(assets\/[^"]+\.css)">/,
+          (_, file) => `<style>${readFileSync(path.join(OUT, file), 'utf8')}</style>`,
+        )
+        rmSync(path.join(OUT, 'assets'), { recursive: true })
 
         const write = (file: string, content: string) => {
           mkdirSync(path.dirname(path.join(OUT, file)), { recursive: true })
