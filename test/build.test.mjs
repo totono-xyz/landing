@@ -37,7 +37,7 @@ for (const [file, route] of Object.entries(pages)) {
       ),
     )
     assert.equal(meta(html, 'property="og:type"'), 'website')
-    assert.equal(meta(html, 'property="og:image"'), 'https://totono.xyz/logo.png')
+    assert.equal(meta(html, 'property="og:image"'), 'https://totono.xyz/og-image.png')
     assert.ok(meta(html, 'name="description"'), 'missing description')
     assert.ok(meta(html, 'property="og:title"'), 'missing og:title')
     assert.doesNotMatch(html, /content=""/, 'empty meta content left over from the template')
@@ -135,6 +135,18 @@ test('llms-full.txt exists with expanded content, FAQ and disambiguation', () =>
   assert.match(full, /TOTONO LLC, Delaware/)
   assert.match(full, /Antonio Tralice/)
   assert.ok(full.length >= 2000, `llms-full.txt should be comprehensive: ${full.length} chars`)
+})
+
+test('og-image.png exists in dist with correct dimensions (1200x630)', () => {
+  const ogPath = new URL('../dist/og-image.png', import.meta.url)
+  assert.ok(existsSync(ogPath), 'og-image.png should exist in dist/')
+  const file = readFileSync(ogPath)
+  assert.ok(file.length > 50000, 'og-image.png should be a substantial file')
+  // Check PNG header for dimensions (bytes 16-23 contain width and height as big-endian 32-bit integers)
+  const width = file.readUInt32BE(16)
+  const height = file.readUInt32BE(20)
+  assert.equal(width, 1200, 'OG image width should be 1200px')
+  assert.equal(height, 630, 'OG image height should be 630px')
 })
 
 test('FAQ page has FAQPage JSON-LD schema with questions', () => {
