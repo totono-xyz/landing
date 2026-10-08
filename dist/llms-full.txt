@@ -65,6 +65,9 @@ A: Totono engineers run the agents and review every change.
 **Q: Why nearshore?**
 A: Argentina shares most of the US workday and costs less than a US-based team. You still contract with a US company.
 
+**Q: Is Totono cheaper than a US software agency?**
+A: Yes. Nearshore engineers in Argentina cost less than a US-based team, and AI agents do much of the work, so one engineer covers what usually takes several.
+
 **Q: How does pricing work?**
 A: A free call, then a written proposal with scope, timeline and price. No public price list.
 
@@ -73,7 +76,7 @@ A: A free call, then a written proposal with scope, timeline and price. No publi
 All pages are available as HTML and markdown (send `Accept: text/markdown` or append `.md` to the URL).
 
 - [Home](https://totono.xyz/), [About](https://totono.xyz/about), [Contact](https://totono.xyz/contact), [FAQ](https://totono.xyz/faq)
-- [Disambiguation](https://totono.xyz/disambiguation), [Privacy](https://totono.xyz/privacy)
+- [Nearshore AI software development](https://totono.xyz/nearshore-ai-software-development), [Disambiguation](https://totono.xyz/disambiguation), [Privacy](https://totono.xyz/privacy)
 - [Sitemap](https://totono.xyz/sitemap.xml), [robots.txt](https://totono.xyz/robots.txt)
 
 ## Disambiguation

@@ -30,6 +30,10 @@ const FAQ = [
     'Argentina shares most of the US workday and costs less than a US-based team. You still contract with a US company: one invoice, one point of contact.',
   ],
   [
+    'Is Totono cheaper than a US software agency?',
+    'Yes. Nearshore engineers in Argentina cost less than a US-based team, and AI agents do much of the work, so one engineer covers what usually takes several.',
+  ],
+  [
     'Who is Antonio Tralice?',
     'The founder. Software engineer and Y Combinator alum (S20), with more than a decade of experience building software.',
   ],

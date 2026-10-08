@@ -1,7 +1,7 @@
 v1.1 // 2026
 # A nearshore agentic software factory, and the control plane to run it.
 
-We connect to your codebase and agents start shipping. The control plane decides what they touch and what needs a human, and shows you the state of your app.
+AI-powered software development at a fraction of US agency rates. We connect to your codebase and agents start shipping. The control plane decides what they touch and what needs a human, and shows you the state of your app.
 
 [Get in touch](https://totono.xyz/#contact)[How you stay in control](https://totono.xyz/#control-plane)
 Engineers in Argentina · US hours · US contract

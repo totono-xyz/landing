@@ -124,8 +124,9 @@ function HeroSection() {
           </h1>
 
           <p className="text-on-surface-variant max-w-[520px] text-lg leading-relaxed">
-            We connect to your codebase and agents start shipping. The control plane decides what
-            they touch and what needs a human, and shows you the state of your app.
+            AI-powered software development at a fraction of US agency rates. We connect to your
+            codebase and agents start shipping. The control plane decides what they touch and what
+            needs a human, and shows you the state of your app.
           </p>
 
           <div className="flex flex-wrap gap-3">

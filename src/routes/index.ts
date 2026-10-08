@@ -4,6 +4,7 @@ import ContactPage from '@/routes/contact'
 import DisambiguationPage from '@/routes/disambiguation'
 import FAQPage from '@/routes/faq'
 import HomePage from '@/routes/home'
+import NearshorePage from '@/routes/nearshore-ai-software-development'
 import NotFoundPage from '@/routes/not-found'
 import PrivacyPage from '@/routes/privacy'
 
@@ -13,9 +14,9 @@ type Route = { title: string; description: string; Component: ComponentType }
 
 export const routes: Record<string, Route> = {
   '/': {
-    title: 'Totono | A nearshore agentic software factory',
+    title: 'Totono | Nearshore AI software development factory',
     description:
-      'A nearshore agentic software factory. Engineers in Argentina and a fleet of agents ship on your codebase; the control plane keeps you in control. Works with Claude Code, Codex, Cursor and Grok.',
+      'Nearshore software development powered by AI agents, at a fraction of US agency rates. Engineers in Argentina and a fleet of AI agents ship on your codebase; the control plane keeps you in control.',
     Component: HomePage,
   },
   '/about': {
@@ -23,6 +24,12 @@ export const routes: Record<string, Route> = {
     description:
       'One engineer and a fleet of agents on your codebase, and a control plane to run it. Engineers in Argentina, a US company. Led by Antonio Tralice (YC S20).',
     Component: AboutPage,
+  },
+  '/nearshore-ai-software-development': {
+    title: 'Nearshore AI software development from Argentina | Totono',
+    description:
+      'Affordable nearshore software development with AI agents: engineers in Argentina, on US hours, with a US contract. Costs a fraction of a US agency or in-house team.',
+    Component: NearshorePage,
   },
   '/contact': {
     title: 'Contact Totono',
