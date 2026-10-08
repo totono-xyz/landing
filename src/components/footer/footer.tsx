@@ -13,6 +13,12 @@ function Footer() {
             <a className="transition-colors hover:text-white" href="/about">
               About
             </a>
+            <a
+              className="transition-colors hover:text-white"
+              href="/nearshore-ai-software-development"
+            >
+              Nearshore AI development
+            </a>
             <a className="transition-colors hover:text-white" href="/contact">
               Contact
             </a>
