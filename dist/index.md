@@ -6,7 +6,7 @@ We connect to your codebase and agents start shipping. The control plane decides
 [Get in touch](https://totono.xyz/#contact)[How you stay in control](https://totono.xyz/#control-plane)
 Engineers in Argentina · US hours · US contract
 
-Bring your own harness
+Works with your agents
 - [Claude Code](https://claude.com/product/claude-code)
 - [Codex](https://openai.com/codex/)
 - [Cursor](https://cursor.com/)
@@ -16,9 +16,9 @@ How it works
 ## Hire us, and agents ship on your codebase within days.
 
 - One conversation: Then we plug into your stack (repo, CI, issue tracker, deploys) and start shipping in days, not months.
-- Agents understand your code: We create a map so agents know your app's features, decisions and critical paths.
-- Developers stay in control: Your team decides what agents may touch, which tools they can use, and which critical decisions should go through a human.
-- Everyone sees the state: Stakeholders get a plain view of features, owners, what changed this week and where the risk is.
+- Agents find their way: We add a light map to your repo so agents know your app's features and critical areas, and we record the decisions your team confirms.
+- You stay in control: Your team marks what's critical and decides it or delegates it. Your developer controls which tools agents use. Critical changes wait for a human.
+- Everyone sees the state: Stakeholders get a plain view of features, owners and what needs them.
 Human attention is the scarce asset now. We point it at the decisions that matter, and leave everything else to agents.
 
 The business sideWe handle contract, pricing and coordination. One invoice, one point of contact.
@@ -35,7 +35,7 @@ A small, high-signal slice of the map: features, decisions, owners and critical 
 $
 map pack checkout
 feature checkout · critical
-owner @payments-lead
+owner Dana Ruiz, Head of Payments
 rule no schema changes w/o review
 
 For developers
@@ -48,11 +48,11 @@ Set which zones agents may touch, which tools they may run, and which decisions 
 
 For stakeholders
 Know the state of the app:
-Features, owners, what changed this week and where the risk is. No code, no standups to decode.
+Features, owners and what needs you, in plain language. No code, no standups to decode.
 
 FeatureThis weekCheckout1 decision waitingOnboardingShippedReportsNo owner yet
 
-Built in-house. Improved every week on real projects.
+Built in-house. Improved every week on our own projects.
 
 Contact
 ## One engineer. A fleet of agents. Your software factory.

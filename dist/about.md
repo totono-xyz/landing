@@ -10,8 +10,8 @@ Human attention is the scarce asset now. The control plane points it at the deci
 ## The control plane
 
 - For agents: a map of your app's features, decisions and critical paths.
-- For developers: decide what agents may touch, which tools they run, and which decisions need a human.
-- For stakeholders: features, owners, what changed this week and where the risk is.
+- For developers: control which tools agents run.
+- For stakeholders: mark what's critical, decide or delegate, and see what needs you.
 
 The map lives in your repo. It works with Claude Code, Codex, Cursor and Grok. Our own tool, early and improving every week.
 

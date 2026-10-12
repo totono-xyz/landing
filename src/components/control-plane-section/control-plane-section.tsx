@@ -58,7 +58,7 @@ function ControlPlaneSection() {
                 <span className="text-dark-muted">$</span> map pack checkout
               </div>
               <div className="text-dark-muted">feature checkout · critical</div>
-              <div className="text-dark-muted">owner @payments-lead</div>
+              <div className="text-dark-muted">owner Dana Ruiz, Head of Payments</div>
               <div className="text-dark-muted">rule no schema changes w/o review</div>
             </div>
           </Card>
@@ -98,7 +98,7 @@ function ControlPlaneSection() {
           <Card
             label="For stakeholders"
             title="Know the state of the app"
-            body="Features, owners, what changed this week and where the risk is. No code, no standups to decode."
+            body="Features, owners and what needs you, in plain language. No code, no standups to decode."
           >
             <table className="border-line bg-surface w-full border-collapse border text-sm">
               <thead>
@@ -125,7 +125,7 @@ function ControlPlaneSection() {
 
         <p className="text-muted mt-10 flex items-center gap-2.5 font-mono text-[13px]">
           <span className="bg-accent size-2 shrink-0 rounded-full" />
-          Built in-house. Improved every week on real projects.
+          Built in-house. Improved every week on our own projects.
         </p>
       </div>
     </section>

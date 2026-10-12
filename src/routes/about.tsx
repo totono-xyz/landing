@@ -20,11 +20,8 @@ export default function AboutPage() {
       <h2>The control plane</h2>
       <ul>
         <li>For agents: a map of your app's features, decisions and critical paths.</li>
-        <li>
-          For developers: decide what agents may touch, which tools they run, and which decisions
-          need a human.
-        </li>
-        <li>For stakeholders: features, owners, what changed this week and where the risk is.</li>
+        <li>For developers: control which tools agents run.</li>
+        <li>For stakeholders: mark what's critical, decide or delegate, and see what needs you.</li>
       </ul>
       <p>
         The map lives in your repo. It works with Claude Code, Codex, Cursor and Grok. Our own tool,

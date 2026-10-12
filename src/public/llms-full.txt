@@ -20,8 +20,8 @@
 - **Engineers plus agents**: Totono engineers run the agents and review every change. Humans make the critical calls; agents do the rest.
 - **The control plane** (Totono's own tool, early and improving every week):
   - For agents: a map of your app's features, decisions and critical paths, so they do not break what matters.
-  - For developers: rules for which zones agents may touch, which tools they may run, and which decisions need a human.
-  - For stakeholders: features, owners, what changed this week and where the risk is.
+  - For developers: control which tools agents run.
+  - For stakeholders: mark what's critical, decide or delegate, and see what needs you.
 - **Your repo, your map**: the map lives in your repository, not with Totono.
 - **Agent support**: Claude Code, Codex, Cursor and Grok out of the box; other agents on request.
 - **Business side**: Totono handles contract, pricing and coordination. One invoice, one point of contact.

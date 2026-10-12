@@ -6,16 +6,16 @@ const SERVICES = [
     'Then we plug into your stack (repo, CI, issue tracker, deploys) and start shipping in days, not months.',
   ],
   [
-    'Agents understand your code',
-    "We create a map so agents know your app's features, decisions and critical paths.",
+    'Agents find their way',
+    "We add a light map to your repo so agents know your app's features and critical areas, and we record the decisions your team confirms.",
   ],
   [
-    'Developers stay in control',
-    'Your team decides what agents may touch, which tools they can use, and which critical decisions should go through a human.',
+    'You stay in control',
+    "Your team marks what's critical and decides it or delegates it. Your developer controls which tools agents use. Critical changes wait for a human.",
   ],
   [
     'Everyone sees the state',
-    'Stakeholders get a plain view of features, owners, what changed this week and where the risk is.',
+    'Stakeholders get a plain view of features, owners and what needs them.',
   ],
 ]
 

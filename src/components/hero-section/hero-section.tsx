@@ -169,7 +169,7 @@ function HeroSection() {
       <section aria-label="Supported harnesses" className="border-line bg-surface border-y">
         <div className="text-muted mx-auto flex max-w-6xl flex-wrap items-center gap-x-10 gap-y-4 px-6 py-5">
           <span className="font-mono text-xs tracking-[0.12em] uppercase">
-            Bring your own harness
+            Works with your agents
           </span>
           <ul className="text-on-surface flex flex-wrap items-center gap-x-9 gap-y-3">
             {AGENT_LOGOS.map(([name, url, path]) => (

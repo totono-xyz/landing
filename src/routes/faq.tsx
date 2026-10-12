@@ -23,7 +23,7 @@ const FAQ = [
   ],
   [
     'Do I keep control of my code?',
-    'Yes. The map lives in your repo. Your developers decide what agents can touch, and important decisions go through a human.',
+    "Yes. The map lives in your repo. Your team marks what's critical and decides who signs off, and critical changes go through a human.",
   ],
   [
     'Why nearshore?',
