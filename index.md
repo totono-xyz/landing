@@ -32,25 +32,13 @@ For agents
 Understand the code before changing it:
 A small, high-signal slice of the map: features, decisions, owners and critical paths. Less rediscovery, fewer broken things.
 
-$
-map pack checkout
-feature checkout · critical
-owner @payments-lead
-rule no schema changes w/o review
-
 For developers
 Decide what agents can do:
 Set which zones agents may touch, which tools they may run, and which decisions block until a human signs off.
 
-- auth/**Human decides
-- db:writeOwner only
-- onboarding/**Agents ship
-
 For stakeholders
 Know the state of the app:
 Features, owners, what changed this week and where the risk is. No code, no standups to decode.
-
-FeatureThis weekCheckout1 decision waitingOnboardingShippedReportsNo owner yet
 
 Built in-house. Improved every week on real projects.
 
