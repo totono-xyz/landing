@@ -28,6 +28,8 @@ The control plane
 
 It lives in your repo. Agents read it, developers control it, everyone sees it.
 
+DecisionsWhat was decided for this app, and who decided it.
+
 For agents
 Understand the code before changing it:
 A small, high-signal slice of the map: features, decisions, owners and critical paths. Less rediscovery, fewer broken things.
